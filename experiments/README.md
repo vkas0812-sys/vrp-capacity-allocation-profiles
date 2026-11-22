@@ -1,4 +1,4 @@
-# Thực nghiệm CVRP cho CITA 2027
+# Thực nghiệm CVRP
 
 ## Câu hỏi và thiết kế
 
@@ -19,7 +19,7 @@ Yêu cầu Python 3.11, Clang có C++17, và Cargo để chạy checker. Các l�
 
 ```sh
 WORK=$(mktemp -d)
-R=experiments/cita
+R=experiments
 python3.11 -m venv "$WORK/venv"
 PY="$WORK/venv/bin/python"
 "$PY" -m pip install -r "$R/requirements.txt"
@@ -115,12 +115,12 @@ Danh sách 20 instance mẹ giữ riêng nằm trong `holdout_parents.csv`. Xế
 ```sh
 XDIR=/tmp/iccsa-holdout-vrp
 mkdir -p "$XDIR"
-cut -d, -f1 experiments/cita/holdout_parents.csv | tail -n +2 | while read -r parent; do
+cut -d, -f1 experiments/holdout_parents.csv | tail -n +2 | while read -r parent; do
   curl -fsSL "https://raw.githubusercontent.com/VROOM-Project/vroom-scripts/0f5ee1eb625d287101686d11622d03e43ec0c969/benchmarks/CVRP/X/${parent}.vrp" -o "$XDIR/${parent}.vrp" || exit 1
 done
-python3.11 experiments/cita/six_vehicle_profiles.py "$XDIR" --holdout
-python3.11 experiments/cita/holdout_summary.py --check-milp "$XDIR"
-python3.11 experiments/cita/holdout_summary.py
+python3.11 experiments/six_vehicle_profiles.py "$XDIR" --holdout
+python3.11 experiments/holdout_summary.py --check-milp "$XDIR"
+python3.11 experiments/holdout_summary.py
 ```
 
 Runner kiểm tra mã băm Git blob của cả 20 tệp trước khi tính. Bảng `six_vehicle_holdout.csv` ghi năm phương án cho mỗi ca hoàn tất và giữ dòng timeout cho ca quá hạn. Đơn vị mẫu là instance mẹ. Tỷ lệ giảm quãng đường tính trong từng ca rồi mới lấy trung vị. Bốn instance mẹ tại vị trí 1, 7, 14 và 20 của nhóm mới có thêm đối chiếu MILP. Các mốc thời gian chạy lại có thể thay đổi trạng thái chạm giới hạn của MILP.
@@ -130,12 +130,12 @@ Runner kiểm tra mã băm Git blob của cả 20 tệp trước khi tính. Bả
 Đối chứng sáu tuyến dùng cùng đầu vào và cùng tập cột. Chế độ chuẩn giữ tất cả mặt nạ hai nửa. Hai chế độ còn lại giữ phía chứa tất cả 2 hoặc 3 khách mốc và phía chứa phần bù. Chúng xuất nghiệm, tổng số cách và chi phí tốt nhất cho từng lớp vượt tải. Phép thử chứng nhận LP riêng dùng nghiệm 3+1 đã lưu để đo độ chặt của cận. Chạy lại từ thư mục gốc:
 
 ```sh
-python3.11 experiments/cita/anchor_ablation.py "$INITIAL_X_DIR" "$HOLDOUT_X_DIR"
-python3.11 experiments/cita/regret_bound.py "$INITIAL_X_DIR" "$HOLDOUT_X_DIR"
-python3.11 experiments/cita/summarize_anchors.py
+python3.11 experiments/anchor_ablation.py "$INITIAL_X_DIR" "$HOLDOUT_X_DIR"
+python3.11 experiments/regret_bound.py "$INITIAL_X_DIR" "$HOLDOUT_X_DIR"
+python3.11 experiments/summarize_anchors.py
 ```
 
-Tác vụ `night-20261122` có bản nguồn, dữ liệu bố mẹ, mã băm, bản biên dịch và danh mục ca cố định trong `experiments/cita/runs/night-20261122/`. Đọc `REPORT.md` để xem đối chiếu theo nhánh; `status.json` ghi ca đang chạy và hạn dừng theo giờ Việt Nam; `jobs/` lưu từng checkpoint JSON bằng thay tệp nguyên tử. Dữ liệu của đợt này là bộ sinh tải chặt được ghi trong `src/overnight/cases.py`, khác bộ sinh của 30 ca sáu xe đầu tiên. Không gộp các ca vào số mẫu chính của paper trước khi phân tích.
+Tác vụ `night-20261122` có bản nguồn, dữ liệu bố mẹ, mã băm, bản biên dịch và danh mục ca cố định trong `experiments/runs/night-20261122/`. Đọc `REPORT.md` để xem đối chiếu theo nhánh; `status.json` ghi ca đang chạy và hạn dừng theo giờ Việt Nam; `jobs/` lưu từng checkpoint JSON bằng thay tệp nguyên tử. Dữ liệu của đợt này là bộ sinh tải chặt được ghi trong `src/overnight/cases.py`, khác bộ sinh của 30 ca sáu xe đầu tiên. Không gộp các ca vào số mẫu chính của paper trước khi phân tích.
 
 Bộ DAG thử nghiệm xuất số đếm và mục tiêu theo lớp; thời gian của nó bao gồm công việc khác với bộ ghép có trả lại cả nghiệm. Đối chiếu tốc độ phải dùng cùng nhánh và đầu ra. Nhánh batch dùng cùng cấu trúc nhu cầu với ma trận khoảng cách khác nhau; nhánh policy giữ nguyên vị trí trong mỗi depot rồi thay nhu cầu. Nhánh certificate tính lại nghiệm khả thi từ cách đóng tải ban đầu bằng cải thiện hai tuyến, đưa cả thời gian tìm nghiệm và LP vào log. Trên macOS, launchd chạy một worker tại một thời điểm, có caffeinate giữ máy thức. Hạn 8 giờ tính từ lần khởi động đầu tiên và giữ nguyên khi tiếp tục. Mọi so sánh thời gian của chiến dịch dùng RSS được lấy mẫu và thời gian ở cấp tiến trình.
 
@@ -143,7 +143,7 @@ Lệnh kiểm tra của riêng đợt này:
 
 ```sh
 launchctl print gui/501/local.iccsa.night-20261122
-cat experiments/cita/runs/night-20261122/status.json
+cat experiments/runs/night-20261122/status.json
 ```
 
 Nếu tiến trình bị ngắt trong khi phiên macOS vẫn còn đăng nhập và trước hạn dừng, dùng `launchctl kickstart gui/501/local.iccsa.night-20261122` để tiếp tục từ checkpoint. Giữ nắp laptop mở khi cắm điện. Có thể dừng có kiểm soát bằng cách tạo tệp `STOP` trong thư mục lần chạy. Job được nạp từ một plist trong workspace, không cài làm mục tự khởi động khi đăng nhập.

@@ -11,7 +11,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
-RESULTS = HERE.parent / "experiments/cita/results"
+RESULTS = HERE.parent / "experiments/results"
 
 
 def read(name):
