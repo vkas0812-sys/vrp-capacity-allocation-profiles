@@ -5,7 +5,9 @@
 [![QOBLIB Benchmark](https://img.shields.io/badge/QOBLIB-09--routing%20(CVRP)-blue)](https://github.com/ZIB-AOPT/QOBLIB)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Author:** Vuong Kha Anh Son ([`vkas0812-sys`](https://github.com/vkas0812-sys))  
+**Author:** Kha Anh Son Vuong ([`vkas0812-sys`](https://github.com/vkas0812-sys)) · **ORCID:** [0009-0006-3435-7990](https://orcid.org/0009-0006-3435-7990)  
+**Affiliation:** School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam  
+**Email:** [anhson.vuongkha@gmail.com](mailto:anhson.vuongkha@gmail.com)  
 **Target Problem:** Capacitated Vehicle Routing Problem (CVRP) — Instance `XSH-n20-k4-21` from the [Quantum Optimization Benchmark Library (QOBLIB)](https://github.com/ZIB-AOPT/QOBLIB).  
 **Related QOBLIB Submissions:** [PR #93 (TC-Exact)](https://github.com/ZIB-AOPT/QOBLIB/pull/93) · [PR #94 (SQA-Subspace)](https://github.com/ZIB-AOPT/QOBLIB/pull/94) · [C++ Campaign Benchmark Repository](https://github.com/vkas0812-sys/qoblib-routing-exact-sqa).
 
@@ -181,14 +183,29 @@ vrp-quantum-hello-world/
 
 ## Citation & Contact
 
+- **Author:** Kha Anh Son Vuong (`Vuong, Kha Anh Son`)
+- **Affiliation:** School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam
+- **Email:** [anhson.vuongkha@gmail.com](mailto:anhson.vuongkha@gmail.com)
+- **ORCID:** [https://orcid.org/0009-0006-3435-7990](https://orcid.org/0009-0006-3435-7990)
+
 If you use this formulation or workflow in your research:
 
 ```bibtex
 @misc{vuong2026vrpquantumhelloworld,
-  author = {Vuong, Kha Anh Son},
-  title = {VRP Quantum Hello World: 11-Qubit Subspace Grover Optimization},
-  year = {2026},
-  publisher = {GitHub},
+  author       = {Vuong, Kha Anh Son},
+  title        = {VRP Quantum Hello World: 11-Qubit Subspace Grover Optimization},
+  year         = {2026},
+  publisher    = {GitHub},
+  note         = {ORCID: 0009-0006-3435-7990. School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam},
   howpublished = {\url{https://github.com/vkas0812-sys/vrp-quantum-hello-world}}
 }
+```
+
+```yaml
+authors:
+  - family-names: "Vuong"
+    given-names: "Kha Anh Son"
+    email: "anhson.vuongkha@gmail.com"
+    affiliation: "School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0006-3435-7990"
 ```
