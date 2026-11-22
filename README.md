@@ -7,7 +7,7 @@
 
 **Author:** Kha Anh Son Vuong ([`vkas0812-sys`](https://github.com/vkas0812-sys)) · **ORCID:** [0009-0006-3435-7990](https://orcid.org/0009-0006-3435-7990)  
 **Affiliation:** School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam  
-**Email:** [anhson.vuongkha@gmail.com](mailto:anhson.vuongkha@gmail.com)  
+**Email:** [sonvka31@mp.hcmiu.edu.vn](mailto:sonvka31@mp.hcmiu.edu.vn)  
 **Target Problem:** Capacitated Vehicle Routing Problem (CVRP) — Instance `XSH-n20-k4-21` from the [Quantum Optimization Benchmark Library (QOBLIB)](https://github.com/ZIB-AOPT/QOBLIB).  
 **Related QOBLIB Submissions:** [PR #93 (TC-Exact)](https://github.com/ZIB-AOPT/QOBLIB/pull/93) · [PR #94 (SQA-Subspace)](https://github.com/ZIB-AOPT/QOBLIB/pull/94) · [C++ Campaign Benchmark Repository](https://github.com/vkas0812-sys/qoblib-routing-exact-sqa).
 
@@ -185,7 +185,7 @@ vrp-quantum-hello-world/
 
 - **Author:** Kha Anh Son Vuong (`Vuong, Kha Anh Son`)
 - **Affiliation:** School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam
-- **Email:** [anhson.vuongkha@gmail.com](mailto:anhson.vuongkha@gmail.com)
+- **Email:** [sonvka31@mp.hcmiu.edu.vn](mailto:sonvka31@mp.hcmiu.edu.vn)
 - **ORCID:** [https://orcid.org/0009-0006-3435-7990](https://orcid.org/0009-0006-3435-7990)
 
 If you use this formulation or workflow in your research:
@@ -205,7 +205,7 @@ If you use this formulation or workflow in your research:
 authors:
   - family-names: "Vuong"
     given-names: "Kha Anh Son"
-    email: "anhson.vuongkha@gmail.com"
+    email: "sonvka31@mp.hcmiu.edu.vn"
     affiliation: "School of Industrial Engineering and Management, Ho Chi Minh City International University, Ho Chi Minh City, Vietnam"
     orcid: "https://orcid.org/0009-0006-3435-7990"
 ```
