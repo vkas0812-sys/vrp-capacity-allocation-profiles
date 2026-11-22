@@ -14,3 +14,4 @@ __pycache__/
 *.sol
 temp_solutions/
 quantum_55_instances_summary.json
+check/target/

@@ -218,15 +218,26 @@ with open(sol_filename, "w") as f:
 
 print(f" Saved QOBLIB solution file: {sol_filename}")
 
-# Search for QOBLIB checker relative to repository
+# Search for QOBLIB checker and instances (bundled inside this repo under check/ and instances/)
+repo_dir = os.path.dirname(os.path.abspath(__file__))
+local_check_dir = os.path.join(repo_dir, "check")
+local_checker_bin = os.path.join(local_check_dir, "target", "release", "check_cvrp")
+
+if not os.path.exists(local_checker_bin) and os.path.exists(os.path.join(local_check_dir, "Cargo.toml")):
+    try:
+        print(" Building bundled QOBLIB Rust checker (check/src/bin/check_cvrp.rs)...")
+        subprocess.run(["cargo", "build", "--release"], cwd=local_check_dir, check=True, capture_output=True)
+    except Exception:
+        pass
+
 possible_checkers = [
-    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "QOBLIB", "09-routing", "check", "target", "release", "check_cvrp")),
-    "/Volumes/VKAS_SSD/11_QUANTUM_UPDATE/QOBLIB/09-routing/check/target/release/check_cvrp",
+    local_checker_bin,
+    os.path.abspath(os.path.join(repo_dir, "..", "QOBLIB", "09-routing", "check", "target", "release", "check_cvrp")),
     "check_cvrp"
 ]
 possible_instances = [
-    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "QOBLIB", "09-routing", "instances", "XSH-n20-k4-21.vrp")),
-    "/Volumes/VKAS_SSD/11_QUANTUM_UPDATE/QOBLIB/09-routing/instances/XSH-n20-k4-21.vrp"
+    os.path.join(repo_dir, "instances", "XSH-n20-k4-21.vrp"),
+    os.path.abspath(os.path.join(repo_dir, "..", "QOBLIB", "09-routing", "instances", "XSH-n20-k4-21.vrp")),
 ]
 
 checker_bin = next((p for p in possible_checkers if os.path.exists(p)), None)

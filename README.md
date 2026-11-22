@@ -91,7 +91,7 @@ Evaluating $\langle Z_0 Z_j \rangle$ across qubits displays the characteristic a
 
 ---
 
-## Step 5. Official QOBLIB Verification (`check_cvrp`)
+## Step 5. Official QOBLIB Verification ([`check_cvrp`](https://github.com/ZIB-AOPT/QOBLIB/tree/main/09-routing/check))
 
 The measured optimal state $|00000101010\rangle$ (Index 42) maps directly to the 4 vehicle routes:
 
@@ -104,7 +104,7 @@ Route #4: 12 6 18 7
 Cost 842
 ```
 
-Verified directly against the official QOBLIB Rust solution checker (`check_cvrp`):
+Verified directly against the official QOBLIB Rust solution checker ([`check_cvrp`](https://github.com/ZIB-AOPT/QOBLIB/tree/main/09-routing/check), also bundled locally in [`check/`](check/)):
 ```text
 ============================================================
   OFFICIAL QOBLIB CHECKER VERIFICATION OUTPUT:
@@ -150,7 +150,7 @@ jupyter notebook VRP_Quantum_Hello_World.ipynb
 ## Full 55-Instance QOBLIB Benchmark Verification
 
 Across all 55 benchmark instances in QOBLIB `09-routing` (`XSH-n20-k4-01` to `XSH-n20-k4-55`), the Subspace formulation achieves:
-* **100% Pass Rate:** 55 / 55 instances verified valid by official Rust checker `check_cvrp`.
+* **100% Pass Rate:** 55 / 55 instances verified valid by official Rust checker [`check_cvrp`](https://github.com/ZIB-AOPT/QOBLIB/tree/main/09-routing/check) (source bundled in [`check/`](check/)).
 * **Hardware Requirement:** Only **9 to 13 qubits** (mean: 11.75 qubits), down from 80 qubits (-85.32% physical qubit reduction).
 * **MacBook Simulation Speed:** Mean ~24 ms / instance on Apple Silicon using Qiskit 2.6.0.
 
@@ -165,18 +165,22 @@ vrp-quantum-hello-world/
 ├── README.md                          # Documentation and benchmark overview
 ├── VRP_Quantum_Hello_World.ipynb      # Interactive 6-step Jupyter Notebook
 ├── run_vrp_hello_world.py             # Single-instance CLI execution script
-├── run_all_55_quantum_simulator.py     # Full 55-instance campaign runner & verifier
-├── quantum_55_instances_summary.json  # Detailed metrics for all 55 instances
+├── run_all_55_quantum_simulator.py    # Full 55-instance campaign runner & verifier
+├── campaign_test_results.json         # Precomputed 55-instance subspace partitions & optimal tours
 ├── requirements.txt                   # Dependencies (qiskit, qiskit-aer, matplotlib, numpy)
 ├── .gitignore                         # Git ignore rules
+├── check/                             # Official QOBLIB Rust solution verifier (check_cvrp)
+│   ├── Cargo.toml
+│   ├── README.md
+│   └── src/bin/check_cvrp.rs
+├── instances/                         # All 55 QOBLIB 09-routing CVRP instances (XSH-n20-k4-01..55.vrp)
 └── plots/                             # High-resolution generated circuit diagrams & charts
     ├── step1_vrp_circuit.png
     ├── step2_isa_transpiled_circuit.png
     ├── step4_distribution_histogram.png
     ├── step4_observable_correlation.png
     ├── step4_qubit_comparison.png
-    ├── step6_55_instances_benchmark.png
-    └── XSH-n20-k4-21_solution.sol
+    └── step6_55_instances_benchmark.png
 ```
 
 ---

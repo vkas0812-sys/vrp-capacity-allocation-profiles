@@ -1,0 +1,1652 @@
+[
+  {
+    "instance": "XSH-n20-k4-01",
+    "capacity": 231,
+    "num_subsets": 546,
+    "num_partitions": 2520,
+    "nonzeros": 3889,
+    "min_coeff": 1,
+    "max_coeff": 255,
+    "exact_cost": 646,
+    "second_best_cost": 648,
+    "exact_total_s": 0.004834,
+    "exact_tts_s": 0.004694,
+    "sqa_best_cost": 646,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.021098,
+    "sqa_mean_tts_s": 0.020410,
+    "routes": [
+      [15, 2, 18, 1, 8],
+      [17, 4, 5, 19, 3],
+      [10, 11, 7, 9, 6],
+      [20, 12, 13, 14, 16]
+    ],
+    "traces": [
+      [{"Time": 0.020195, "Incumbent": 759, "step": 1}, {"Time": 0.020202, "Incumbent": 729, "step": 4}, {"Time": 0.020204, "Incumbent": 684, "step": 9}, {"Time": 0.020220, "Incumbent": 673, "step": 41}, {"Time": 0.020228, "Incumbent": 655, "step": 68}, {"Time": 0.020230, "Incumbent": 648, "step": 75}, {"Time": 0.020458, "Incumbent": 646, "step": 1704}],
+      [{"Time": 0.020192, "Incumbent": 849, "step": 1}, {"Time": 0.020192, "Incumbent": 783, "step": 2}, {"Time": 0.020193, "Incumbent": 753, "step": 3}, {"Time": 0.020195, "Incumbent": 752, "step": 26}, {"Time": 0.020195, "Incumbent": 722, "step": 28}, {"Time": 0.020196, "Incumbent": 710, "step": 40}, {"Time": 0.020198, "Incumbent": 664, "step": 63}, {"Time": 0.020201, "Incumbent": 654, "step": 102}, {"Time": 0.020229, "Incumbent": 650, "step": 431}, {"Time": 0.020232, "Incumbent": 648, "step": 479}, {"Time": 0.020447, "Incumbent": 646, "step": 3331}],
+      [{"Time": 0.020192, "Incumbent": 803, "step": 1}, {"Time": 0.020192, "Incumbent": 726, "step": 2}, {"Time": 0.020193, "Incumbent": 717, "step": 5}, {"Time": 0.020196, "Incumbent": 696, "step": 37}, {"Time": 0.020200, "Incumbent": 692, "step": 92}, {"Time": 0.020202, "Incumbent": 670, "step": 104}, {"Time": 0.020204, "Incumbent": 667, "step": 132}, {"Time": 0.020224, "Incumbent": 656, "step": 379}, {"Time": 0.020265, "Incumbent": 646, "step": 886}],
+      [{"Time": 0.020192, "Incumbent": 720, "step": 1}, {"Time": 0.020193, "Incumbent": 659, "step": 11}, {"Time": 0.020200, "Incumbent": 658, "step": 85}, {"Time": 0.020248, "Incumbent": 650, "step": 683}, {"Time": 0.020265, "Incumbent": 648, "step": 879}, {"Time": 0.020389, "Incumbent": 646, "step": 2382}],
+      [{"Time": 0.020192, "Incumbent": 845, "step": 1}, {"Time": 0.020192, "Incumbent": 800, "step": 2}, {"Time": 0.020193, "Incumbent": 683, "step": 5}, {"Time": 0.020202, "Incumbent": 667, "step": 100}, {"Time": 0.020213, "Incumbent": 662, "step": 241}, {"Time": 0.020215, "Incumbent": 657, "step": 265}, {"Time": 0.020215, "Incumbent": 654, "step": 266}, {"Time": 0.020221, "Incumbent": 648, "step": 331}, {"Time": 0.020490, "Incumbent": 646, "step": 3681}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-02",
+    "capacity": 194,
+    "num_subsets": 917,
+    "num_partitions": 2612,
+    "nonzeros": 7479,
+    "min_coeff": 1,
+    "max_coeff": 321,
+    "exact_cost": 650,
+    "second_best_cost": 652,
+    "exact_total_s": 0.026554,
+    "exact_tts_s": 0.026344,
+    "sqa_best_cost": 650,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.045721,
+    "sqa_mean_tts_s": 0.045040,
+    "routes": [
+      [15, 11, 2, 17, 1],
+      [10, 12, 9, 8, 13, 3],
+      [18, 4, 6],
+      [14, 19, 5, 20, 16, 7]
+    ],
+    "traces": [
+      [{"Time": 0.044827, "Incumbent": 838, "step": 1}, {"Time": 0.044827, "Incumbent": 722, "step": 2}, {"Time": 0.044828, "Incumbent": 688, "step": 6}, {"Time": 0.044834, "Incumbent": 680, "step": 53}, {"Time": 0.044839, "Incumbent": 664, "step": 101}, {"Time": 0.044901, "Incumbent": 662, "step": 770}, {"Time": 0.044920, "Incumbent": 650, "step": 996}],
+      [{"Time": 0.044826, "Incumbent": 778, "step": 1}, {"Time": 0.044826, "Incumbent": 772, "step": 2}, {"Time": 0.044826, "Incumbent": 759, "step": 3}, {"Time": 0.044827, "Incumbent": 738, "step": 11}, {"Time": 0.044828, "Incumbent": 712, "step": 13}, {"Time": 0.044829, "Incumbent": 685, "step": 29}, {"Time": 0.044838, "Incumbent": 672, "step": 107}, {"Time": 0.044850, "Incumbent": 666, "step": 246}, {"Time": 0.044859, "Incumbent": 660, "step": 345}, {"Time": 0.044908, "Incumbent": 659, "step": 898}, {"Time": 0.044911, "Incumbent": 652, "step": 935}, {"Time": 0.045101, "Incumbent": 650, "step": 3211}],
+      [{"Time": 0.044826, "Incumbent": 790, "step": 1}, {"Time": 0.044826, "Incumbent": 711, "step": 3}, {"Time": 0.044826, "Incumbent": 674, "step": 8}, {"Time": 0.044838, "Incumbent": 672, "step": 93}, {"Time": 0.044848, "Incumbent": 666, "step": 209}, {"Time": 0.044862, "Incumbent": 662, "step": 367}, {"Time": 0.044892, "Incumbent": 660, "step": 704}, {"Time": 0.044896, "Incumbent": 653, "step": 754}, {"Time": 0.044940, "Incumbent": 652, "step": 1227}, {"Time": 0.045022, "Incumbent": 650, "step": 2231}],
+      [{"Time": 0.044826, "Incumbent": 814, "step": 1}, {"Time": 0.044826, "Incumbent": 806, "step": 3}, {"Time": 0.044826, "Incumbent": 764, "step": 5}, {"Time": 0.044827, "Incumbent": 701, "step": 11}, {"Time": 0.044831, "Incumbent": 693, "step": 58}, {"Time": 0.044834, "Incumbent": 685, "step": 86}, {"Time": 0.044835, "Incumbent": 675, "step": 94}, {"Time": 0.044842, "Incumbent": 674, "step": 174}, {"Time": 0.044843, "Incumbent": 664, "step": 190}, {"Time": 0.044856, "Incumbent": 660, "step": 282}, {"Time": 0.044878, "Incumbent": 652, "step": 556}, {"Time": 0.045278, "Incumbent": 650, "step": 5818}],
+      [{"Time": 0.044826, "Incumbent": 768, "step": 1}, {"Time": 0.044826, "Incumbent": 739, "step": 2}, {"Time": 0.044826, "Incumbent": 691, "step": 7}, {"Time": 0.044826, "Incumbent": 690, "step": 8}, {"Time": 0.044835, "Incumbent": 680, "step": 100}, {"Time": 0.044843, "Incumbent": 676, "step": 188}, {"Time": 0.044850, "Incumbent": 672, "step": 273}, {"Time": 0.044856, "Incumbent": 660, "step": 342}, {"Time": 0.044856, "Incumbent": 652, "step": 348}, {"Time": 0.044880, "Incumbent": 650, "step": 648}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-03",
+    "capacity": 281,
+    "num_subsets": 413,
+    "num_partitions": 1067,
+    "nonzeros": 2975,
+    "min_coeff": 1,
+    "max_coeff": 178,
+    "exact_cost": 508,
+    "second_best_cost": 510,
+    "exact_total_s": 0.003546,
+    "exact_tts_s": 0.003500,
+    "sqa_best_cost": 508,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.008129,
+    "sqa_mean_tts_s": 0.007474,
+    "routes": [
+      [3, 6, 5, 14, 8, 1],
+      [16, 18, 17, 2],
+      [15, 13, 7, 9, 4],
+      [20, 10, 19, 12, 11]
+    ],
+    "traces": [
+      [{"Time": 0.007313, "Incumbent": 547, "step": 1}, {"Time": 0.007314, "Incumbent": 545, "step": 5}, {"Time": 0.007314, "Incumbent": 520, "step": 6}, {"Time": 0.007322, "Incumbent": 519, "step": 102}, {"Time": 0.007325, "Incumbent": 518, "step": 134}, {"Time": 0.007325, "Incumbent": 516, "step": 135}, {"Time": 0.007377, "Incumbent": 515, "step": 771}, {"Time": 0.007404, "Incumbent": 508, "step": 1137}],
+      [{"Time": 0.007312, "Incumbent": 582, "step": 1}, {"Time": 0.007312, "Incumbent": 541, "step": 2}, {"Time": 0.007314, "Incumbent": 539, "step": 22}, {"Time": 0.007315, "Incumbent": 533, "step": 36}, {"Time": 0.007316, "Incumbent": 529, "step": 42}, {"Time": 0.007318, "Incumbent": 525, "step": 74}, {"Time": 0.007325, "Incumbent": 518, "step": 170}, {"Time": 0.007342, "Incumbent": 515, "step": 403}, {"Time": 0.007347, "Incumbent": 510, "step": 485}, {"Time": 0.007663, "Incumbent": 508, "step": 4883}],
+      [{"Time": 0.007312, "Incumbent": 559, "step": 1}, {"Time": 0.007312, "Incumbent": 554, "step": 3}, {"Time": 0.007313, "Incumbent": 550, "step": 5}, {"Time": 0.007313, "Incumbent": 543, "step": 6}, {"Time": 0.007313, "Incumbent": 531, "step": 14}, {"Time": 0.007314, "Incumbent": 523, "step": 15}, {"Time": 0.007324, "Incumbent": 520, "step": 129}, {"Time": 0.007340, "Incumbent": 508, "step": 353}],
+      [{"Time": 0.007312, "Incumbent": 567, "step": 1}, {"Time": 0.007312, "Incumbent": 553, "step": 2}, {"Time": 0.007312, "Incumbent": 549, "step": 3}, {"Time": 0.007313, "Incumbent": 545, "step": 6}, {"Time": 0.007313, "Incumbent": 537, "step": 9}, {"Time": 0.007315, "Incumbent": 532, "step": 28}, {"Time": 0.007317, "Incumbent": 527, "step": 62}, {"Time": 0.007349, "Incumbent": 519, "step": 475}, {"Time": 0.007352, "Incumbent": 515, "step": 505}, {"Time": 0.007470, "Incumbent": 510, "step": 2103}, {"Time": 0.007616, "Incumbent": 508, "step": 4220}],
+      [{"Time": 0.007312, "Incumbent": 528, "step": 1}, {"Time": 0.007313, "Incumbent": 521, "step": 12}, {"Time": 0.007346, "Incumbent": 510, "step": 456}, {"Time": 0.007348, "Incumbent": 508, "step": 488}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-04",
+    "capacity": 299,
+    "num_subsets": 359,
+    "num_partitions": 2034,
+    "nonzeros": 2421,
+    "min_coeff": 1,
+    "max_coeff": 284,
+    "exact_cost": 776,
+    "second_best_cost": 782,
+    "exact_total_s": 0.001598,
+    "exact_tts_s": 0.001571,
+    "sqa_best_cost": 776,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.012447,
+    "sqa_mean_tts_s": 0.011697,
+    "routes": [
+      [18, 7, 6, 8, 1],
+      [17, 19, 4, 13, 12, 2],
+      [15, 11, 16, 3],
+      [10, 20, 14, 9, 5]
+    ],
+    "traces": [
+      [{"Time": 0.011572, "Incumbent": 905, "step": 1}, {"Time": 0.011572, "Incumbent": 898, "step": 3}, {"Time": 0.011572, "Incumbent": 892, "step": 4}, {"Time": 0.011573, "Incumbent": 890, "step": 7}, {"Time": 0.011573, "Incumbent": 842, "step": 8}, {"Time": 0.011577, "Incumbent": 833, "step": 41}, {"Time": 0.011580, "Incumbent": 819, "step": 63}, {"Time": 0.011581, "Incumbent": 817, "step": 79}, {"Time": 0.011592, "Incumbent": 800, "step": 188}, {"Time": 0.011597, "Incumbent": 785, "step": 241}, {"Time": 0.011606, "Incumbent": 783, "step": 350}, {"Time": 0.011658, "Incumbent": 776, "step": 998}],
+      [{"Time": 0.011571, "Incumbent": 872, "step": 1}, {"Time": 0.011571, "Incumbent": 836, "step": 2}, {"Time": 0.011571, "Incumbent": 819, "step": 8}, {"Time": 0.011574, "Incumbent": 805, "step": 34}, {"Time": 0.011597, "Incumbent": 776, "step": 324}],
+      [{"Time": 0.011571, "Incumbent": 911, "step": 1}, {"Time": 0.011571, "Incumbent": 839, "step": 3}, {"Time": 0.011575, "Incumbent": 814, "step": 46}, {"Time": 0.011578, "Incumbent": 804, "step": 84}, {"Time": 0.011583, "Incumbent": 801, "step": 148}, {"Time": 0.011588, "Incumbent": 787, "step": 200}, {"Time": 0.011589, "Incumbent": 782, "step": 216}, {"Time": 0.011900, "Incumbent": 776, "step": 4423}],
+      [{"Time": 0.011571, "Incumbent": 880, "step": 1}, {"Time": 0.011571, "Incumbent": 849, "step": 6}, {"Time": 0.011576, "Incumbent": 844, "step": 49}, {"Time": 0.011577, "Incumbent": 842, "step": 60}, {"Time": 0.011578, "Incumbent": 833, "step": 76}, {"Time": 0.011579, "Incumbent": 829, "step": 80}, {"Time": 0.011581, "Incumbent": 814, "step": 106}, {"Time": 0.011587, "Incumbent": 796, "step": 159}, {"Time": 0.011616, "Incumbent": 785, "step": 497}, {"Time": 0.011618, "Incumbent": 776, "step": 513}],
+      [{"Time": 0.011571, "Incumbent": 886, "step": 1}, {"Time": 0.011571, "Incumbent": 883, "step": 2}, {"Time": 0.011571, "Incumbent": 868, "step": 3}, {"Time": 0.011572, "Incumbent": 860, "step": 7}, {"Time": 0.011572, "Incumbent": 829, "step": 10}, {"Time": 0.011575, "Incumbent": 822, "step": 49}, {"Time": 0.011586, "Incumbent": 812, "step": 179}, {"Time": 0.011588, "Incumbent": 810, "step": 203}, {"Time": 0.011592, "Incumbent": 808, "step": 253}, {"Time": 0.011612, "Incumbent": 782, "step": 490}, {"Time": 0.011710, "Incumbent": 776, "step": 1703}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-05",
+    "capacity": 270,
+    "num_subsets": 435,
+    "num_partitions": 1730,
+    "nonzeros": 3105,
+    "min_coeff": 1,
+    "max_coeff": 235,
+    "exact_cost": 702,
+    "second_best_cost": 706,
+    "exact_total_s": 0.003674,
+    "exact_tts_s": 0.003662,
+    "sqa_best_cost": 702,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.013024,
+    "sqa_mean_tts_s": 0.012238,
+    "routes": [
+      [17, 7, 19, 11, 12, 1],
+      [15, 13, 4, 3, 2],
+      [20, 9, 16, 5, 8],
+      [10, 18, 14, 6]
+    ],
+    "traces": [
+      [{"Time": 0.012148, "Incumbent": 810, "step": 1}, {"Time": 0.012148, "Incumbent": 740, "step": 2}, {"Time": 0.012150, "Incumbent": 735, "step": 12}, {"Time": 0.012157, "Incumbent": 733, "step": 76}, {"Time": 0.012158, "Incumbent": 726, "step": 88}, {"Time": 0.012174, "Incumbent": 720, "step": 297}, {"Time": 0.012227, "Incumbent": 716, "step": 1002}, {"Time": 0.012245, "Incumbent": 702, "step": 1243}],
+      [{"Time": 0.012147, "Incumbent": 809, "step": 1}, {"Time": 0.012147, "Incumbent": 785, "step": 2}, {"Time": 0.012148, "Incumbent": 770, "step": 4}, {"Time": 0.012148, "Incumbent": 735, "step": 5}, {"Time": 0.012149, "Incumbent": 729, "step": 14}, {"Time": 0.012161, "Incumbent": 726, "step": 144}, {"Time": 0.012168, "Incumbent": 716, "step": 224}, {"Time": 0.012198, "Incumbent": 706, "step": 603}],
+      [{"Time": 0.012147, "Incumbent": 798, "step": 1}, {"Time": 0.012147, "Incumbent": 729, "step": 3}, {"Time": 0.012148, "Incumbent": 726, "step": 6}, {"Time": 0.012158, "Incumbent": 706, "step": 114}, {"Time": 0.012323, "Incumbent": 702, "step": 2219}],
+      [{"Time": 0.012147, "Incumbent": 747, "step": 1}, {"Time": 0.012148, "Incumbent": 726, "step": 8}, {"Time": 0.012150, "Incumbent": 724, "step": 26}, {"Time": 0.012176, "Incumbent": 722, "step": 348}, {"Time": 0.012200, "Incumbent": 711, "step": 625}, {"Time": 0.012231, "Incumbent": 702, "step": 1033}],
+      [{"Time": 0.012147, "Incumbent": 814, "step": 1}, {"Time": 0.012147, "Incumbent": 804, "step": 2}, {"Time": 0.012147, "Incumbent": 784, "step": 3}, {"Time": 0.012148, "Incumbent": 779, "step": 4}, {"Time": 0.012148, "Incumbent": 775, "step": 5}, {"Time": 0.012148, "Incumbent": 771, "step": 6}, {"Time": 0.012148, "Incumbent": 736, "step": 8}, {"Time": 0.012149, "Incumbent": 735, "step": 19}, {"Time": 0.012152, "Incumbent": 734, "step": 51}, {"Time": 0.012152, "Incumbent": 732, "step": 56}, {"Time": 0.012155, "Incumbent": 728, "step": 82}, {"Time": 0.012164, "Incumbent": 727, "step": 202}, {"Time": 0.012167, "Incumbent": 716, "step": 235}, {"Time": 0.012176, "Incumbent": 706, "step": 333}, {"Time": 0.012193, "Incumbent": 702, "step": 530}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-06",
+    "capacity": 210,
+    "num_subsets": 536,
+    "num_partitions": 4012,
+    "nonzeros": 3716,
+    "min_coeff": 1,
+    "max_coeff": 251,
+    "exact_cost": 690,
+    "second_best_cost": 697,
+    "exact_total_s": 0.003179,
+    "exact_tts_s": 0.003173,
+    "sqa_best_cost": 690,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.038055,
+    "sqa_mean_tts_s": 0.037319,
+    "routes": [
+      [18, 11, 16, 1],
+      [15, 5, 20, 2, 12],
+      [9, 7, 19, 3, 4],
+      [17, 6, 10, 13, 14, 8]
+    ],
+    "traces": [
+      [{"Time": 0.037088, "Incumbent": 857, "step": 1}, {"Time": 0.037089, "Incumbent": 833, "step": 2}, {"Time": 0.037089, "Incumbent": 832, "step": 5}, {"Time": 0.037089, "Incumbent": 756, "step": 6}, {"Time": 0.037092, "Incumbent": 755, "step": 22}, {"Time": 0.037092, "Incumbent": 726, "step": 25}, {"Time": 0.037096, "Incumbent": 697, "step": 57}, {"Time": 0.037296, "Incumbent": 690, "step": 2353}],
+      [{"Time": 0.037087, "Incumbent": 857, "step": 1}, {"Time": 0.037087, "Incumbent": 828, "step": 2}, {"Time": 0.037088, "Incumbent": 821, "step": 5}, {"Time": 0.037090, "Incumbent": 815, "step": 21}, {"Time": 0.037091, "Incumbent": 772, "step": 40}, {"Time": 0.037095, "Incumbent": 763, "step": 80}, {"Time": 0.037096, "Incumbent": 751, "step": 87}, {"Time": 0.037097, "Incumbent": 720, "step": 103}, {"Time": 0.037097, "Incumbent": 708, "step": 104}, {"Time": 0.037129, "Incumbent": 703, "step": 465}, {"Time": 0.037145, "Incumbent": 699, "step": 622}, {"Time": 0.037421, "Incumbent": 697, "step": 3861}, {"Time": 0.037493, "Incumbent": 690, "step": 4665}],
+      [{"Time": 0.037087, "Incumbent": 816, "step": 1}, {"Time": 0.037088, "Incumbent": 807, "step": 7}, {"Time": 0.037089, "Incumbent": 720, "step": 12}, {"Time": 0.037099, "Incumbent": 704, "step": 126}, {"Time": 0.037108, "Incumbent": 699, "step": 216}, {"Time": 0.037109, "Incumbent": 690, "step": 223}],
+      [{"Time": 0.037087, "Incumbent": 836, "step": 1}, {"Time": 0.037087, "Incumbent": 832, "step": 2}, {"Time": 0.037088, "Incumbent": 796, "step": 8}, {"Time": 0.037089, "Incumbent": 779, "step": 21}, {"Time": 0.037091, "Incumbent": 747, "step": 35}, {"Time": 0.037092, "Incumbent": 737, "step": 51}, {"Time": 0.037100, "Incumbent": 715, "step": 122}, {"Time": 0.037106, "Incumbent": 708, "step": 178}, {"Time": 0.037193, "Incumbent": 704, "step": 1120}, {"Time": 0.037226, "Incumbent": 699, "step": 1499}, {"Time": 0.037232, "Incumbent": 697, "step": 1587}],
+      [{"Time": 0.037088, "Incumbent": 862, "step": 1}, {"Time": 0.037088, "Incumbent": 850, "step": 2}, {"Time": 0.037089, "Incumbent": 837, "step": 4}, {"Time": 0.037089, "Incumbent": 832, "step": 5}, {"Time": 0.037089, "Incumbent": 745, "step": 7}, {"Time": 0.037091, "Incumbent": 744, "step": 23}, {"Time": 0.037092, "Incumbent": 739, "step": 39}, {"Time": 0.037094, "Incumbent": 718, "step": 55}, {"Time": 0.037096, "Incumbent": 712, "step": 75}, {"Time": 0.037102, "Incumbent": 704, "step": 143}, {"Time": 0.037182, "Incumbent": 701, "step": 1063}, {"Time": 0.037244, "Incumbent": 699, "step": 1800}, {"Time": 0.037254, "Incumbent": 697, "step": 1939}, {"Time": 0.037467, "Incumbent": 690, "step": 4434}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-07",
+    "capacity": 221,
+    "num_subsets": 546,
+    "num_partitions": 1077,
+    "nonzeros": 4112,
+    "min_coeff": 1,
+    "max_coeff": 297,
+    "exact_cost": 730,
+    "second_best_cost": 734,
+    "exact_total_s": 0.006234,
+    "exact_tts_s": 0.006209,
+    "sqa_best_cost": 730,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.010501,
+    "sqa_mean_tts_s": 0.009868,
+    "routes": [
+      [15, 20, 10, 11, 17, 6, 1],
+      [8, 12, 7, 2],
+      [13, 16, 19, 3, 4],
+      [14, 18, 5, 9]
+    ],
+    "traces": [
+      [{"Time": 0.009833, "Incumbent": 1015, "step": 1}, {"Time": 0.009834, "Incumbent": 1009, "step": 2}, {"Time": 0.009834, "Incumbent": 758, "step": 7}, {"Time": 0.009843, "Incumbent": 752, "step": 120}, {"Time": 0.009846, "Incumbent": 738, "step": 164}, {"Time": 0.009851, "Incumbent": 734, "step": 227}, {"Time": 0.009882, "Incumbent": 730, "step": 656}],
+      [{"Time": 0.009833, "Incumbent": 1035, "step": 1}, {"Time": 0.009833, "Incumbent": 877, "step": 5}, {"Time": 0.009835, "Incumbent": 746, "step": 24}, {"Time": 0.009837, "Incumbent": 738, "step": 48}, {"Time": 0.009847, "Incumbent": 736, "step": 186}, {"Time": 0.009866, "Incumbent": 735, "step": 455}, {"Time": 0.009874, "Incumbent": 734, "step": 568}, {"Time": 0.009893, "Incumbent": 730, "step": 866}],
+      [{"Time": 0.009833, "Incumbent": 1032, "step": 1}, {"Time": 0.009833, "Incumbent": 884, "step": 2}, {"Time": 0.009833, "Incumbent": 882, "step": 3}, {"Time": 0.009835, "Incumbent": 761, "step": 18}, {"Time": 0.009853, "Incumbent": 736, "step": 273}, {"Time": 0.009864, "Incumbent": 730, "step": 424}],
+      [{"Time": 0.009833, "Incumbent": 916, "step": 1}, {"Time": 0.009833, "Incumbent": 900, "step": 5}, {"Time": 0.009834, "Incumbent": 887, "step": 21}, {"Time": 0.009836, "Incumbent": 872, "step": 45}, {"Time": 0.009837, "Incumbent": 865, "step": 47}, {"Time": 0.009843, "Incumbent": 734, "step": 124}, {"Time": 0.009850, "Incumbent": 730, "step": 219}],
+      [{"Time": 0.009833, "Incumbent": 897, "step": 1}, {"Time": 0.009833, "Incumbent": 887, "step": 5}, {"Time": 0.009833, "Incumbent": 884, "step": 11}, {"Time": 0.009834, "Incumbent": 883, "step": 15}, {"Time": 0.009834, "Incumbent": 752, "step": 19}, {"Time": 0.009836, "Incumbent": 736, "step": 43}, {"Time": 0.009850, "Incumbent": 730, "step": 238}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-08",
+    "capacity": 180,
+    "num_subsets": 961,
+    "num_partitions": 2282,
+    "nonzeros": 7728,
+    "min_coeff": 1,
+    "max_coeff": 281,
+    "exact_cost": 718,
+    "second_best_cost": 720,
+    "exact_total_s": 0.024198,
+    "exact_tts_s": 0.024067,
+    "sqa_best_cost": 718,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.037861,
+    "sqa_mean_tts_s": 0.037125,
+    "routes": [
+      [14, 1, 5, 15, 12],
+      [10, 13, 2, 4],
+      [7, 9, 20, 16, 3],
+      [19, 17, 18, 6, 11, 8]
+    ],
+    "traces": [
+      [{"Time": 0.036938, "Incumbent": 795, "step": 1}, {"Time": 0.036938, "Incumbent": 776, "step": 2}, {"Time": 0.036939, "Incumbent": 756, "step": 7}, {"Time": 0.036940, "Incumbent": 738, "step": 12}, {"Time": 0.036943, "Incumbent": 731, "step": 40}, {"Time": 0.037033, "Incumbent": 720, "step": 1163}, {"Time": 0.037127, "Incumbent": 718, "step": 2342}],
+      [{"Time": 0.036937, "Incumbent": 762, "step": 1}, {"Time": 0.036938, "Incumbent": 740, "step": 9}, {"Time": 0.036940, "Incumbent": 731, "step": 25}, {"Time": 0.036968, "Incumbent": 724, "step": 351}, {"Time": 0.036986, "Incumbent": 718, "step": 588}],
+      [{"Time": 0.036937, "Incumbent": 741, "step": 1}, {"Time": 0.036937, "Incumbent": 728, "step": 3}, {"Time": 0.036944, "Incumbent": 725, "step": 80}, {"Time": 0.036949, "Incumbent": 718, "step": 136}],
+      [{"Time": 0.036937, "Incumbent": 810, "step": 1}, {"Time": 0.036937, "Incumbent": 779, "step": 2}, {"Time": 0.036937, "Incumbent": 747, "step": 3}, {"Time": 0.036941, "Incumbent": 729, "step": 46}, {"Time": 0.036945, "Incumbent": 727, "step": 85}, {"Time": 0.036967, "Incumbent": 724, "step": 354}, {"Time": 0.036979, "Incumbent": 720, "step": 508}, {"Time": 0.037268, "Incumbent": 718, "step": 4369}],
+      [{"Time": 0.036937, "Incumbent": 765, "step": 1}, {"Time": 0.036937, "Incumbent": 762, "step": 4}, {"Time": 0.036938, "Incumbent": 754, "step": 7}, {"Time": 0.036939, "Incumbent": 748, "step": 16}, {"Time": 0.036942, "Incumbent": 747, "step": 46}, {"Time": 0.036951, "Incumbent": 725, "step": 173}, {"Time": 0.037003, "Incumbent": 724, "step": 867}, {"Time": 0.037029, "Incumbent": 722, "step": 1210}, {"Time": 0.037111, "Incumbent": 720, "step": 2334}, {"Time": 0.037294, "Incumbent": 718, "step": 4934}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-09",
+    "capacity": 180,
+    "num_subsets": 938,
+    "num_partitions": 2817,
+    "nonzeros": 7516,
+    "min_coeff": 1,
+    "max_coeff": 281,
+    "exact_cost": 707,
+    "second_best_cost": 711,
+    "exact_total_s": 0.023117,
+    "exact_tts_s": 0.022804,
+    "sqa_best_cost": 707,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.043086,
+    "sqa_mean_tts_s": 0.042286,
+    "routes": [
+      [10, 1, 13, 2, 3],
+      [9, 4, 7, 19, 17, 11, 8],
+      [18, 5, 12, 14],
+      [20, 16, 15, 6]
+    ],
+    "traces": [
+      [{"Time": 0.042134, "Incumbent": 765, "step": 1}, {"Time": 0.042134, "Incumbent": 764, "step": 5}, {"Time": 0.042135, "Incumbent": 759, "step": 8}, {"Time": 0.042136, "Incumbent": 740, "step": 17}, {"Time": 0.042138, "Incumbent": 736, "step": 22}, {"Time": 0.042143, "Incumbent": 735, "step": 72}, {"Time": 0.042144, "Incumbent": 734, "step": 88}, {"Time": 0.042157, "Incumbent": 730, "step": 211}, {"Time": 0.042176, "Incumbent": 728, "step": 424}, {"Time": 0.042177, "Incumbent": 725, "step": 427}, {"Time": 0.042222, "Incumbent": 707, "step": 944}],
+      [{"Time": 0.042133, "Incumbent": 780, "step": 1}, {"Time": 0.042133, "Incumbent": 749, "step": 4}, {"Time": 0.042134, "Incumbent": 729, "step": 5}, {"Time": 0.042143, "Incumbent": 721, "step": 106}, {"Time": 0.042152, "Incumbent": 707, "step": 205}],
+      [{"Time": 0.042133, "Incumbent": 775, "step": 1}, {"Time": 0.042133, "Incumbent": 760, "step": 3}, {"Time": 0.042134, "Incumbent": 751, "step": 12}, {"Time": 0.042135, "Incumbent": 748, "step": 17}, {"Time": 0.042137, "Incumbent": 741, "step": 45}, {"Time": 0.042139, "Incumbent": 729, "step": 61}, {"Time": 0.042142, "Incumbent": 718, "step": 100}, {"Time": 0.042313, "Incumbent": 711, "step": 2218}, {"Time": 0.042350, "Incumbent": 707, "step": 2658}],
+      [{"Time": 0.042133, "Incumbent": 866, "step": 1}, {"Time": 0.042133, "Incumbent": 819, "step": 2}, {"Time": 0.042133, "Incumbent": 785, "step": 3}, {"Time": 0.042133, "Incumbent": 779, "step": 5}, {"Time": 0.042133, "Incumbent": 740, "step": 6}, {"Time": 0.042135, "Incumbent": 736, "step": 22}, {"Time": 0.042148, "Incumbent": 735, "step": 178}, {"Time": 0.042152, "Incumbent": 724, "step": 223}, {"Time": 0.042174, "Incumbent": 718, "step": 488}, {"Time": 0.042262, "Incumbent": 715, "step": 1496}, {"Time": 0.042372, "Incumbent": 707, "step": 2859}],
+      [{"Time": 0.042133, "Incumbent": 750, "step": 1}, {"Time": 0.042134, "Incumbent": 743, "step": 11}, {"Time": 0.042135, "Incumbent": 730, "step": 15}, {"Time": 0.042147, "Incumbent": 723, "step": 166}, {"Time": 0.042174, "Incumbent": 718, "step": 501}, {"Time": 0.042191, "Incumbent": 715, "step": 708}, {"Time": 0.042334, "Incumbent": 707, "step": 2542}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-10",
+    "capacity": 239,
+    "num_subsets": 541,
+    "num_partitions": 2506,
+    "nonzeros": 3895,
+    "min_coeff": 1,
+    "max_coeff": 314,
+    "exact_cost": 737,
+    "second_best_cost": 738,
+    "exact_total_s": 0.004731,
+    "exact_tts_s": 0.004640,
+    "sqa_best_cost": 737,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.020171,
+    "sqa_mean_tts_s": 0.019441,
+    "routes": [
+      [9, 3, 12, 1],
+      [20, 6, 14, 11, 2],
+      [7, 10, 13, 18, 15, 4],
+      [19, 17, 16, 8, 5]
+    ],
+    "traces": [
+      [{"Time": 0.019336, "Incumbent": 879, "step": 1}, {"Time": 0.019337, "Incumbent": 848, "step": 4}, {"Time": 0.019338, "Incumbent": 813, "step": 11}, {"Time": 0.019339, "Incumbent": 806, "step": 20}, {"Time": 0.019341, "Incumbent": 802, "step": 48}, {"Time": 0.019342, "Incumbent": 778, "step": 55}, {"Time": 0.019344, "Incumbent": 737, "step": 90}],
+      [{"Time": 0.019336, "Incumbent": 929, "step": 1}, {"Time": 0.019336, "Incumbent": 906, "step": 3}, {"Time": 0.019337, "Incumbent": 810, "step": 9}, {"Time": 0.019338, "Incumbent": 791, "step": 30}, {"Time": 0.019339, "Incumbent": 787, "step": 41}, {"Time": 0.019341, "Incumbent": 783, "step": 52}, {"Time": 0.019345, "Incumbent": 772, "step": 107}, {"Time": 0.019354, "Incumbent": 767, "step": 217}, {"Time": 0.019359, "Incumbent": 741, "step": 285}, {"Time": 0.019449, "Incumbent": 738, "step": 1432}, {"Time": 0.019451, "Incumbent": 737, "step": 1465}],
+      [{"Time": 0.019336, "Incumbent": 918, "step": 1}, {"Time": 0.019336, "Incumbent": 875, "step": 3}, {"Time": 0.019337, "Incumbent": 772, "step": 16}, {"Time": 0.019338, "Incumbent": 769, "step": 32}, {"Time": 0.019340, "Incumbent": 741, "step": 48}, {"Time": 0.019374, "Incumbent": 738, "step": 493}, {"Time": 0.019446, "Incumbent": 737, "step": 1468}],
+      [{"Time": 0.019336, "Incumbent": 878, "step": 1}, {"Time": 0.019337, "Incumbent": 852, "step": 7}, {"Time": 0.019337, "Incumbent": 778, "step": 10}, {"Time": 0.019340, "Incumbent": 775, "step": 49}, {"Time": 0.019346, "Incumbent": 752, "step": 118}, {"Time": 0.019347, "Incumbent": 749, "step": 134}, {"Time": 0.019360, "Incumbent": 737, "step": 302}],
+      [{"Time": 0.019336, "Incumbent": 901, "step": 1}, {"Time": 0.019336, "Incumbent": 887, "step": 3}, {"Time": 0.019337, "Incumbent": 880, "step": 7}, {"Time": 0.019338, "Incumbent": 871, "step": 14}, {"Time": 0.019338, "Incumbent": 809, "step": 16}, {"Time": 0.019338, "Incumbent": 774, "step": 22}, {"Time": 0.019343, "Incumbent": 741, "step": 65}, {"Time": 0.019429, "Incumbent": 738, "step": 1180}, {"Time": 0.019602, "Incumbent": 737, "step": 3496}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-11",
+    "capacity": 251,
+    "num_subsets": 459,
+    "num_partitions": 1249,
+    "nonzeros": 3277,
+    "min_coeff": 1,
+    "max_coeff": 301,
+    "exact_cost": 914,
+    "second_best_cost": 922,
+    "exact_total_s": 0.003296,
+    "exact_tts_s": 0.003215,
+    "sqa_best_cost": 914,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.008483,
+    "sqa_mean_tts_s": 0.007722,
+    "routes": [
+      [6, 1, 10, 20, 2],
+      [8, 13, 9, 17, 3],
+      [7, 19, 11, 4],
+      [15, 14, 16, 12, 18, 5]
+    ],
+    "traces": [
+      [{"Time": 0.007689, "Incumbent": 1099, "step": 1}, {"Time": 0.007689, "Incumbent": 1098, "step": 2}, {"Time": 0.007690, "Incumbent": 1093, "step": 4}, {"Time": 0.007690, "Incumbent": 1090, "step": 5}, {"Time": 0.007690, "Incumbent": 962, "step": 7}, {"Time": 0.007691, "Incumbent": 944, "step": 12}, {"Time": 0.007691, "Incumbent": 926, "step": 17}, {"Time": 0.007710, "Incumbent": 924, "step": 275}, {"Time": 0.007738, "Incumbent": 914, "step": 692}],
+      [{"Time": 0.007689, "Incumbent": 1083, "step": 1}, {"Time": 0.007689, "Incumbent": 960, "step": 3}, {"Time": 0.007690, "Incumbent": 956, "step": 9}, {"Time": 0.007690, "Incumbent": 914, "step": 10}],
+      [{"Time": 0.007689, "Incumbent": 1056, "step": 1}, {"Time": 0.007689, "Incumbent": 932, "step": 5}, {"Time": 0.007696, "Incumbent": 929, "step": 94}, {"Time": 0.007697, "Incumbent": 924, "step": 97}, {"Time": 0.007724, "Incumbent": 923, "step": 499}, {"Time": 0.007731, "Incumbent": 914, "step": 606}],
+      [{"Time": 0.007689, "Incumbent": 1093, "step": 1}, {"Time": 0.007689, "Incumbent": 944, "step": 2}, {"Time": 0.007690, "Incumbent": 937, "step": 7}, {"Time": 0.007691, "Incumbent": 924, "step": 23}, {"Time": 0.007692, "Incumbent": 923, "step": 39}, {"Time": 0.007718, "Incumbent": 922, "step": 360}, {"Time": 0.007752, "Incumbent": 914, "step": 867}],
+      [{"Time": 0.007689, "Incumbent": 1092, "step": 1}, {"Time": 0.007689, "Incumbent": 1078, "step": 2}, {"Time": 0.007690, "Incumbent": 957, "step": 10}, {"Time": 0.007690, "Incumbent": 955, "step": 15}, {"Time": 0.007691, "Incumbent": 948, "step": 19}, {"Time": 0.007691, "Incumbent": 940, "step": 25}, {"Time": 0.007693, "Incumbent": 935, "step": 46}, {"Time": 0.007693, "Incumbent": 931, "step": 52}, {"Time": 0.007694, "Incumbent": 927, "step": 69}, {"Time": 0.007698, "Incumbent": 914, "step": 120}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-12",
+    "capacity": 249,
+    "num_subsets": 507,
+    "num_partitions": 2222,
+    "nonzeros": 3648,
+    "min_coeff": 1,
+    "max_coeff": 298,
+    "exact_cost": 709,
+    "second_best_cost": 732,
+    "exact_total_s": 0.004407,
+    "exact_tts_s": 0.004321,
+    "sqa_best_cost": 709,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.017743,
+    "sqa_mean_tts_s": 0.016927,
+    "routes": [
+      [12, 11, 1, 3, 19, 5],
+      [20, 7, 2, 8],
+      [15, 13, 14, 6, 16, 4],
+      [17, 18, 9, 10]
+    ],
+    "traces": [
+      [{"Time": 0.016804, "Incumbent": 857, "step": 1}, {"Time": 0.016805, "Incumbent": 753, "step": 10}, {"Time": 0.016816, "Incumbent": 709, "step": 138}],
+      [{"Time": 0.016804, "Incumbent": 829, "step": 1}, {"Time": 0.016807, "Incumbent": 797, "step": 31}, {"Time": 0.016813, "Incumbent": 760, "step": 90}, {"Time": 0.016909, "Incumbent": 732, "step": 1235}, {"Time": 0.017093, "Incumbent": 709, "step": 3535}],
+      [{"Time": 0.016803, "Incumbent": 857, "step": 1}, {"Time": 0.016804, "Incumbent": 853, "step": 9}, {"Time": 0.016805, "Incumbent": 817, "step": 11}, {"Time": 0.016805, "Incumbent": 760, "step": 16}, {"Time": 0.016816, "Incumbent": 748, "step": 144}, {"Time": 0.016994, "Incumbent": 709, "step": 2384}],
+      [{"Time": 0.016803, "Incumbent": 886, "step": 1}, {"Time": 0.016804, "Incumbent": 876, "step": 5}, {"Time": 0.016804, "Incumbent": 859, "step": 6}, {"Time": 0.016804, "Incumbent": 818, "step": 10}, {"Time": 0.016805, "Incumbent": 804, "step": 13}, {"Time": 0.016808, "Incumbent": 775, "step": 59}, {"Time": 0.016812, "Incumbent": 766, "step": 98}, {"Time": 0.016815, "Incumbent": 709, "step": 130}],
+      [{"Time": 0.016803, "Incumbent": 901, "step": 1}, {"Time": 0.016803, "Incumbent": 863, "step": 2}, {"Time": 0.016804, "Incumbent": 851, "step": 3}, {"Time": 0.016804, "Incumbent": 775, "step": 10}, {"Time": 0.016816, "Incumbent": 753, "step": 134}, {"Time": 0.016819, "Incumbent": 748, "step": 172}, {"Time": 0.016919, "Incumbent": 732, "step": 1477}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-13",
+    "capacity": 194,
+    "num_subsets": 827,
+    "num_partitions": 5011,
+    "nonzeros": 6395,
+    "min_coeff": 1,
+    "max_coeff": 275,
+    "exact_cost": 628,
+    "second_best_cost": 636,
+    "exact_total_s": 0.014902,
+    "exact_tts_s": 0.014662,
+    "sqa_best_cost": 628,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.072969,
+    "sqa_mean_tts_s": 0.072091,
+    "routes": [
+      [20, 5, 1, 2],
+      [9, 16, 3],
+      [15, 12, 8, 4, 17, 18, 11, 10],
+      [19, 6, 14, 13, 7]
+    ],
+    "traces": [
+      [{"Time": 0.071858, "Incumbent": 682, "step": 1}, {"Time": 0.071861, "Incumbent": 668, "step": 17}, {"Time": 0.071882, "Incumbent": 667, "step": 168}, {"Time": 0.071887, "Incumbent": 655, "step": 213}, {"Time": 0.071914, "Incumbent": 650, "step": 458}, {"Time": 0.071921, "Incumbent": 636, "step": 539}],
+      [{"Time": 0.071857, "Incumbent": 723, "step": 1}, {"Time": 0.071857, "Incumbent": 721, "step": 7}, {"Time": 0.071858, "Incumbent": 711, "step": 13}, {"Time": 0.071860, "Incumbent": 702, "step": 29}, {"Time": 0.071861, "Incumbent": 691, "step": 37}, {"Time": 0.071874, "Incumbent": 686, "step": 157}, {"Time": 0.071882, "Incumbent": 678, "step": 227}, {"Time": 0.071889, "Incumbent": 649, "step": 294}, {"Time": 0.071898, "Incumbent": 646, "step": 386}, {"Time": 0.071929, "Incumbent": 639, "step": 713}, {"Time": 0.072007, "Incumbent": 637, "step": 1498}, {"Time": 0.072220, "Incumbent": 628, "step": 3835}],
+      [{"Time": 0.071857, "Incumbent": 794, "step": 1}, {"Time": 0.071857, "Incumbent": 786, "step": 2}, {"Time": 0.071857, "Incumbent": 762, "step": 3}, {"Time": 0.071858, "Incumbent": 756, "step": 10}, {"Time": 0.071858, "Incumbent": 734, "step": 11}, {"Time": 0.071859, "Incumbent": 687, "step": 15}, {"Time": 0.071859, "Incumbent": 677, "step": 22}, {"Time": 0.071860, "Incumbent": 628, "step": 25}],
+      [{"Time": 0.071857, "Incumbent": 801, "step": 1}, {"Time": 0.071857, "Incumbent": 762, "step": 2}, {"Time": 0.071858, "Incumbent": 761, "step": 4}, {"Time": 0.071858, "Incumbent": 756, "step": 5}, {"Time": 0.071858, "Incumbent": 749, "step": 6}, {"Time": 0.071858, "Incumbent": 710, "step": 7}, {"Time": 0.071861, "Incumbent": 694, "step": 22}, {"Time": 0.071865, "Incumbent": 675, "step": 50}, {"Time": 0.071866, "Incumbent": 661, "step": 59}, {"Time": 0.071880, "Incumbent": 652, "step": 202}, {"Time": 0.071889, "Incumbent": 639, "step": 303}, {"Time": 0.072157, "Incumbent": 637, "step": 3038}, {"Time": 0.072341, "Incumbent": 628, "step": 5046}],
+      [{"Time": 0.071857, "Incumbent": 747, "step": 1}, {"Time": 0.071857, "Incumbent": 740, "step": 3}, {"Time": 0.071857, "Incumbent": 695, "step": 5}, {"Time": 0.071859, "Incumbent": 687, "step": 21}, {"Time": 0.071859, "Incumbent": 681, "step": 22}, {"Time": 0.071865, "Incumbent": 672, "step": 70}, {"Time": 0.071882, "Incumbent": 650, "step": 240}, {"Time": 0.071889, "Incumbent": 639, "step": 314}, {"Time": 0.072113, "Incumbent": 628, "step": 2821}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-14",
+    "capacity": 267,
+    "num_subsets": 455,
+    "num_partitions": 1473,
+    "nonzeros": 3310,
+    "min_coeff": 1,
+    "max_coeff": 272,
+    "exact_cost": 696,
+    "second_best_cost": 697,
+    "exact_total_s": 0.004698,
+    "exact_tts_s": 0.004671,
+    "sqa_best_cost": 696,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.011482,
+    "sqa_mean_tts_s": 0.010726,
+    "routes": [
+      [9, 15, 1, 6],
+      [20, 8, 2, 11],
+      [18, 17, 12, 14, 10, 3],
+      [19, 5, 16, 13, 4, 7]
+    ],
+    "traces": [
+      [{"Time": 0.010670, "Incumbent": 781, "step": 1}, {"Time": 0.010671, "Incumbent": 717, "step": 12}, {"Time": 0.010682, "Incumbent": 701, "step": 144}, {"Time": 0.010683, "Incumbent": 698, "step": 160}, {"Time": 0.010749, "Incumbent": 697, "step": 1077}, {"Time": 0.010794, "Incumbent": 696, "step": 1717}],
+      [{"Time": 0.010670, "Incumbent": 824, "step": 1}, {"Time": 0.010670, "Incumbent": 797, "step": 2}, {"Time": 0.010670, "Incumbent": 746, "step": 6}, {"Time": 0.010670, "Incumbent": 712, "step": 11}, {"Time": 0.010685, "Incumbent": 696, "step": 208}],
+      [{"Time": 0.010670, "Incumbent": 771, "step": 1}, {"Time": 0.010670, "Incumbent": 724, "step": 2}, {"Time": 0.010672, "Incumbent": 705, "step": 26}, {"Time": 0.010682, "Incumbent": 704, "step": 152}, {"Time": 0.010689, "Incumbent": 696, "step": 244}],
+      [{"Time": 0.010670, "Incumbent": 824, "step": 1}, {"Time": 0.010670, "Incumbent": 805, "step": 2}, {"Time": 0.010670, "Incumbent": 796, "step": 3}, {"Time": 0.010671, "Incumbent": 704, "step": 7}, {"Time": 0.010672, "Incumbent": 697, "step": 26}, {"Time": 0.010725, "Incumbent": 696, "step": 692}],
+      [{"Time": 0.010669, "Incumbent": 816, "step": 1}, {"Time": 0.010670, "Incumbent": 761, "step": 3}, {"Time": 0.010670, "Incumbent": 754, "step": 6}, {"Time": 0.010670, "Incumbent": 747, "step": 8}, {"Time": 0.010671, "Incumbent": 723, "step": 11}, {"Time": 0.010675, "Incumbent": 704, "step": 59}, {"Time": 0.010677, "Incumbent": 701, "step": 89}, {"Time": 0.010687, "Incumbent": 700, "step": 181}, {"Time": 0.010689, "Incumbent": 697, "step": 202}, {"Time": 0.010737, "Incumbent": 696, "step": 796}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-15",
+    "capacity": 257,
+    "num_subsets": 500,
+    "num_partitions": 2895,
+    "nonzeros": 3610,
+    "min_coeff": 1,
+    "max_coeff": 284,
+    "exact_cost": 780,
+    "second_best_cost": 782,
+    "exact_total_s": 0.004980,
+    "exact_tts_s": 0.004979,
+    "sqa_best_cost": 780,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.024745,
+    "sqa_mean_tts_s": 0.023972,
+    "routes": [
+      [20, 1, 17],
+      [12, 9, 11, 2, 16, 6],
+      [18, 14, 3, 19, 13],
+      [8, 7, 10, 15, 4, 5]
+    ],
+    "traces": [
+      [{"Time": 0.023821, "Incumbent": 888, "step": 1}, {"Time": 0.023821, "Incumbent": 872, "step": 2}, {"Time": 0.023821, "Incumbent": 826, "step": 3}, {"Time": 0.023822, "Incumbent": 814, "step": 5}, {"Time": 0.023822, "Incumbent": 811, "step": 6}, {"Time": 0.023822, "Incumbent": 801, "step": 13}, {"Time": 0.023825, "Incumbent": 798, "step": 38}, {"Time": 0.023835, "Incumbent": 787, "step": 142}, {"Time": 0.023838, "Incumbent": 780, "step": 167}],
+      [{"Time": 0.023820, "Incumbent": 893, "step": 1}, {"Time": 0.023821, "Incumbent": 825, "step": 4}, {"Time": 0.023821, "Incumbent": 813, "step": 11}, {"Time": 0.023827, "Incumbent": 787, "step": 70}, {"Time": 0.023996, "Incumbent": 780, "step": 2213}],
+      [{"Time": 0.023820, "Incumbent": 840, "step": 1}, {"Time": 0.023820, "Incumbent": 817, "step": 4}, {"Time": 0.023821, "Incumbent": 808, "step": 8}, {"Time": 0.023826, "Incumbent": 807, "step": 68}, {"Time": 0.023827, "Incumbent": 805, "step": 79}, {"Time": 0.023834, "Incumbent": 799, "step": 165}, {"Time": 0.023835, "Incumbent": 788, "step": 179}, {"Time": 0.023937, "Incumbent": 786, "step": 1384}, {"Time": 0.024149, "Incumbent": 782, "step": 4034}, {"Time": 0.024217, "Incumbent": 780, "step": 4814}],
+      [{"Time": 0.023820, "Incumbent": 892, "step": 1}, {"Time": 0.023820, "Incumbent": 814, "step": 2}, {"Time": 0.023820, "Incumbent": 810, "step": 3}, {"Time": 0.023825, "Incumbent": 801, "step": 46}, {"Time": 0.023827, "Incumbent": 788, "step": 76}, {"Time": 0.023837, "Incumbent": 780, "step": 184}],
+      [{"Time": 0.023820, "Incumbent": 840, "step": 1}, {"Time": 0.023820, "Incumbent": 828, "step": 5}, {"Time": 0.023821, "Incumbent": 815, "step": 6}, {"Time": 0.023822, "Incumbent": 807, "step": 14}, {"Time": 0.023822, "Incumbent": 805, "step": 15}, {"Time": 0.023825, "Incumbent": 801, "step": 47}, {"Time": 0.023829, "Incumbent": 799, "step": 79}, {"Time": 0.023842, "Incumbent": 792, "step": 232}, {"Time": 0.023845, "Incumbent": 787, "step": 273}, {"Time": 0.023850, "Incumbent": 786, "step": 329}, {"Time": 0.023970, "Incumbent": 785, "step": 1876}, {"Time": 0.023971, "Incumbent": 780, "step": 1901}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-16",
+    "capacity": 230,
+    "num_subsets": 602,
+    "num_partitions": 5187,
+    "nonzeros": 4302,
+    "min_coeff": 1,
+    "max_coeff": 356,
+    "exact_cost": 830,
+    "second_best_cost": 831,
+    "exact_total_s": 0.005006,
+    "exact_tts_s": 0.004879,
+    "sqa_best_cost": 830,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.063657,
+    "sqa_mean_tts_s": 0.062887,
+    "routes": [
+      [10, 6, 1, 5, 20, 7],
+      [15, 2, 18, 12, 4, 13, 3],
+      [11, 16, 17, 8],
+      [19, 14, 9]
+    ],
+    "traces": [
+      [{"Time": 0.062589, "Incumbent": 1047, "step": 1}, {"Time": 0.062590, "Incumbent": 1014, "step": 2}, {"Time": 0.062590, "Incumbent": 985, "step": 3}, {"Time": 0.062590, "Incumbent": 902, "step": 4}, {"Time": 0.062592, "Incumbent": 901, "step": 12}, {"Time": 0.062594, "Incumbent": 900, "step": 28}, {"Time": 0.062596, "Incumbent": 892, "step": 43}, {"Time": 0.062601, "Incumbent": 865, "step": 76}, {"Time": 0.062607, "Incumbent": 853, "step": 132}, {"Time": 0.062619, "Incumbent": 848, "step": 244}, {"Time": 0.062768, "Incumbent": 831, "step": 1824}, {"Time": 0.063051, "Incumbent": 830, "step": 5095}],
+      [{"Time": 0.062589, "Incumbent": 940, "step": 1}, {"Time": 0.062590, "Incumbent": 930, "step": 13}, {"Time": 0.062591, "Incumbent": 920, "step": 18}, {"Time": 0.062592, "Incumbent": 904, "step": 34}, {"Time": 0.062593, "Incumbent": 900, "step": 37}, {"Time": 0.062599, "Incumbent": 894, "step": 100}, {"Time": 0.062609, "Incumbent": 853, "step": 216}, {"Time": 0.062654, "Incumbent": 831, "step": 704}, {"Time": 0.062816, "Incumbent": 830, "step": 2580}],
+      [{"Time": 0.062589, "Incumbent": 987, "step": 1}, {"Time": 0.062590, "Incumbent": 982, "step": 4}, {"Time": 0.062590, "Incumbent": 975, "step": 5}, {"Time": 0.062590, "Incumbent": 946, "step": 6}, {"Time": 0.062591, "Incumbent": 907, "step": 14}, {"Time": 0.062594, "Incumbent": 875, "step": 46}, {"Time": 0.062611, "Incumbent": 867, "step": 234}, {"Time": 0.062636, "Incumbent": 838, "step": 494}, {"Time": 0.062722, "Incumbent": 830, "step": 1385}],
+      [{"Time": 0.062589, "Incumbent": 964, "step": 1}, {"Time": 0.062589, "Incumbent": 906, "step": 2}, {"Time": 0.062595, "Incumbent": 900, "step": 51}, {"Time": 0.062596, "Incumbent": 898, "step": 58}, {"Time": 0.062604, "Incumbent": 895, "step": 124}, {"Time": 0.062605, "Incumbent": 883, "step": 130}, {"Time": 0.062617, "Incumbent": 875, "step": 260}, {"Time": 0.062645, "Incumbent": 854, "step": 562}, {"Time": 0.062650, "Incumbent": 851, "step": 611}, {"Time": 0.062652, "Incumbent": 831, "step": 626}, {"Time": 0.062920, "Incumbent": 830, "step": 3275}],
+      [{"Time": 0.062589, "Incumbent": 1020, "step": 1}, {"Time": 0.062589, "Incumbent": 1006, "step": 2}, {"Time": 0.062589, "Incumbent": 934, "step": 3}, {"Time": 0.062590, "Incumbent": 909, "step": 6}, {"Time": 0.062593, "Incumbent": 902, "step": 33}, {"Time": 0.062600, "Incumbent": 896, "step": 90}, {"Time": 0.062603, "Incumbent": 893, "step": 117}, {"Time": 0.062604, "Incumbent": 881, "step": 136}, {"Time": 0.062646, "Incumbent": 860, "step": 577}, {"Time": 0.062653, "Incumbent": 851, "step": 641}, {"Time": 0.062683, "Incumbent": 838, "step": 977}, {"Time": 0.062818, "Incumbent": 831, "step": 2491}, {"Time": 0.062925, "Incumbent": 830, "step": 3689}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-17",
+    "capacity": 253,
+    "num_subsets": 454,
+    "num_partitions": 2311,
+    "nonzeros": 3145,
+    "min_coeff": 1,
+    "max_coeff": 294,
+    "exact_cost": 605,
+    "second_best_cost": 612,
+    "exact_total_s": 0.002841,
+    "exact_tts_s": 0.002801,
+    "sqa_best_cost": 605,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.017397,
+    "sqa_mean_tts_s": 0.016667,
+    "routes": [
+      [17, 6, 10, 1],
+      [14, 5, 2, 15, 4],
+      [19, 8, 9, 16, 11, 3],
+      [20, 12, 7, 18, 13]
+    ],
+    "traces": [
+      [{"Time": 0.016489, "Incumbent": 747, "step": 1}, {"Time": 0.016489, "Incumbent": 728, "step": 4}, {"Time": 0.016490, "Incumbent": 715, "step": 9}, {"Time": 0.016491, "Incumbent": 714, "step": 17}, {"Time": 0.016492, "Incumbent": 682, "step": 24}, {"Time": 0.016495, "Incumbent": 677, "step": 46}, {"Time": 0.016497, "Incumbent": 643, "step": 62}, {"Time": 0.016517, "Incumbent": 624, "step": 282}, {"Time": 0.016618, "Incumbent": 612, "step": 1499}, {"Time": 0.016725, "Incumbent": 605, "step": 2828}],
+      [{"Time": 0.016489, "Incumbent": 724, "step": 1}, {"Time": 0.016490, "Incumbent": 651, "step": 20}, {"Time": 0.016522, "Incumbent": 641, "step": 410}, {"Time": 0.016541, "Incumbent": 637, "step": 666}, {"Time": 0.016557, "Incumbent": 612, "step": 872}, {"Time": 0.016887, "Incumbent": 605, "step": 4917}],
+      [{"Time": 0.016488, "Incumbent": 721, "step": 1}, {"Time": 0.016490, "Incumbent": 707, "step": 18}, {"Time": 0.016495, "Incumbent": 672, "step": 69}, {"Time": 0.016496, "Incumbent": 651, "step": 84}, {"Time": 0.016498, "Incumbent": 640, "step": 103}, {"Time": 0.016502, "Incumbent": 639, "step": 151}, {"Time": 0.016513, "Incumbent": 612, "step": 279}, {"Time": 0.016622, "Incumbent": 605, "step": 1674}],
+      [{"Time": 0.016488, "Incumbent": 788, "step": 1}, {"Time": 0.016489, "Incumbent": 735, "step": 3}, {"Time": 0.016491, "Incumbent": 731, "step": 24}, {"Time": 0.016491, "Incumbent": 707, "step": 30}, {"Time": 0.016492, "Incumbent": 696, "step": 40}, {"Time": 0.016492, "Incumbent": 692, "step": 41}, {"Time": 0.016498, "Incumbent": 683, "step": 107}, {"Time": 0.016501, "Incumbent": 651, "step": 150}, {"Time": 0.016512, "Incumbent": 624, "step": 287}, {"Time": 0.016516, "Incumbent": 605, "step": 335}],
+      [{"Time": 0.016488, "Incumbent": 785, "step": 1}, {"Time": 0.016489, "Incumbent": 778, "step": 2}, {"Time": 0.016489, "Incumbent": 756, "step": 3}, {"Time": 0.016489, "Incumbent": 715, "step": 5}, {"Time": 0.016490, "Incumbent": 708, "step": 21}, {"Time": 0.016491, "Incumbent": 681, "step": 27}, {"Time": 0.016492, "Incumbent": 667, "step": 36}, {"Time": 0.016495, "Incumbent": 651, "step": 75}, {"Time": 0.016496, "Incumbent": 650, "step": 91}, {"Time": 0.016501, "Incumbent": 639, "step": 155}, {"Time": 0.016510, "Incumbent": 634, "step": 265}, {"Time": 0.016571, "Incumbent": 612, "step": 1081}, {"Time": 0.016583, "Incumbent": 605, "step": 1258}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-18",
+    "capacity": 257,
+    "num_subsets": 530,
+    "num_partitions": 2472,
+    "nonzeros": 3874,
+    "min_coeff": 1,
+    "max_coeff": 358,
+    "exact_cost": 997,
+    "second_best_cost": 1003,
+    "exact_total_s": 0.005696,
+    "exact_tts_s": 0.005670,
+    "sqa_best_cost": 997,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.020251,
+    "sqa_mean_tts_s": 0.019476,
+    "routes": [
+      [18, 7, 1],
+      [9, 15, 12, 2],
+      [8, 14, 19, 5, 17, 6, 4, 3],
+      [11, 20, 16, 13, 10]
+    ],
+    "traces": [
+      [{"Time": 0.019348, "Incumbent": 1094, "step": 1}, {"Time": 0.019349, "Incumbent": 1066, "step": 7}, {"Time": 0.019350, "Incumbent": 1038, "step": 19}, {"Time": 0.019356, "Incumbent": 1033, "step": 91}, {"Time": 0.019356, "Incumbent": 1021, "step": 95}, {"Time": 0.019360, "Incumbent": 1016, "step": 139}, {"Time": 0.019361, "Incumbent": 1008, "step": 155}, {"Time": 0.019381, "Incumbent": 997, "step": 402}],
+      [{"Time": 0.019348, "Incumbent": 1071, "step": 1}, {"Time": 0.019348, "Incumbent": 1053, "step": 7}, {"Time": 0.019349, "Incumbent": 1050, "step": 8}, {"Time": 0.019349, "Incumbent": 1022, "step": 12}, {"Time": 0.019350, "Incumbent": 1021, "step": 25}, {"Time": 0.019352, "Incumbent": 1020, "step": 51}, {"Time": 0.019353, "Incumbent": 1007, "step": 57}, {"Time": 0.019357, "Incumbent": 1003, "step": 111}, {"Time": 0.019470, "Incumbent": 997, "step": 1589}],
+      [{"Time": 0.019348, "Incumbent": 1104, "step": 1}, {"Time": 0.019348, "Incumbent": 1098, "step": 2}, {"Time": 0.019348, "Incumbent": 1047, "step": 4}, {"Time": 0.019352, "Incumbent": 1033, "step": 52}, {"Time": 0.019355, "Incumbent": 1012, "step": 84}, {"Time": 0.019358, "Incumbent": 1003, "step": 124}, {"Time": 0.019458, "Incumbent": 997, "step": 1455}],
+      [{"Time": 0.019348, "Incumbent": 1108, "step": 1}, {"Time": 0.019348, "Incumbent": 1083, "step": 2}, {"Time": 0.019349, "Incumbent": 1075, "step": 4}, {"Time": 0.019349, "Incumbent": 1021, "step": 9}, {"Time": 0.019358, "Incumbent": 1006, "step": 100}, {"Time": 0.019373, "Incumbent": 1003, "step": 290}, {"Time": 0.019399, "Incumbent": 997, "step": 578}],
+      [{"Time": 0.019348, "Incumbent": 1133, "step": 1}, {"Time": 0.019348, "Incumbent": 1067, "step": 3}, {"Time": 0.019348, "Incumbent": 1036, "step": 6}, {"Time": 0.019350, "Incumbent": 1032, "step": 24}, {"Time": 0.019357, "Incumbent": 1024, "step": 105}, {"Time": 0.019360, "Incumbent": 1020, "step": 155}, {"Time": 0.019361, "Incumbent": 1017, "step": 162}, {"Time": 0.019365, "Incumbent": 1014, "step": 217}, {"Time": 0.019367, "Incumbent": 1007, "step": 252}, {"Time": 0.019383, "Incumbent": 1006, "step": 451}, {"Time": 0.019427, "Incumbent": 1003, "step": 1040}, {"Time": 0.019671, "Incumbent": 997, "step": 4360}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-19",
+    "capacity": 269,
+    "num_subsets": 448,
+    "num_partitions": 1675,
+    "nonzeros": 3153,
+    "min_coeff": 1,
+    "max_coeff": 379,
+    "exact_cost": 976,
+    "second_best_cost": 987,
+    "exact_total_s": 0.003170,
+    "exact_tts_s": 0.003096,
+    "sqa_best_cost": 976,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.011156,
+    "sqa_mean_tts_s": 0.010498,
+    "routes": [
+      [14, 1, 11, 4, 3],
+      [10, 6, 9, 12, 2],
+      [15, 19, 5, 8, 7],
+      [20, 16, 18, 13, 17]
+    ],
+    "traces": [
+      [{"Time": 0.010338, "Incumbent": 1060, "step": 1}, {"Time": 0.010338, "Incumbent": 1049, "step": 8}, {"Time": 0.010339, "Incumbent": 1039, "step": 18}, {"Time": 0.010340, "Incumbent": 995, "step": 27}, {"Time": 0.010349, "Incumbent": 993, "step": 153}, {"Time": 0.010435, "Incumbent": 976, "step": 1367}],
+      [{"Time": 0.010337, "Incumbent": 1123, "step": 1}, {"Time": 0.010337, "Incumbent": 1074, "step": 2}, {"Time": 0.010338, "Incumbent": 1059, "step": 6}, {"Time": 0.010338, "Incumbent": 1011, "step": 7}, {"Time": 0.010345, "Incumbent": 998, "step": 84}, {"Time": 0.010370, "Incumbent": 995, "step": 429}, {"Time": 0.010377, "Incumbent": 976, "step": 523}],
+      [{"Time": 0.010337, "Incumbent": 998, "step": 1}, {"Time": 0.010349, "Incumbent": 995, "step": 153}, {"Time": 0.010365, "Incumbent": 976, "step": 361}],
+      [{"Time": 0.010337, "Incumbent": 1140, "step": 1}, {"Time": 0.010337, "Incumbent": 1053, "step": 2}, {"Time": 0.010338, "Incumbent": 1031, "step": 6}, {"Time": 0.010338, "Incumbent": 1017, "step": 10}, {"Time": 0.010343, "Incumbent": 1016, "step": 67}, {"Time": 0.010357, "Incumbent": 998, "step": 238}, {"Time": 0.010371, "Incumbent": 993, "step": 423}, {"Time": 0.010410, "Incumbent": 987, "step": 933}, {"Time": 0.010619, "Incumbent": 976, "step": 3256}],
+      [{"Time": 0.010337, "Incumbent": 1100, "step": 1}, {"Time": 0.010337, "Incumbent": 1093, "step": 2}, {"Time": 0.010337, "Incumbent": 1065, "step": 4}, {"Time": 0.010338, "Incumbent": 1047, "step": 12}, {"Time": 0.010340, "Incumbent": 1040, "step": 35}, {"Time": 0.010342, "Incumbent": 1019, "step": 57}, {"Time": 0.010351, "Incumbent": 1011, "step": 163}, {"Time": 0.010367, "Incumbent": 1000, "step": 393}, {"Time": 0.010382, "Incumbent": 999, "step": 600}, {"Time": 0.010398, "Incumbent": 995, "step": 818}, {"Time": 0.010404, "Incumbent": 993, "step": 887}, {"Time": 0.010422, "Incumbent": 987, "step": 1156}, {"Time": 0.010695, "Incumbent": 976, "step": 4975}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-20",
+    "capacity": 276,
+    "num_subsets": 426,
+    "num_partitions": 1668,
+    "nonzeros": 2996,
+    "min_coeff": 1,
+    "max_coeff": 272,
+    "exact_cost": 648,
+    "second_best_cost": 650,
+    "exact_total_s": 0.002738,
+    "exact_tts_s": 0.002722,
+    "sqa_best_cost": 648,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.011014,
+    "sqa_mean_tts_s": 0.010306,
+    "routes": [
+      [20, 8, 10, 1, 11],
+      [12, 15, 9, 13, 2, 3],
+      [17, 18, 5, 4, 6],
+      [19, 16, 14, 7]
+    ],
+    "traces": [
+      [{"Time": 0.010208, "Incumbent": 741, "step": 1}, {"Time": 0.010208, "Incumbent": 695, "step": 11}, {"Time": 0.010212, "Incumbent": 670, "step": 51}, {"Time": 0.010213, "Incumbent": 665, "step": 63}, {"Time": 0.010220, "Incumbent": 662, "step": 148}, {"Time": 0.010224, "Incumbent": 653, "step": 203}, {"Time": 0.010234, "Incumbent": 652, "step": 330}, {"Time": 0.010236, "Incumbent": 650, "step": 362}, {"Time": 0.010266, "Incumbent": 648, "step": 769}],
+      [{"Time": 0.010207, "Incumbent": 800, "step": 1}, {"Time": 0.010207, "Incumbent": 777, "step": 3}, {"Time": 0.010207, "Incumbent": 715, "step": 4}, {"Time": 0.010208, "Incumbent": 662, "step": 5}, {"Time": 0.010222, "Incumbent": 653, "step": 195}, {"Time": 0.010225, "Incumbent": 648, "step": 227}],
+      [{"Time": 0.010207, "Incumbent": 777, "step": 1}, {"Time": 0.010207, "Incumbent": 726, "step": 3}, {"Time": 0.010208, "Incumbent": 714, "step": 8}, {"Time": 0.010208, "Incumbent": 701, "step": 9}, {"Time": 0.010208, "Incumbent": 695, "step": 12}, {"Time": 0.010209, "Incumbent": 671, "step": 19}, {"Time": 0.010242, "Incumbent": 662, "step": 454}, {"Time": 0.010293, "Incumbent": 650, "step": 1160}, {"Time": 0.010508, "Incumbent": 648, "step": 4217}],
+      [{"Time": 0.010207, "Incumbent": 704, "step": 1}, {"Time": 0.010207, "Incumbent": 701, "step": 5}, {"Time": 0.010208, "Incumbent": 687, "step": 12}, {"Time": 0.010210, "Incumbent": 686, "step": 28}, {"Time": 0.010210, "Incumbent": 684, "step": 31}, {"Time": 0.010213, "Incumbent": 678, "step": 72}, {"Time": 0.010215, "Incumbent": 675, "step": 99}, {"Time": 0.010215, "Incumbent": 670, "step": 100}, {"Time": 0.010230, "Incumbent": 652, "step": 298}, {"Time": 0.010236, "Incumbent": 648, "step": 380}],
+      [{"Time": 0.010207, "Incumbent": 702, "step": 1}, {"Time": 0.010208, "Incumbent": 683, "step": 6}, {"Time": 0.010209, "Incumbent": 663, "step": 17}, {"Time": 0.010223, "Incumbent": 662, "step": 202}, {"Time": 0.010239, "Incumbent": 653, "step": 431}, {"Time": 0.010296, "Incumbent": 648, "step": 1206}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-21",
+    "capacity": 275,
+    "num_subsets": 458,
+    "num_partitions": 1090,
+    "nonzeros": 3313,
+    "min_coeff": 1,
+    "max_coeff": 247,
+    "exact_cost": 842,
+    "second_best_cost": 843,
+    "exact_total_s": 0.004124,
+    "exact_tts_s": 0.004051,
+    "sqa_best_cost": 842,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.008239,
+    "sqa_mean_tts_s": 0.007511,
+    "routes": [
+      [5, 3, 11, 1],
+      [14, 16, 8, 17, 13, 2],
+      [20, 9, 4, 15, 10, 19],
+      [12, 6, 18, 7]
+    ],
+    "traces": [
+      [{"Time": 0.007450, "Incumbent": 870, "step": 1}, {"Time": 0.007450, "Incumbent": 860, "step": 2}, {"Time": 0.007451, "Incumbent": 847, "step": 17}, {"Time": 0.007462, "Incumbent": 846, "step": 160}, {"Time": 0.007471, "Incumbent": 845, "step": 296}, {"Time": 0.007497, "Incumbent": 843, "step": 694}, {"Time": 0.007527, "Incumbent": 842, "step": 1154}],
+      [{"Time": 0.007450, "Incumbent": 869, "step": 1}, {"Time": 0.007450, "Incumbent": 866, "step": 2}, {"Time": 0.007450, "Incumbent": 863, "step": 7}, {"Time": 0.007451, "Incumbent": 862, "step": 8}, {"Time": 0.007453, "Incumbent": 853, "step": 30}, {"Time": 0.007456, "Incumbent": 846, "step": 72}, {"Time": 0.007463, "Incumbent": 842, "step": 188}],
+      [{"Time": 0.007450, "Incumbent": 878, "step": 1}, {"Time": 0.007450, "Incumbent": 870, "step": 2}, {"Time": 0.007450, "Incumbent": 854, "step": 3}, {"Time": 0.007456, "Incumbent": 845, "step": 79}, {"Time": 0.007469, "Incumbent": 844, "step": 266}, {"Time": 0.007471, "Incumbent": 842, "step": 282}],
+      [{"Time": 0.007450, "Incumbent": 870, "step": 1}, {"Time": 0.007450, "Incumbent": 865, "step": 3}, {"Time": 0.007450, "Incumbent": 860, "step": 4}, {"Time": 0.007450, "Incumbent": 855, "step": 5}, {"Time": 0.007451, "Incumbent": 854, "step": 7}, {"Time": 0.007453, "Incumbent": 848, "step": 42}, {"Time": 0.007458, "Incumbent": 845, "step": 94}, {"Time": 0.007461, "Incumbent": 844, "step": 143}, {"Time": 0.007496, "Incumbent": 843, "step": 677}, {"Time": 0.007626, "Incumbent": 842, "step": 2602}],
+      [{"Time": 0.007450, "Incumbent": 876, "step": 1}, {"Time": 0.007450, "Incumbent": 847, "step": 3}, {"Time": 0.007461, "Incumbent": 843, "step": 145}, {"Time": 0.007467, "Incumbent": 842, "step": 241}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-22",
+    "capacity": 253,
+    "num_subsets": 506,
+    "num_partitions": 1834,
+    "nonzeros": 3649,
+    "min_coeff": 1,
+    "max_coeff": 384,
+    "exact_cost": 760,
+    "second_best_cost": 769,
+    "exact_total_s": 0.004556,
+    "exact_tts_s": 0.004550,
+    "sqa_best_cost": 760,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.013458,
+    "sqa_mean_tts_s": 0.012686,
+    "routes": [
+      [17, 1, 18, 12, 11],
+      [13, 2, 14, 19, 10],
+      [16, 3, 5, 9],
+      [8, 6, 7, 15, 20, 4]
+    ],
+    "traces": [
+      [{"Time": 0.012635, "Incumbent": 948, "step": 1}, {"Time": 0.012635, "Incumbent": 873, "step": 5}, {"Time": 0.012636, "Incumbent": 868, "step": 7}, {"Time": 0.012636, "Incumbent": 854, "step": 11}, {"Time": 0.012639, "Incumbent": 843, "step": 34}, {"Time": 0.012645, "Incumbent": 813, "step": 109}, {"Time": 0.012657, "Incumbent": 780, "step": 260}, {"Time": 0.012659, "Incumbent": 760, "step": 284}],
+      [{"Time": 0.012634, "Incumbent": 899, "step": 1}, {"Time": 0.012635, "Incumbent": 880, "step": 11}, {"Time": 0.012636, "Incumbent": 876, "step": 17}, {"Time": 0.012637, "Incumbent": 868, "step": 27}, {"Time": 0.012639, "Incumbent": 831, "step": 65}, {"Time": 0.012643, "Incumbent": 760, "step": 107}],
+      [{"Time": 0.012634, "Incumbent": 1019, "step": 1}, {"Time": 0.012635, "Incumbent": 838, "step": 4}, {"Time": 0.012635, "Incumbent": 813, "step": 9}, {"Time": 0.012640, "Incumbent": 782, "step": 74}, {"Time": 0.012688, "Incumbent": 769, "step": 723}, {"Time": 0.012708, "Incumbent": 760, "step": 1022}],
+      [{"Time": 0.012634, "Incumbent": 944, "step": 1}, {"Time": 0.012635, "Incumbent": 901, "step": 9}, {"Time": 0.012635, "Incumbent": 885, "step": 10}, {"Time": 0.012636, "Incumbent": 876, "step": 21}, {"Time": 0.012636, "Incumbent": 857, "step": 22}, {"Time": 0.012638, "Incumbent": 843, "step": 40}, {"Time": 0.012641, "Incumbent": 841, "step": 88}, {"Time": 0.012644, "Incumbent": 818, "step": 121}, {"Time": 0.012656, "Incumbent": 769, "step": 277}, {"Time": 0.012737, "Incumbent": 760, "step": 1370}],
+      [{"Time": 0.012634, "Incumbent": 933, "step": 1}, {"Time": 0.012635, "Incumbent": 890, "step": 6}, {"Time": 0.012635, "Incumbent": 797, "step": 7}, {"Time": 0.012646, "Incumbent": 795, "step": 154}, {"Time": 0.012665, "Incumbent": 769, "step": 428}, {"Time": 0.012686, "Incumbent": 760, "step": 698}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-23",
+    "capacity": 258,
+    "num_subsets": 474,
+    "num_partitions": 3137,
+    "nonzeros": 3303,
+    "min_coeff": 1,
+    "max_coeff": 329,
+    "exact_cost": 851,
+    "second_best_cost": 860,
+    "exact_total_s": 0.003082,
+    "exact_tts_s": 0.003054,
+    "sqa_best_cost": 851,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.027015,
+    "sqa_mean_tts_s": 0.026263,
+    "routes": [
+      [20, 17, 7, 19, 1],
+      [3, 13, 5, 14, 2],
+      [18, 6, 8, 10, 4],
+      [11, 15, 16, 12, 9]
+    ],
+    "traces": [
+      [{"Time": 0.025996, "Incumbent": 975, "step": 1}, {"Time": 0.025996, "Incumbent": 939, "step": 3}, {"Time": 0.025997, "Incumbent": 934, "step": 12}, {"Time": 0.025998, "Incumbent": 920, "step": 15}, {"Time": 0.026000, "Incumbent": 912, "step": 37}, {"Time": 0.026001, "Incumbent": 909, "step": 40}, {"Time": 0.026002, "Incumbent": 906, "step": 56}, {"Time": 0.026020, "Incumbent": 905, "step": 266}, {"Time": 0.026025, "Incumbent": 904, "step": 317}, {"Time": 0.026025, "Incumbent": 896, "step": 321}, {"Time": 0.026027, "Incumbent": 863, "step": 337}, {"Time": 0.026063, "Incumbent": 851, "step": 765}],
+      [{"Time": 0.025995, "Incumbent": 918, "step": 1}, {"Time": 0.025995, "Incumbent": 904, "step": 3}, {"Time": 0.025999, "Incumbent": 902, "step": 42}, {"Time": 0.026000, "Incumbent": 899, "step": 49}, {"Time": 0.026008, "Incumbent": 896, "step": 148}, {"Time": 0.026031, "Incumbent": 891, "step": 412}, {"Time": 0.026044, "Incumbent": 872, "step": 537}, {"Time": 0.026128, "Incumbent": 866, "step": 1513}, {"Time": 0.026173, "Incumbent": 851, "step": 2041}],
+      [{"Time": 0.025995, "Incumbent": 957, "step": 1}, {"Time": 0.025995, "Incumbent": 931, "step": 2}, {"Time": 0.025995, "Incumbent": 914, "step": 3}, {"Time": 0.025998, "Incumbent": 908, "step": 21}, {"Time": 0.026002, "Incumbent": 904, "step": 54}, {"Time": 0.026003, "Incumbent": 903, "step": 55}, {"Time": 0.026007, "Incumbent": 899, "step": 92}, {"Time": 0.026011, "Incumbent": 864, "step": 125}, {"Time": 0.026039, "Incumbent": 863, "step": 415}, {"Time": 0.026147, "Incumbent": 851, "step": 1573}],
+      [{"Time": 0.025995, "Incumbent": 940, "step": 1}, {"Time": 0.025995, "Incumbent": 935, "step": 2}, {"Time": 0.025995, "Incumbent": 890, "step": 3}, {"Time": 0.026060, "Incumbent": 873, "step": 643}, {"Time": 0.026068, "Incumbent": 866, "step": 721}, {"Time": 0.026142, "Incumbent": 860, "step": 1530}, {"Time": 0.026627, "Incumbent": 851, "step": 7079}],
+      [{"Time": 0.025995, "Incumbent": 1001, "step": 1}, {"Time": 0.025995, "Incumbent": 978, "step": 2}, {"Time": 0.025995, "Incumbent": 949, "step": 3}, {"Time": 0.025996, "Incumbent": 895, "step": 7}, {"Time": 0.026001, "Incumbent": 890, "step": 61}, {"Time": 0.026045, "Incumbent": 886, "step": 565}, {"Time": 0.026054, "Incumbent": 878, "step": 659}, {"Time": 0.026068, "Incumbent": 860, "step": 839}, {"Time": 0.026303, "Incumbent": 851, "step": 3594}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-24",
+    "capacity": 205,
+    "num_subsets": 769,
+    "num_partitions": 5630,
+    "nonzeros": 5745,
+    "min_coeff": 1,
+    "max_coeff": 239,
+    "exact_cost": 725,
+    "second_best_cost": 739,
+    "exact_total_s": 0.009428,
+    "exact_tts_s": 0.009229,
+    "sqa_best_cost": 725,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.077297,
+    "sqa_mean_tts_s": 0.076418,
+    "routes": [
+      [10, 4, 14, 8, 18, 9, 20, 1],
+      [15, 19, 7, 2, 6],
+      [12, 16, 3, 11],
+      [17, 13, 5]
+    ],
+    "traces": [
+      [{"Time": 0.076128, "Incumbent": 842, "step": 1}, {"Time": 0.076128, "Incumbent": 831, "step": 2}, {"Time": 0.076128, "Incumbent": 769, "step": 3}, {"Time": 0.076128, "Incumbent": 765, "step": 4}, {"Time": 0.076131, "Incumbent": 762, "step": 19}, {"Time": 0.076146, "Incumbent": 758, "step": 143}, {"Time": 0.076147, "Incumbent": 754, "step": 155}, {"Time": 0.076154, "Incumbent": 752, "step": 212}, {"Time": 0.076157, "Incumbent": 749, "step": 245}, {"Time": 0.076159, "Incumbent": 743, "step": 261}, {"Time": 0.076218, "Incumbent": 725, "step": 716}],
+      [{"Time": 0.076126, "Incumbent": 886, "step": 1}, {"Time": 0.076126, "Incumbent": 877, "step": 2}, {"Time": 0.076127, "Incumbent": 875, "step": 3}, {"Time": 0.076127, "Incumbent": 824, "step": 4}, {"Time": 0.076128, "Incumbent": 819, "step": 5}, {"Time": 0.076129, "Incumbent": 745, "step": 19}, {"Time": 0.076427, "Incumbent": 743, "step": 3133}, {"Time": 0.076435, "Incumbent": 739, "step": 3209}, {"Time": 0.076518, "Incumbent": 725, "step": 4077}],
+      [{"Time": 0.076126, "Incumbent": 829, "step": 1}, {"Time": 0.076127, "Incumbent": 810, "step": 6}, {"Time": 0.076127, "Incumbent": 806, "step": 7}, {"Time": 0.076129, "Incumbent": 790, "step": 14}, {"Time": 0.076132, "Incumbent": 785, "step": 33}, {"Time": 0.076132, "Incumbent": 763, "step": 37}, {"Time": 0.076137, "Incumbent": 746, "step": 85}, {"Time": 0.076242, "Incumbent": 725, "step": 1171}],
+      [{"Time": 0.076126, "Incumbent": 836, "step": 1}, {"Time": 0.076127, "Incumbent": 789, "step": 8}, {"Time": 0.076127, "Incumbent": 751, "step": 9}, {"Time": 0.076145, "Incumbent": 748, "step": 157}, {"Time": 0.076201, "Incumbent": 739, "step": 700}, {"Time": 0.076720, "Incumbent": 725, "step": 5979}],
+      [{"Time": 0.076126, "Incumbent": 842, "step": 1}, {"Time": 0.076126, "Incumbent": 831, "step": 3}, {"Time": 0.076127, "Incumbent": 829, "step": 4}, {"Time": 0.076127, "Incumbent": 826, "step": 5}, {"Time": 0.076127, "Incumbent": 808, "step": 6}, {"Time": 0.076128, "Incumbent": 752, "step": 13}, {"Time": 0.076164, "Incumbent": 751, "step": 371}, {"Time": 0.076184, "Incumbent": 748, "step": 591}, {"Time": 0.076273, "Incumbent": 747, "step": 1499}, {"Time": 0.076303, "Incumbent": 739, "step": 1799}, {"Time": 0.076391, "Incumbent": 725, "step": 2660}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-25",
+    "capacity": 240,
+    "num_subsets": 551,
+    "num_partitions": 2864,
+    "nonzeros": 3975,
+    "min_coeff": 1,
+    "max_coeff": 184,
+    "exact_cost": 462,
+    "second_best_cost": 463,
+    "exact_total_s": 0.004859,
+    "exact_tts_s": 0.004850,
+    "sqa_best_cost": 462,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.026083,
+    "sqa_mean_tts_s": 0.025219,
+    "routes": [
+      [12, 10, 11, 19, 1],
+      [20, 2, 4, 6, 13, 3],
+      [16, 9, 5, 8],
+      [17, 14, 18, 15, 7]
+    ],
+    "traces": [
+      [{"Time": 0.025164, "Incumbent": 576, "step": 1}, {"Time": 0.025165, "Incumbent": 521, "step": 5}, {"Time": 0.025177, "Incumbent": 462, "step": 117}],
+      [{"Time": 0.025163, "Incumbent": 582, "step": 1}, {"Time": 0.025163, "Incumbent": 522, "step": 3}, {"Time": 0.025163, "Incumbent": 492, "step": 4}, {"Time": 0.025165, "Incumbent": 476, "step": 20}, {"Time": 0.025168, "Incumbent": 463, "step": 52}, {"Time": 0.025227, "Incumbent": 462, "step": 791}],
+      [{"Time": 0.025163, "Incumbent": 603, "step": 1}, {"Time": 0.025163, "Incumbent": 580, "step": 2}, {"Time": 0.025163, "Incumbent": 571, "step": 3}, {"Time": 0.025164, "Incumbent": 493, "step": 6}, {"Time": 0.025168, "Incumbent": 492, "step": 55}, {"Time": 0.025188, "Incumbent": 491, "step": 168}, {"Time": 0.025190, "Incumbent": 480, "step": 200}, {"Time": 0.025208, "Incumbent": 479, "step": 409}, {"Time": 0.025226, "Incumbent": 473, "step": 622}, {"Time": 0.025249, "Incumbent": 465, "step": 901}, {"Time": 0.025251, "Incumbent": 462, "step": 917}],
+      [{"Time": 0.025163, "Incumbent": 621, "step": 1}, {"Time": 0.025163, "Incumbent": 589, "step": 2}, {"Time": 0.025163, "Incumbent": 532, "step": 3}, {"Time": 0.025164, "Incumbent": 493, "step": 11}, {"Time": 0.025165, "Incumbent": 491, "step": 19}, {"Time": 0.025165, "Incumbent": 481, "step": 21}, {"Time": 0.025172, "Incumbent": 476, "step": 83}, {"Time": 0.025173, "Incumbent": 475, "step": 93}, {"Time": 0.025178, "Incumbent": 463, "step": 140}, {"Time": 0.025275, "Incumbent": 462, "step": 1213}],
+      [{"Time": 0.025163, "Incumbent": 601, "step": 1}, {"Time": 0.025164, "Incumbent": 486, "step": 11}, {"Time": 0.025165, "Incumbent": 476, "step": 24}, {"Time": 0.025166, "Incumbent": 462, "step": 27}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-26",
+    "capacity": 299,
+    "num_subsets": 359,
+    "num_partitions": 1308,
+    "nonzeros": 2456,
+    "min_coeff": 1,
+    "max_coeff": 281,
+    "exact_cost": 688,
+    "second_best_cost": 692,
+    "exact_total_s": 0.002243,
+    "exact_tts_s": 0.002234,
+    "sqa_best_cost": 688,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.008120,
+    "sqa_mean_tts_s": 0.007414,
+    "routes": [
+      [16, 10, 1, 8, 12],
+      [14, 9, 2, 11],
+      [19, 18, 5, 17, 7, 3],
+      [20, 13, 4, 15, 6]
+    ],
+    "traces": [
+      [{"Time": 0.007345, "Incumbent": 904, "step": 1}, {"Time": 0.007345, "Incumbent": 822, "step": 2}, {"Time": 0.007346, "Incumbent": 812, "step": 6}, {"Time": 0.007346, "Incumbent": 792, "step": 10}, {"Time": 0.007347, "Incumbent": 730, "step": 17}, {"Time": 0.007349, "Incumbent": 707, "step": 40}, {"Time": 0.007350, "Incumbent": 706, "step": 46}, {"Time": 0.007359, "Incumbent": 699, "step": 161}, {"Time": 0.007363, "Incumbent": 692, "step": 209}, {"Time": 0.007429, "Incumbent": 688, "step": 1070}],
+      [{"Time": 0.007344, "Incumbent": 791, "step": 1}, {"Time": 0.007344, "Incumbent": 788, "step": 2}, {"Time": 0.007345, "Incumbent": 773, "step": 9}, {"Time": 0.007345, "Incumbent": 742, "step": 12}, {"Time": 0.007346, "Incumbent": 713, "step": 17}, {"Time": 0.007348, "Incumbent": 697, "step": 52}, {"Time": 0.007392, "Incumbent": 692, "step": 650}, {"Time": 0.007444, "Incumbent": 688, "step": 1379}],
+      [{"Time": 0.007344, "Incumbent": 906, "step": 1}, {"Time": 0.007344, "Incumbent": 824, "step": 2}, {"Time": 0.007345, "Incumbent": 739, "step": 5}, {"Time": 0.007345, "Incumbent": 712, "step": 8}, {"Time": 0.007345, "Incumbent": 694, "step": 10}, {"Time": 0.007375, "Incumbent": 692, "step": 404}, {"Time": 0.007377, "Incumbent": 688, "step": 416}],
+      [{"Time": 0.007344, "Incumbent": 828, "step": 1}, {"Time": 0.007344, "Incumbent": 753, "step": 2}, {"Time": 0.007350, "Incumbent": 741, "step": 70}, {"Time": 0.007353, "Incumbent": 737, "step": 101}, {"Time": 0.007353, "Incumbent": 720, "step": 106}, {"Time": 0.007362, "Incumbent": 709, "step": 221}, {"Time": 0.007408, "Incumbent": 703, "step": 848}, {"Time": 0.007409, "Incumbent": 692, "step": 866}, {"Time": 0.007452, "Incumbent": 688, "step": 1462}],
+      [{"Time": 0.007344, "Incumbent": 892, "step": 1}, {"Time": 0.007344, "Incumbent": 834, "step": 2}, {"Time": 0.007344, "Incumbent": 798, "step": 3}, {"Time": 0.007345, "Incumbent": 778, "step": 6}, {"Time": 0.007345, "Incumbent": 771, "step": 10}, {"Time": 0.007347, "Incumbent": 697, "step": 29}, {"Time": 0.007367, "Incumbent": 688, "step": 299}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-27",
+    "capacity": 244,
+    "num_subsets": 536,
+    "num_partitions": 2279,
+    "nonzeros": 3882,
+    "min_coeff": 1,
+    "max_coeff": 214,
+    "exact_cost": 540,
+    "second_best_cost": 542,
+    "exact_total_s": 0.005431,
+    "exact_tts_s": 0.005333,
+    "sqa_best_cost": 540,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.018905,
+    "sqa_mean_tts_s": 0.018127,
+    "routes": [
+      [15, 1, 12, 17, 3],
+      [14, 9, 18, 2, 6, 7],
+      [5, 19, 10, 13, 4],
+      [16, 20, 8, 11]
+    ],
+    "traces": [
+      [{"Time": 0.017924, "Incumbent": 701, "step": 1}, {"Time": 0.017924, "Incumbent": 571, "step": 2}, {"Time": 0.017925, "Incumbent": 569, "step": 11}, {"Time": 0.017927, "Incumbent": 567, "step": 21}, {"Time": 0.017928, "Incumbent": 563, "step": 33}, {"Time": 0.017929, "Incumbent": 556, "step": 46}, {"Time": 0.017930, "Incumbent": 553, "step": 59}, {"Time": 0.017943, "Incumbent": 550, "step": 222}, {"Time": 0.017957, "Incumbent": 548, "step": 361}, {"Time": 0.017978, "Incumbent": 545, "step": 621}, {"Time": 0.018118, "Incumbent": 542, "step": 2306}, {"Time": 0.018129, "Incumbent": 540, "step": 2439}],
+      [{"Time": 0.017923, "Incumbent": 691, "step": 1}, {"Time": 0.017923, "Incumbent": 649, "step": 2}, {"Time": 0.017924, "Incumbent": 641, "step": 6}, {"Time": 0.017924, "Incumbent": 559, "step": 7}, {"Time": 0.017930, "Incumbent": 550, "step": 75}, {"Time": 0.017965, "Incumbent": 547, "step": 484}, {"Time": 0.017974, "Incumbent": 545, "step": 571}, {"Time": 0.017997, "Incumbent": 542, "step": 864}, {"Time": 0.018085, "Incumbent": 540, "step": 2001}],
+      [{"Time": 0.017924, "Incumbent": 711, "step": 1}, {"Time": 0.017924, "Incumbent": 680, "step": 2}, {"Time": 0.017924, "Incumbent": 654, "step": 3}, {"Time": 0.017924, "Incumbent": 645, "step": 4}, {"Time": 0.017924, "Incumbent": 572, "step": 5}, {"Time": 0.017925, "Incumbent": 571, "step": 19}, {"Time": 0.017926, "Incumbent": 561, "step": 22}, {"Time": 0.017936, "Incumbent": 548, "step": 146}, {"Time": 0.017955, "Incumbent": 545, "step": 426}, {"Time": 0.017963, "Incumbent": 542, "step": 545}, {"Time": 0.017998, "Incumbent": 540, "step": 1038}],
+      [{"Time": 0.017924, "Incumbent": 701, "step": 1}, {"Time": 0.017924, "Incumbent": 630, "step": 2}, {"Time": 0.017925, "Incumbent": 607, "step": 15}, {"Time": 0.017930, "Incumbent": 591, "step": 34}, {"Time": 0.017931, "Incumbent": 558, "step": 40}, {"Time": 0.017946, "Incumbent": 552, "step": 191}, {"Time": 0.017968, "Incumbent": 545, "step": 318}, {"Time": 0.018122, "Incumbent": 542, "step": 1836}, {"Time": 0.018204, "Incumbent": 540, "step": 2610}],
+      [{"Time": 0.017923, "Incumbent": 689, "step": 1}, {"Time": 0.017924, "Incumbent": 683, "step": 3}, {"Time": 0.017924, "Incumbent": 637, "step": 5}, {"Time": 0.017925, "Incumbent": 602, "step": 7}, {"Time": 0.017927, "Incumbent": 598, "step": 16}, {"Time": 0.017929, "Incumbent": 596, "step": 28}, {"Time": 0.017929, "Incumbent": 569, "step": 30}, {"Time": 0.017930, "Incumbent": 568, "step": 46}, {"Time": 0.017931, "Incumbent": 563, "step": 49}, {"Time": 0.017934, "Incumbent": 547, "step": 80}, {"Time": 0.017938, "Incumbent": 542, "step": 122}, {"Time": 0.018220, "Incumbent": 540, "step": 3191}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-28",
+    "capacity": 211,
+    "num_subsets": 716,
+    "num_partitions": 2506,
+    "nonzeros": 5488,
+    "min_coeff": 1,
+    "max_coeff": 273,
+    "exact_cost": 669,
+    "second_best_cost": 675,
+    "exact_total_s": 0.010863,
+    "exact_tts_s": 0.010746,
+    "sqa_best_cost": 669,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.028405,
+    "sqa_mean_tts_s": 0.027471,
+    "routes": [
+      [18, 3, 15, 1, 16],
+      [20, 14, 7, 2, 12],
+      [17, 13, 11, 4, 6],
+      [8, 19, 10, 9, 5]
+    ],
+    "traces": [
+      [{"Time": 0.027385, "Incumbent": 851, "step": 1}, {"Time": 0.027386, "Incumbent": 822, "step": 6}, {"Time": 0.027386, "Incumbent": 807, "step": 7}, {"Time": 0.027393, "Incumbent": 801, "step": 71}, {"Time": 0.027393, "Incumbent": 686, "step": 78}, {"Time": 0.027489, "Incumbent": 679, "step": 1211}, {"Time": 0.027512, "Incumbent": 676, "step": 1477}, {"Time": 0.027528, "Incumbent": 669, "step": 1652}],
+      [{"Time": 0.027384, "Incumbent": 837, "step": 1}, {"Time": 0.027385, "Incumbent": 826, "step": 3}, {"Time": 0.027387, "Incumbent": 823, "step": 21}, {"Time": 0.027387, "Incumbent": 817, "step": 24}, {"Time": 0.027388, "Incumbent": 816, "step": 30}, {"Time": 0.027388, "Incumbent": 801, "step": 40}, {"Time": 0.027390, "Incumbent": 686, "step": 64}, {"Time": 0.027406, "Incumbent": 680, "step": 272}, {"Time": 0.027455, "Incumbent": 675, "step": 905}, {"Time": 0.027487, "Incumbent": 669, "step": 1326}],
+      [{"Time": 0.027385, "Incumbent": 849, "step": 1}, {"Time": 0.027385, "Incumbent": 823, "step": 2}, {"Time": 0.027386, "Incumbent": 821, "step": 11}, {"Time": 0.027387, "Incumbent": 724, "step": 22}, {"Time": 0.027400, "Incumbent": 708, "step": 135}, {"Time": 0.027401, "Incumbent": 679, "step": 151}, {"Time": 0.027416, "Incumbent": 676, "step": 274}, {"Time": 0.027472, "Incumbent": 669, "step": 654}],
+      [{"Time": 0.027384, "Incumbent": 876, "step": 1}, {"Time": 0.027385, "Incumbent": 816, "step": 2}, {"Time": 0.027386, "Incumbent": 815, "step": 7}, {"Time": 0.027386, "Incumbent": 810, "step": 9}, {"Time": 0.027387, "Incumbent": 779, "step": 23}, {"Time": 0.027393, "Incumbent": 688, "step": 74}, {"Time": 0.027414, "Incumbent": 675, "step": 298}, {"Time": 0.027445, "Incumbent": 669, "step": 617}],
+      [{"Time": 0.027384, "Incumbent": 803, "step": 1}, {"Time": 0.027387, "Incumbent": 755, "step": 13}, {"Time": 0.027391, "Incumbent": 739, "step": 39}, {"Time": 0.027392, "Incumbent": 728, "step": 62}, {"Time": 0.027421, "Incumbent": 669, "step": 390}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-29",
+    "capacity": 229,
+    "num_subsets": 555,
+    "num_partitions": 2334,
+    "nonzeros": 4044,
+    "min_coeff": 1,
+    "max_coeff": 307,
+    "exact_cost": 658,
+    "second_best_cost": 661,
+    "exact_total_s": 0.005321,
+    "exact_tts_s": 0.005219,
+    "sqa_best_cost": 658,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.021353,
+    "sqa_mean_tts_s": 0.020589,
+    "routes": [
+      [12, 8, 15, 19, 3, 1],
+      [18, 20, 2, 17, 7, 4],
+      [14, 13, 5, 10],
+      [11, 16, 6, 9]
+    ],
+    "traces": [
+      [{"Time": 0.020497, "Incumbent": 822, "step": 1}, {"Time": 0.020498, "Incumbent": 813, "step": 2}, {"Time": 0.020498, "Incumbent": 806, "step": 4}, {"Time": 0.020498, "Incumbent": 805, "step": 8}, {"Time": 0.020499, "Incumbent": 751, "step": 11}, {"Time": 0.020499, "Incumbent": 688, "step": 13}, {"Time": 0.020502, "Incumbent": 678, "step": 45}, {"Time": 0.020508, "Incumbent": 661, "step": 108}, {"Time": 0.020814, "Incumbent": 658, "step": 4013}],
+      [{"Time": 0.020497, "Incumbent": 784, "step": 1}, {"Time": 0.020497, "Incumbent": 775, "step": 3}, {"Time": 0.020497, "Incumbent": 738, "step": 6}, {"Time": 0.020498, "Incumbent": 726, "step": 9}, {"Time": 0.020499, "Incumbent": 712, "step": 22}, {"Time": 0.020502, "Incumbent": 709, "step": 63}, {"Time": 0.020504, "Incumbent": 682, "step": 79}, {"Time": 0.020512, "Incumbent": 678, "step": 171}, {"Time": 0.020529, "Incumbent": 667, "step": 396}, {"Time": 0.020559, "Incumbent": 658, "step": 780}],
+      [{"Time": 0.020497, "Incumbent": 759, "step": 1}, {"Time": 0.020497, "Incumbent": 735, "step": 2}, {"Time": 0.020498, "Incumbent": 725, "step": 7}, {"Time": 0.020498, "Incumbent": 707, "step": 13}, {"Time": 0.020510, "Incumbent": 671, "step": 141}, {"Time": 0.020511, "Incumbent": 668, "step": 157}, {"Time": 0.020512, "Incumbent": 658, "step": 173}],
+      [{"Time": 0.020497, "Incumbent": 847, "step": 1}, {"Time": 0.020497, "Incumbent": 803, "step": 2}, {"Time": 0.020497, "Incumbent": 779, "step": 3}, {"Time": 0.020497, "Incumbent": 750, "step": 7}, {"Time": 0.020499, "Incumbent": 716, "step": 25}, {"Time": 0.020499, "Incumbent": 689, "step": 29}, {"Time": 0.020512, "Incumbent": 667, "step": 177}, {"Time": 0.020556, "Incumbent": 658, "step": 743}],
+      [{"Time": 0.020497, "Incumbent": 802, "step": 1}, {"Time": 0.020497, "Incumbent": 777, "step": 2}, {"Time": 0.020497, "Incumbent": 753, "step": 6}, {"Time": 0.020498, "Incumbent": 735, "step": 14}, {"Time": 0.020499, "Incumbent": 696, "step": 28}, {"Time": 0.020503, "Incumbent": 658, "step": 64}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-30",
+    "capacity": 262,
+    "num_subsets": 413,
+    "num_partitions": 2158,
+    "nonzeros": 2833,
+    "min_coeff": 1,
+    "max_coeff": 252,
+    "exact_cost": 685,
+    "second_best_cost": 688,
+    "exact_total_s": 0.002447,
+    "exact_tts_s": 0.002371,
+    "sqa_best_cost": 685,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.014498,
+    "sqa_mean_tts_s": 0.013749,
+    "routes": [
+      [6, 16, 7, 3, 1],
+      [10, 5, 8, 4, 2],
+      [12, 18, 15, 11, 9],
+      [17, 14, 19, 20, 13]
+    ],
+    "traces": [
+      [{"Time": 0.013587, "Incumbent": 800, "step": 1}, {"Time": 0.013588, "Incumbent": 754, "step": 8}, {"Time": 0.013595, "Incumbent": 709, "step": 88}, {"Time": 0.013603, "Incumbent": 696, "step": 189}, {"Time": 0.013669, "Incumbent": 694, "step": 1029}, {"Time": 0.013814, "Incumbent": 685, "step": 2905}],
+      [{"Time": 0.013586, "Incumbent": 861, "step": 1}, {"Time": 0.013587, "Incumbent": 816, "step": 2}, {"Time": 0.013587, "Incumbent": 786, "step": 3}, {"Time": 0.013587, "Incumbent": 764, "step": 6}, {"Time": 0.013588, "Incumbent": 755, "step": 13}, {"Time": 0.013590, "Incumbent": 747, "step": 40}, {"Time": 0.013592, "Incumbent": 742, "step": 65}, {"Time": 0.013597, "Incumbent": 732, "step": 124}, {"Time": 0.013609, "Incumbent": 727, "step": 270}, {"Time": 0.013611, "Incumbent": 717, "step": 286}, {"Time": 0.013614, "Incumbent": 705, "step": 334}, {"Time": 0.013638, "Incumbent": 703, "step": 639}, {"Time": 0.013646, "Incumbent": 698, "step": 754}, {"Time": 0.013648, "Incumbent": 688, "step": 771}, {"Time": 0.013849, "Incumbent": 685, "step": 3462}],
+      [{"Time": 0.013586, "Incumbent": 888, "step": 1}, {"Time": 0.013587, "Incumbent": 843, "step": 2}, {"Time": 0.013587, "Incumbent": 829, "step": 3}, {"Time": 0.013587, "Incumbent": 827, "step": 7}, {"Time": 0.013587, "Incumbent": 771, "step": 9}, {"Time": 0.013588, "Incumbent": 744, "step": 10}, {"Time": 0.013590, "Incumbent": 705, "step": 34}, {"Time": 0.013618, "Incumbent": 702, "step": 399}, {"Time": 0.013628, "Incumbent": 685, "step": 535}],
+      [{"Time": 0.013586, "Incumbent": 779, "step": 1}, {"Time": 0.013587, "Incumbent": 713, "step": 3}, {"Time": 0.013626, "Incumbent": 703, "step": 505}, {"Time": 0.013679, "Incumbent": 698, "step": 1204}, {"Time": 0.013682, "Incumbent": 696, "step": 1252}, {"Time": 0.013704, "Incumbent": 685, "step": 1517}],
+      [{"Time": 0.013587, "Incumbent": 741, "step": 1}, {"Time": 0.013605, "Incumbent": 726, "step": 235}, {"Time": 0.013615, "Incumbent": 714, "step": 371}, {"Time": 0.013622, "Incumbent": 709, "step": 457}, {"Time": 0.013626, "Incumbent": 698, "step": 505}, {"Time": 0.013631, "Incumbent": 688, "step": 585}, {"Time": 0.013749, "Incumbent": 685, "step": 2178}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-31",
+    "capacity": 259,
+    "num_subsets": 492,
+    "num_partitions": 3371,
+    "nonzeros": 3518,
+    "min_coeff": 1,
+    "max_coeff": 219,
+    "exact_cost": 445,
+    "second_best_cost": 448,
+    "exact_total_s": 0.004278,
+    "exact_tts_s": 0.004249,
+    "sqa_best_cost": 445,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.032670,
+    "sqa_mean_tts_s": 0.031789,
+    "routes": [
+      [11, 18, 1, 6],
+      [14, 3, 12, 10, 13, 2],
+      [15, 16, 17, 8, 4],
+      [7, 20, 19, 9, 5]
+    ],
+    "traces": [
+      [{"Time": 0.031621, "Incumbent": 535, "step": 1}, {"Time": 0.031621, "Incumbent": 521, "step": 2}, {"Time": 0.031622, "Incumbent": 506, "step": 5}, {"Time": 0.031624, "Incumbent": 503, "step": 15}, {"Time": 0.031624, "Incumbent": 468, "step": 16}, {"Time": 0.031628, "Incumbent": 457, "step": 44}, {"Time": 0.031678, "Incumbent": 450, "step": 494}, {"Time": 0.031760, "Incumbent": 448, "step": 1353}, {"Time": 0.031810, "Incumbent": 445, "step": 1872}],
+      [{"Time": 0.031620, "Incumbent": 553, "step": 1}, {"Time": 0.031620, "Incumbent": 506, "step": 3}, {"Time": 0.031622, "Incumbent": 470, "step": 20}, {"Time": 0.031636, "Incumbent": 464, "step": 157}, {"Time": 0.031637, "Incumbent": 456, "step": 170}, {"Time": 0.031651, "Incumbent": 451, "step": 307}, {"Time": 0.031846, "Incumbent": 448, "step": 2517}],
+      [{"Time": 0.031620, "Incumbent": 539, "step": 1}, {"Time": 0.031620, "Incumbent": 536, "step": 2}, {"Time": 0.031621, "Incumbent": 478, "step": 5}, {"Time": 0.031625, "Incumbent": 445, "step": 53}],
+      [{"Time": 0.031620, "Incumbent": 551, "step": 1}, {"Time": 0.031620, "Incumbent": 546, "step": 2}, {"Time": 0.031621, "Incumbent": 529, "step": 5}, {"Time": 0.031621, "Incumbent": 456, "step": 6}, {"Time": 0.031638, "Incumbent": 451, "step": 192}, {"Time": 0.031696, "Incumbent": 450, "step": 828}, {"Time": 0.031810, "Incumbent": 448, "step": 2150}, {"Time": 0.031955, "Incumbent": 445, "step": 3827}],
+      [{"Time": 0.031620, "Incumbent": 557, "step": 1}, {"Time": 0.031620, "Incumbent": 510, "step": 2}, {"Time": 0.031620, "Incumbent": 504, "step": 4}, {"Time": 0.031621, "Incumbent": 496, "step": 10}, {"Time": 0.031622, "Incumbent": 492, "step": 15}, {"Time": 0.031622, "Incumbent": 474, "step": 17}, {"Time": 0.031632, "Incumbent": 456, "step": 128}, {"Time": 0.031641, "Incumbent": 448, "step": 224}, {"Time": 0.031710, "Incumbent": 445, "step": 978}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-32",
+    "capacity": 197,
+    "num_subsets": 828,
+    "num_partitions": 3008,
+    "nonzeros": 6406,
+    "min_coeff": 1,
+    "max_coeff": 308,
+    "exact_cost": 882,
+    "second_best_cost": 884,
+    "exact_total_s": 0.013375,
+    "exact_tts_s": 0.013193,
+    "sqa_best_cost": 882,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.036026,
+    "sqa_mean_tts_s": 0.035187,
+    "routes": [
+      [10, 18, 3, 20, 1],
+      [14, 7, 2, 15, 17, 5],
+      [19, 4, 6, 8, 13],
+      [16, 11, 9, 12]
+    ],
+    "traces": [
+      [{"Time": 0.035063, "Incumbent": 952, "step": 1}, {"Time": 0.035064, "Incumbent": 931, "step": 2}, {"Time": 0.035065, "Incumbent": 927, "step": 6}, {"Time": 0.035066, "Incumbent": 924, "step": 15}, {"Time": 0.035070, "Incumbent": 910, "step": 43}, {"Time": 0.035071, "Incumbent": 907, "step": 61}, {"Time": 0.035077, "Incumbent": 906, "step": 112}, {"Time": 0.035087, "Incumbent": 904, "step": 217}, {"Time": 0.035131, "Incumbent": 901, "step": 758}, {"Time": 0.035150, "Incumbent": 898, "step": 1000}, {"Time": 0.035282, "Incumbent": 882, "step": 2613}],
+      [{"Time": 0.035063, "Incumbent": 953, "step": 1}, {"Time": 0.035063, "Incumbent": 934, "step": 2}, {"Time": 0.035063, "Incumbent": 921, "step": 5}, {"Time": 0.035064, "Incumbent": 898, "step": 6}, {"Time": 0.035091, "Incumbent": 890, "step": 355}, {"Time": 0.035193, "Incumbent": 887, "step": 1700}, {"Time": 0.035232, "Incumbent": 882, "step": 2223}],
+      [{"Time": 0.035063, "Incumbent": 949, "step": 1}, {"Time": 0.035063, "Incumbent": 939, "step": 2}, {"Time": 0.035064, "Incumbent": 931, "step": 13}, {"Time": 0.035065, "Incumbent": 928, "step": 28}, {"Time": 0.035066, "Incumbent": 922, "step": 35}, {"Time": 0.035066, "Incumbent": 907, "step": 41}, {"Time": 0.035067, "Incumbent": 904, "step": 42}, {"Time": 0.035086, "Incumbent": 902, "step": 277}, {"Time": 0.035087, "Incumbent": 900, "step": 290}, {"Time": 0.035096, "Incumbent": 899, "step": 393}, {"Time": 0.035148, "Incumbent": 890, "step": 1081}, {"Time": 0.035172, "Incumbent": 884, "step": 1403}, {"Time": 0.035234, "Incumbent": 882, "step": 2269}],
+      [{"Time": 0.035063, "Incumbent": 951, "step": 1}, {"Time": 0.035063, "Incumbent": 932, "step": 2}, {"Time": 0.035063, "Incumbent": 926, "step": 6}, {"Time": 0.035064, "Incumbent": 909, "step": 12}, {"Time": 0.035067, "Incumbent": 905, "step": 55}, {"Time": 0.035069, "Incumbent": 901, "step": 76}, {"Time": 0.035071, "Incumbent": 882, "step": 99}],
+      [{"Time": 0.035063, "Incumbent": 956, "step": 1}, {"Time": 0.035063, "Incumbent": 945, "step": 4}, {"Time": 0.035063, "Incumbent": 932, "step": 5}, {"Time": 0.035064, "Incumbent": 930, "step": 14}, {"Time": 0.035066, "Incumbent": 920, "step": 34}, {"Time": 0.035066, "Incumbent": 911, "step": 39}, {"Time": 0.035076, "Incumbent": 909, "step": 129}, {"Time": 0.035080, "Incumbent": 906, "step": 187}, {"Time": 0.035084, "Incumbent": 899, "step": 242}, {"Time": 0.035113, "Incumbent": 889, "step": 547}, {"Time": 0.035118, "Incumbent": 882, "step": 604}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-33",
+    "capacity": 250,
+    "num_subsets": 491,
+    "num_partitions": 2413,
+    "nonzeros": 3499,
+    "min_coeff": 1,
+    "max_coeff": 249,
+    "exact_cost": 568,
+    "second_best_cost": 569,
+    "exact_total_s": 0.004101,
+    "exact_tts_s": 0.004076,
+    "sqa_best_cost": 568,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.019985,
+    "sqa_mean_tts_s": 0.019168,
+    "routes": [
+      [17, 13, 20, 19, 1, 9],
+      [5, 4, 7, 2],
+      [10, 14, 15, 12, 3],
+      [16, 18, 11, 6, 8]
+    ],
+    "traces": [
+      [{"Time": 0.018984, "Incumbent": 719, "step": 1}, {"Time": 0.018984, "Incumbent": 682, "step": 2}, {"Time": 0.018984, "Incumbent": 668, "step": 3}, {"Time": 0.018987, "Incumbent": 666, "step": 28}, {"Time": 0.018988, "Incumbent": 652, "step": 31}, {"Time": 0.018991, "Incumbent": 647, "step": 62}, {"Time": 0.018998, "Incumbent": 630, "step": 142}, {"Time": 0.019000, "Incumbent": 627, "step": 158}, {"Time": 0.019000, "Incumbent": 603, "step": 163}, {"Time": 0.019006, "Incumbent": 601, "step": 227}, {"Time": 0.019012, "Incumbent": 590, "step": 291}, {"Time": 0.019045, "Incumbent": 587, "step": 635}, {"Time": 0.019047, "Incumbent": 571, "step": 643}, {"Time": 0.019050, "Incumbent": 568, "step": 683}],
+      [{"Time": 0.018983, "Incumbent": 680, "step": 1}, {"Time": 0.018984, "Incumbent": 662, "step": 8}, {"Time": 0.018985, "Incumbent": 590, "step": 17}, {"Time": 0.018997, "Incumbent": 588, "step": 144}, {"Time": 0.018998, "Incumbent": 575, "step": 163}, {"Time": 0.019035, "Incumbent": 571, "step": 610}, {"Time": 0.019131, "Incumbent": 568, "step": 1849}],
+      [{"Time": 0.018983, "Incumbent": 721, "step": 1}, {"Time": 0.018983, "Incumbent": 699, "step": 2}, {"Time": 0.018984, "Incumbent": 690, "step": 3}, {"Time": 0.018984, "Incumbent": 685, "step": 9}, {"Time": 0.018985, "Incumbent": 682, "step": 19}, {"Time": 0.018986, "Incumbent": 607, "step": 28}, {"Time": 0.018997, "Incumbent": 602, "step": 145}, {"Time": 0.019005, "Incumbent": 599, "step": 232}, {"Time": 0.019014, "Incumbent": 590, "step": 348}, {"Time": 0.019026, "Incumbent": 571, "step": 489}, {"Time": 0.019105, "Incumbent": 569, "step": 1433}, {"Time": 0.019509, "Incumbent": 568, "step": 6563}],
+      [{"Time": 0.018983, "Incumbent": 709, "step": 1}, {"Time": 0.018983, "Incumbent": 673, "step": 4}, {"Time": 0.018984, "Incumbent": 661, "step": 8}, {"Time": 0.018986, "Incumbent": 646, "step": 20}, {"Time": 0.018986, "Incumbent": 620, "step": 21}, {"Time": 0.018989, "Incumbent": 603, "step": 48}, {"Time": 0.018993, "Incumbent": 598, "step": 80}, {"Time": 0.019003, "Incumbent": 590, "step": 182}, {"Time": 0.019003, "Incumbent": 568, "step": 187}],
+      [{"Time": 0.018983, "Incumbent": 719, "step": 1}, {"Time": 0.018983, "Incumbent": 687, "step": 2}, {"Time": 0.018983, "Incumbent": 680, "step": 3}, {"Time": 0.018984, "Incumbent": 679, "step": 14}, {"Time": 0.018984, "Incumbent": 599, "step": 15}, {"Time": 0.019020, "Incumbent": 590, "step": 328}, {"Time": 0.019120, "Incumbent": 569, "step": 1457}, {"Time": 0.019149, "Incumbent": 568, "step": 1797}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-34",
+    "capacity": 270,
+    "num_subsets": 478,
+    "num_partitions": 372,
+    "nonzeros": 3435,
+    "min_coeff": 1,
+    "max_coeff": 348,
+    "exact_cost": 891,
+    "second_best_cost": 893,
+    "exact_total_s": 0.003967,
+    "exact_tts_s": 0.003957,
+    "sqa_best_cost": 891,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.005113,
+    "sqa_mean_tts_s": 0.004407,
+    "routes": [
+      [16, 6, 11, 15, 1],
+      [13, 2, 8, 14, 9, 4],
+      [20, 3, 12, 10, 5],
+      [19, 18, 7, 17]
+    ],
+    "traces": [
+      [{"Time": 0.004377, "Incumbent": 1040, "step": 1}, {"Time": 0.004377, "Incumbent": 999, "step": 2}, {"Time": 0.004377, "Incumbent": 928, "step": 5}, {"Time": 0.004379, "Incumbent": 907, "step": 18}, {"Time": 0.004385, "Incumbent": 893, "step": 119}, {"Time": 0.004402, "Incumbent": 891, "step": 357}],
+      [{"Time": 0.004376, "Incumbent": 1029, "step": 1}, {"Time": 0.004377, "Incumbent": 1015, "step": 2}, {"Time": 0.004377, "Incumbent": 972, "step": 6}, {"Time": 0.004377, "Incumbent": 942, "step": 10}, {"Time": 0.004380, "Incumbent": 934, "step": 46}, {"Time": 0.004382, "Incumbent": 931, "step": 65}, {"Time": 0.004391, "Incumbent": 928, "step": 194}, {"Time": 0.004393, "Incumbent": 906, "step": 229}, {"Time": 0.004396, "Incumbent": 891, "step": 261}],
+      [{"Time": 0.004377, "Incumbent": 1104, "step": 1}, {"Time": 0.004377, "Incumbent": 965, "step": 2}, {"Time": 0.004381, "Incumbent": 959, "step": 15}, {"Time": 0.004381, "Incumbent": 946, "step": 22}, {"Time": 0.004381, "Incumbent": 907, "step": 23}, {"Time": 0.004388, "Incumbent": 906, "step": 110}, {"Time": 0.004397, "Incumbent": 893, "step": 238}, {"Time": 0.004457, "Incumbent": 891, "step": 1069}],
+      [{"Time": 0.004376, "Incumbent": 976, "step": 1}, {"Time": 0.004377, "Incumbent": 973, "step": 9}, {"Time": 0.004377, "Incumbent": 959, "step": 12}, {"Time": 0.004380, "Incumbent": 953, "step": 49}, {"Time": 0.004381, "Incumbent": 950, "step": 57}, {"Time": 0.004382, "Incumbent": 938, "step": 73}, {"Time": 0.004385, "Incumbent": 906, "step": 111}, {"Time": 0.004393, "Incumbent": 891, "step": 216}],
+      [{"Time": 0.004377, "Incumbent": 1024, "step": 1}, {"Time": 0.004377, "Incumbent": 907, "step": 3}, {"Time": 0.004383, "Incumbent": 906, "step": 82}, {"Time": 0.004389, "Incumbent": 891, "step": 162}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-35",
+    "capacity": 284,
+    "num_subsets": 418,
+    "num_partitions": 1776,
+    "nonzeros": 2926,
+    "min_coeff": 1,
+    "max_coeff": 331,
+    "exact_cost": 707,
+    "second_best_cost": 713,
+    "exact_total_s": 0.002945,
+    "exact_tts_s": 0.002929,
+    "sqa_best_cost": 707,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.011508,
+    "sqa_mean_tts_s": 0.010734,
+    "routes": [
+      [20, 19, 14, 1, 7],
+      [16, 2, 15, 17, 3],
+      [18, 6, 8, 9, 4],
+      [10, 11, 12, 13, 5]
+    ],
+    "traces": [
+      [{"Time": 0.010668, "Incumbent": 830, "step": 1}, {"Time": 0.010669, "Incumbent": 820, "step": 8}, {"Time": 0.010669, "Incumbent": 790, "step": 9}, {"Time": 0.010671, "Incumbent": 786, "step": 25}, {"Time": 0.010673, "Incumbent": 753, "step": 53}, {"Time": 0.010678, "Incumbent": 748, "step": 102}, {"Time": 0.010702, "Incumbent": 743, "step": 350}, {"Time": 0.010708, "Incumbent": 735, "step": 429}, {"Time": 0.010722, "Incumbent": 713, "step": 607}, {"Time": 0.010767, "Incumbent": 707, "step": 1179}],
+      [{"Time": 0.010668, "Incumbent": 892, "step": 1}, {"Time": 0.010668, "Incumbent": 842, "step": 2}, {"Time": 0.010668, "Incumbent": 823, "step": 5}, {"Time": 0.010669, "Incumbent": 767, "step": 8}, {"Time": 0.010669, "Incumbent": 760, "step": 11}, {"Time": 0.010671, "Incumbent": 755, "step": 32}, {"Time": 0.010671, "Incumbent": 747, "step": 34}, {"Time": 0.010679, "Incumbent": 707, "step": 139}],
+      [{"Time": 0.010668, "Incumbent": 797, "step": 1}, {"Time": 0.010669, "Incumbent": 786, "step": 9}, {"Time": 0.010671, "Incumbent": 777, "step": 35}, {"Time": 0.010675, "Incumbent": 764, "step": 83}, {"Time": 0.010677, "Incumbent": 735, "step": 110}, {"Time": 0.010700, "Incumbent": 713, "step": 394}, {"Time": 0.010760, "Incumbent": 707, "step": 1201}],
+      [{"Time": 0.010668, "Incumbent": 940, "step": 1}, {"Time": 0.010668, "Incumbent": 809, "step": 3}, {"Time": 0.010669, "Incumbent": 808, "step": 6}, {"Time": 0.010669, "Incumbent": 797, "step": 13}, {"Time": 0.010669, "Incumbent": 788, "step": 15}, {"Time": 0.010672, "Incumbent": 747, "step": 44}, {"Time": 0.010677, "Incumbent": 734, "step": 114}, {"Time": 0.010687, "Incumbent": 731, "step": 239}, {"Time": 0.010691, "Incumbent": 707, "step": 292}],
+      [{"Time": 0.010668, "Incumbent": 752, "step": 1}, {"Time": 0.010669, "Incumbent": 743, "step": 17}, {"Time": 0.010671, "Incumbent": 731, "step": 38}, {"Time": 0.010673, "Incumbent": 713, "step": 54}, {"Time": 0.010773, "Incumbent": 707, "step": 1419}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-36",
+    "capacity": 226,
+    "num_subsets": 556,
+    "num_partitions": 3722,
+    "nonzeros": 3983,
+    "min_coeff": 1,
+    "max_coeff": 246,
+    "exact_cost": 610,
+    "second_best_cost": 614,
+    "exact_total_s": 0.004907,
+    "exact_tts_s": 0.004834,
+    "sqa_best_cost": 610,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.038399,
+    "sqa_mean_tts_s": 0.037647,
+    "routes": [
+      [18, 1, 13, 8, 5],
+      [15, 11, 10, 20, 3, 2],
+      [14, 12, 6, 4],
+      [17, 19, 9, 7, 16]
+    ],
+    "traces": [
+      [{"Time": 0.037357, "Incumbent": 758, "step": 1}, {"Time": 0.037357, "Incumbent": 732, "step": 2}, {"Time": 0.037358, "Incumbent": 714, "step": 6}, {"Time": 0.037359, "Incumbent": 693, "step": 12}, {"Time": 0.037363, "Incumbent": 677, "step": 43}, {"Time": 0.037365, "Incumbent": 675, "step": 54}, {"Time": 0.037371, "Incumbent": 658, "step": 96}, {"Time": 0.037377, "Incumbent": 651, "step": 140}, {"Time": 0.037398, "Incumbent": 640, "step": 327}, {"Time": 0.037535, "Incumbent": 624, "step": 1730}, {"Time": 0.037544, "Incumbent": 610, "step": 1828}],
+      [{"Time": 0.037357, "Incumbent": 651, "step": 1}, {"Time": 0.037366, "Incumbent": 617, "step": 106}, {"Time": 0.037378, "Incumbent": 614, "step": 252}, {"Time": 0.037935, "Incumbent": 610, "step": 7113}],
+      [{"Time": 0.037356, "Incumbent": 756, "step": 1}, {"Time": 0.037357, "Incumbent": 691, "step": 8}, {"Time": 0.037360, "Incumbent": 670, "step": 36}, {"Time": 0.037363, "Incumbent": 647, "step": 67}, {"Time": 0.037367, "Incumbent": 644, "step": 106}, {"Time": 0.037377, "Incumbent": 621, "step": 210}, {"Time": 0.037552, "Incumbent": 614, "step": 2251}, {"Time": 0.037573, "Incumbent": 610, "step": 2491}],
+      [{"Time": 0.037356, "Incumbent": 689, "step": 1}, {"Time": 0.037357, "Incumbent": 654, "step": 10}, {"Time": 0.037367, "Incumbent": 638, "step": 127}, {"Time": 0.037380, "Incumbent": 634, "step": 268}, {"Time": 0.037414, "Incumbent": 629, "step": 675}, {"Time": 0.037494, "Incumbent": 617, "step": 1654}, {"Time": 0.037508, "Incumbent": 614, "step": 1833}, {"Time": 0.037754, "Incumbent": 610, "step": 4821}],
+      [{"Time": 0.037356, "Incumbent": 717, "step": 1}, {"Time": 0.037357, "Incumbent": 699, "step": 7}, {"Time": 0.037358, "Incumbent": 691, "step": 14}, {"Time": 0.037359, "Incumbent": 672, "step": 16}, {"Time": 0.037359, "Incumbent": 641, "step": 23}, {"Time": 0.037376, "Incumbent": 624, "step": 195}, {"Time": 0.037428, "Incumbent": 610, "step": 806}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-37",
+    "capacity": 245,
+    "num_subsets": 475,
+    "num_partitions": 2800,
+    "nonzeros": 3307,
+    "min_coeff": 1,
+    "max_coeff": 306,
+    "exact_cost": 650,
+    "second_best_cost": 655,
+    "exact_total_s": 0.003418,
+    "exact_tts_s": 0.003336,
+    "sqa_best_cost": 650,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.023104,
+    "sqa_mean_tts_s": 0.022266,
+    "routes": [
+      [19, 12, 20, 3, 1],
+      [18, 7, 5, 4, 2],
+      [11, 13, 9, 14, 8, 6],
+      [17, 15, 10, 16]
+    ],
+    "traces": [
+      [{"Time": 0.022129, "Incumbent": 786, "step": 1}, {"Time": 0.022129, "Incumbent": 745, "step": 2}, {"Time": 0.022132, "Incumbent": 720, "step": 16}, {"Time": 0.022132, "Incumbent": 704, "step": 18}, {"Time": 0.022154, "Incumbent": 663, "step": 228}, {"Time": 0.022158, "Incumbent": 662, "step": 260}, {"Time": 0.022232, "Incumbent": 650, "step": 1029}],
+      [{"Time": 0.022129, "Incumbent": 813, "step": 1}, {"Time": 0.022129, "Incumbent": 722, "step": 2}, {"Time": 0.022132, "Incumbent": 694, "step": 40}, {"Time": 0.022134, "Incumbent": 687, "step": 60}, {"Time": 0.022143, "Incumbent": 679, "step": 149}, {"Time": 0.022191, "Incumbent": 650, "step": 632}],
+      [{"Time": 0.022129, "Incumbent": 769, "step": 1}, {"Time": 0.022130, "Incumbent": 662, "step": 11}, {"Time": 0.022215, "Incumbent": 655, "step": 1046}, {"Time": 0.022455, "Incumbent": 650, "step": 4002}],
+      [{"Time": 0.022129, "Incumbent": 791, "step": 1}, {"Time": 0.022129, "Incumbent": 765, "step": 2}, {"Time": 0.022129, "Incumbent": 764, "step": 4}, {"Time": 0.022131, "Incumbent": 712, "step": 20}, {"Time": 0.022137, "Incumbent": 693, "step": 88}, {"Time": 0.022144, "Incumbent": 681, "step": 158}, {"Time": 0.022152, "Incumbent": 678, "step": 250}, {"Time": 0.022224, "Incumbent": 673, "step": 1104}, {"Time": 0.022228, "Incumbent": 650, "step": 1151}],
+      [{"Time": 0.022129, "Incumbent": 863, "step": 1}, {"Time": 0.022130, "Incumbent": 833, "step": 2}, {"Time": 0.022130, "Incumbent": 797, "step": 5}, {"Time": 0.022131, "Incumbent": 714, "step": 10}, {"Time": 0.022142, "Incumbent": 701, "step": 123}, {"Time": 0.022143, "Incumbent": 694, "step": 126}, {"Time": 0.022151, "Incumbent": 679, "step": 216}, {"Time": 0.022153, "Incumbent": 663, "step": 248}, {"Time": 0.022225, "Incumbent": 650, "step": 955}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-38",
+    "capacity": 234,
+    "num_subsets": 552,
+    "num_partitions": 3513,
+    "nonzeros": 4021,
+    "min_coeff": 1,
+    "max_coeff": 352,
+    "exact_cost": 991,
+    "second_best_cost": 993,
+    "exact_total_s": 0.006162,
+    "exact_tts_s": 0.006022,
+    "sqa_best_cost": 991,
+    "sqa_succ_runs": 4,
+    "sqa_mean_total_s": 0.037489,
+    "sqa_mean_tts_s": 0.036741,
+    "routes": [
+      [10, 3, 8, 16, 15, 1],
+      [13, 2, 5, 14, 4],
+      [19, 12, 18, 6],
+      [20, 11, 9, 17, 7]
+    ],
+    "traces": [
+      [{"Time": 0.036411, "Incumbent": 1076, "step": 1}, {"Time": 0.036412, "Incumbent": 1046, "step": 9}, {"Time": 0.036419, "Incumbent": 1025, "step": 65}, {"Time": 0.036423, "Incumbent": 998, "step": 99}, {"Time": 0.036636, "Incumbent": 997, "step": 2399}, {"Time": 0.036644, "Incumbent": 993, "step": 2500}, {"Time": 0.036955, "Incumbent": 991, "step": 6130}],
+      [{"Time": 0.036410, "Incumbent": 1169, "step": 1}, {"Time": 0.036410, "Incumbent": 1165, "step": 2}, {"Time": 0.036410, "Incumbent": 1151, "step": 3}, {"Time": 0.036410, "Incumbent": 1123, "step": 4}, {"Time": 0.036411, "Incumbent": 1078, "step": 8}, {"Time": 0.036412, "Incumbent": 1072, "step": 16}, {"Time": 0.036412, "Incumbent": 1060, "step": 19}, {"Time": 0.036412, "Incumbent": 1057, "step": 23}, {"Time": 0.036412, "Incumbent": 1045, "step": 24}, {"Time": 0.036415, "Incumbent": 1002, "step": 49}, {"Time": 0.036416, "Incumbent": 998, "step": 59}, {"Time": 0.036441, "Incumbent": 993, "step": 332}, {"Time": 0.037203, "Incumbent": 991, "step": 9148}],
+      [{"Time": 0.036410, "Incumbent": 1134, "step": 1}, {"Time": 0.036410, "Incumbent": 1124, "step": 3}, {"Time": 0.036411, "Incumbent": 1093, "step": 4}, {"Time": 0.036411, "Incumbent": 1012, "step": 5}, {"Time": 0.036414, "Incumbent": 991, "step": 30}],
+      [{"Time": 0.036410, "Incumbent": 1126, "step": 1}, {"Time": 0.036410, "Incumbent": 1078, "step": 2}, {"Time": 0.036411, "Incumbent": 1077, "step": 3}, {"Time": 0.036412, "Incumbent": 1076, "step": 18}, {"Time": 0.036413, "Incumbent": 1038, "step": 26}, {"Time": 0.036413, "Incumbent": 1024, "step": 30}, {"Time": 0.036415, "Incumbent": 991, "step": 46}],
+      [{"Time": 0.036411, "Incumbent": 1164, "step": 1}, {"Time": 0.036411, "Incumbent": 1123, "step": 2}, {"Time": 0.036412, "Incumbent": 1026, "step": 3}, {"Time": 0.036418, "Incumbent": 1012, "step": 56}, {"Time": 0.036428, "Incumbent": 998, "step": 142}, {"Time": 0.036448, "Incumbent": 995, "step": 334}, {"Time": 0.036716, "Incumbent": 993, "step": 3162}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-39",
+    "capacity": 234,
+    "num_subsets": 595,
+    "num_partitions": 2885,
+    "nonzeros": 4400,
+    "min_coeff": 1,
+    "max_coeff": 317,
+    "exact_cost": 717,
+    "second_best_cost": 718,
+    "exact_total_s": 0.006956,
+    "exact_tts_s": 0.006930,
+    "sqa_best_cost": 717,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.029283,
+    "sqa_mean_tts_s": 0.028380,
+    "routes": [
+      [17, 19, 15, 7, 1, 20, 13],
+      [8, 3, 6, 18, 2],
+      [11, 4, 16, 12, 5],
+      [10, 14, 9]
+    ],
+    "traces": [
+      [{"Time": 0.028290, "Incumbent": 944, "step": 1}, {"Time": 0.028290, "Incumbent": 892, "step": 2}, {"Time": 0.028290, "Incumbent": 857, "step": 3}, {"Time": 0.028291, "Incumbent": 817, "step": 7}, {"Time": 0.028292, "Incumbent": 770, "step": 22}, {"Time": 0.028294, "Incumbent": 736, "step": 38}, {"Time": 0.028296, "Incumbent": 732, "step": 54}, {"Time": 0.028308, "Incumbent": 717, "step": 145}],
+      [{"Time": 0.028289, "Incumbent": 943, "step": 1}, {"Time": 0.028289, "Incumbent": 887, "step": 2}, {"Time": 0.028289, "Incumbent": 740, "step": 3}, {"Time": 0.028294, "Incumbent": 734, "step": 41}, {"Time": 0.028314, "Incumbent": 717, "step": 263}],
+      [{"Time": 0.028289, "Incumbent": 911, "step": 1}, {"Time": 0.028289, "Incumbent": 880, "step": 3}, {"Time": 0.028290, "Incumbent": 850, "step": 5}, {"Time": 0.028290, "Incumbent": 756, "step": 8}, {"Time": 0.028296, "Incumbent": 743, "step": 90}, {"Time": 0.028332, "Incumbent": 726, "step": 539}, {"Time": 0.028378, "Incumbent": 725, "step": 1145}, {"Time": 0.028419, "Incumbent": 717, "step": 1193}],
+      [{"Time": 0.028290, "Incumbent": 959, "step": 1}, {"Time": 0.028290, "Incumbent": 878, "step": 2}, {"Time": 0.028291, "Incumbent": 835, "step": 3}, {"Time": 0.028292, "Incumbent": 764, "step": 15}, {"Time": 0.028303, "Incumbent": 758, "step": 133}, {"Time": 0.028304, "Incumbent": 734, "step": 146}, {"Time": 0.028310, "Incumbent": 718, "step": 216}, {"Time": 0.028498, "Incumbent": 717, "step": 2370}],
+      [{"Time": 0.028289, "Incumbent": 894, "step": 1}, {"Time": 0.028289, "Incumbent": 842, "step": 2}, {"Time": 0.028290, "Incumbent": 794, "step": 7}, {"Time": 0.028298, "Incumbent": 770, "step": 83}, {"Time": 0.028299, "Incumbent": 758, "step": 85}, {"Time": 0.028300, "Incumbent": 743, "step": 99}, {"Time": 0.028310, "Incumbent": 740, "step": 194}, {"Time": 0.028311, "Incumbent": 731, "step": 204}, {"Time": 0.028356, "Incumbent": 718, "step": 663}, {"Time": 0.028363, "Incumbent": 717, "step": 733}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-40",
+    "capacity": 234,
+    "num_subsets": 586,
+    "num_partitions": 2624,
+    "nonzeros": 4319,
+    "min_coeff": 1,
+    "max_coeff": 318,
+    "exact_cost": 700,
+    "second_best_cost": 732,
+    "exact_total_s": 0.006596,
+    "exact_tts_s": 0.006455,
+    "sqa_best_cost": 700,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.025498,
+    "sqa_mean_tts_s": 0.024816,
+    "routes": [
+      [13, 20, 2, 18, 1, 6],
+      [10, 15, 12, 3],
+      [5, 8, 7, 17, 4],
+      [11, 14, 16, 19, 9]
+    ],
+    "traces": [
+      [{"Time": 0.024530, "Incumbent": 983, "step": 1}, {"Time": 0.024530, "Incumbent": 917, "step": 2}, {"Time": 0.024530, "Incumbent": 902, "step": 5}, {"Time": 0.024531, "Incumbent": 893, "step": 9}, {"Time": 0.024533, "Incumbent": 887, "step": 20}, {"Time": 0.024533, "Incumbent": 873, "step": 28}, {"Time": 0.024534, "Incumbent": 827, "step": 34}, {"Time": 0.024535, "Incumbent": 786, "step": 36}, {"Time": 0.024536, "Incumbent": 782, "step": 52}, {"Time": 0.024541, "Incumbent": 781, "step": 103}, {"Time": 0.024545, "Incumbent": 774, "step": 144}, {"Time": 0.024545, "Incumbent": 766, "step": 149}, {"Time": 0.024560, "Incumbent": 732, "step": 323}, {"Time": 0.024625, "Incumbent": 700, "step": 1100}],
+      [{"Time": 0.024529, "Incumbent": 889, "step": 1}, {"Time": 0.024529, "Incumbent": 874, "step": 5}, {"Time": 0.024529, "Incumbent": 819, "step": 9}, {"Time": 0.024534, "Incumbent": 808, "step": 67}, {"Time": 0.024535, "Incumbent": 791, "step": 69}, {"Time": 0.024535, "Incumbent": 788, "step": 77}, {"Time": 0.024540, "Incumbent": 781, "step": 141}, {"Time": 0.024555, "Incumbent": 759, "step": 295}, {"Time": 0.024583, "Incumbent": 734, "step": 627}, {"Time": 0.024629, "Incumbent": 732, "step": 1137}, {"Time": 0.024733, "Incumbent": 700, "step": 2323}],
+      [{"Time": 0.024529, "Incumbent": 999, "step": 1}, {"Time": 0.024529, "Incumbent": 963, "step": 2}, {"Time": 0.024529, "Incumbent": 903, "step": 3}, {"Time": 0.024530, "Incumbent": 902, "step": 6}, {"Time": 0.024530, "Incumbent": 896, "step": 12}, {"Time": 0.024531, "Incumbent": 884, "step": 18}, {"Time": 0.024531, "Incumbent": 833, "step": 19}, {"Time": 0.024531, "Incumbent": 771, "step": 22}, {"Time": 0.024559, "Incumbent": 749, "step": 318}, {"Time": 0.024581, "Incumbent": 734, "step": 583}, {"Time": 0.024696, "Incumbent": 732, "step": 1844}, {"Time": 0.024781, "Incumbent": 700, "step": 2873}],
+      [{"Time": 0.024529, "Incumbent": 936, "step": 1}, {"Time": 0.024529, "Incumbent": 884, "step": 2}, {"Time": 0.024529, "Incumbent": 864, "step": 3}, {"Time": 0.024530, "Incumbent": 834, "step": 6}, {"Time": 0.024532, "Incumbent": 759, "step": 14}, {"Time": 0.024585, "Incumbent": 732, "step": 563}, {"Time": 0.025355, "Incumbent": 700, "step": 12716}],
+      [{"Time": 0.024529, "Incumbent": 846, "step": 1}, {"Time": 0.024534, "Incumbent": 843, "step": 54}, {"Time": 0.024537, "Incumbent": 835, "step": 84}, {"Time": 0.024538, "Incumbent": 772, "step": 100}, {"Time": 0.024543, "Incumbent": 767, "step": 157}, {"Time": 0.024549, "Incumbent": 751, "step": 221}, {"Time": 0.024551, "Incumbent": 742, "step": 244}, {"Time": 0.024585, "Incumbent": 700, "step": 702}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-41",
+    "capacity": 245,
+    "num_subsets": 538,
+    "num_partitions": 2069,
+    "nonzeros": 3934,
+    "min_coeff": 1,
+    "max_coeff": 245,
+    "exact_cost": 736,
+    "second_best_cost": 739,
+    "exact_total_s": 0.005533,
+    "exact_tts_s": 0.005433,
+    "sqa_best_cost": 736,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.017349,
+    "sqa_mean_tts_s": 0.016540,
+    "routes": [
+      [8, 10, 1, 6, 19, 2],
+      [7, 3, 13, 20, 5],
+      [16, 9, 4, 17, 11, 15],
+      [14, 18, 12]
+    ],
+    "traces": [
+      [{"Time": 0.016432, "Incumbent": 901, "step": 1}, {"Time": 0.016432, "Incumbent": 745, "step": 2}, {"Time": 0.016445, "Incumbent": 743, "step": 129}, {"Time": 0.016464, "Incumbent": 742, "step": 338}, {"Time": 0.016504, "Incumbent": 740, "step": 821}, {"Time": 0.016564, "Incumbent": 736, "step": 1469}],
+      [{"Time": 0.016431, "Incumbent": 880, "step": 1}, {"Time": 0.016432, "Incumbent": 863, "step": 3}, {"Time": 0.016433, "Incumbent": 853, "step": 4}, {"Time": 0.016433, "Incumbent": 752, "step": 5}, {"Time": 0.016434, "Incumbent": 750, "step": 21}, {"Time": 0.016435, "Incumbent": 748, "step": 30}, {"Time": 0.016437, "Incumbent": 740, "step": 38}, {"Time": 0.016467, "Incumbent": 739, "step": 366}, {"Time": 0.016531, "Incumbent": 736, "step": 1078}],
+      [{"Time": 0.016431, "Incumbent": 889, "step": 1}, {"Time": 0.016431, "Incumbent": 868, "step": 2}, {"Time": 0.016432, "Incumbent": 750, "step": 7}, {"Time": 0.016436, "Incumbent": 745, "step": 50}, {"Time": 0.016445, "Incumbent": 744, "step": 150}, {"Time": 0.016445, "Incumbent": 739, "step": 155}, {"Time": 0.016609, "Incumbent": 736, "step": 2160}],
+      [{"Time": 0.016431, "Incumbent": 884, "step": 1}, {"Time": 0.016431, "Incumbent": 878, "step": 2}, {"Time": 0.016431, "Incumbent": 870, "step": 3}, {"Time": 0.016432, "Incumbent": 854, "step": 4}, {"Time": 0.016432, "Incumbent": 755, "step": 8}, {"Time": 0.016435, "Incumbent": 753, "step": 40}, {"Time": 0.016436, "Incumbent": 752, "step": 51}, {"Time": 0.016437, "Incumbent": 751, "step": 67}, {"Time": 0.016450, "Incumbent": 742, "step": 184}, {"Time": 0.016521, "Incumbent": 739, "step": 971}, {"Time": 0.016537, "Incumbent": 736, "step": 1163}],
+      [{"Time": 0.016431, "Incumbent": 896, "step": 1}, {"Time": 0.016431, "Incumbent": 877, "step": 3}, {"Time": 0.016431, "Incumbent": 864, "step": 5}, {"Time": 0.016433, "Incumbent": 856, "step": 19}, {"Time": 0.016436, "Incumbent": 744, "step": 35}, {"Time": 0.016437, "Incumbent": 743, "step": 51}, {"Time": 0.016446, "Incumbent": 742, "step": 123}, {"Time": 0.016461, "Incumbent": 736, "step": 271}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-42",
+    "capacity": 232,
+    "num_subsets": 597,
+    "num_partitions": 1978,
+    "nonzeros": 4394,
+    "min_coeff": 1,
+    "max_coeff": 380,
+    "exact_cost": 998,
+    "second_best_cost": 1005,
+    "exact_total_s": 0.006196,
+    "exact_tts_s": 0.006095,
+    "sqa_best_cost": 998,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.016610,
+    "sqa_mean_tts_s": 0.015857,
+    "routes": [
+      [11, 19, 1, 3],
+      [12, 13, 8, 2],
+      [10, 17, 7, 20, 4, 14, 15, 5],
+      [18, 9, 6, 16]
+    ],
+    "traces": [
+      [{"Time": 0.015766, "Incumbent": 1084, "step": 1}, {"Time": 0.015768, "Incumbent": 1039, "step": 5}, {"Time": 0.015781, "Incumbent": 1025, "step": 141}, {"Time": 0.015784, "Incumbent": 1012, "step": 178}, {"Time": 0.015818, "Incumbent": 1011, "step": 628}, {"Time": 0.015929, "Incumbent": 1005, "step": 2105}, {"Time": 0.015931, "Incumbent": 998, "step": 2125}],
+      [{"Time": 0.015766, "Incumbent": 1114, "step": 1}, {"Time": 0.015766, "Incumbent": 1039, "step": 2}, {"Time": 0.015769, "Incumbent": 1034, "step": 35}, {"Time": 0.015776, "Incumbent": 1023, "step": 115}, {"Time": 0.015800, "Incumbent": 1018, "step": 430}, {"Time": 0.015813, "Incumbent": 998, "step": 578}],
+      [{"Time": 0.015766, "Incumbent": 1058, "step": 1}, {"Time": 0.015766, "Incumbent": 1051, "step": 7}, {"Time": 0.015767, "Incumbent": 1012, "step": 8}, {"Time": 0.015926, "Incumbent": 1011, "step": 2104}, {"Time": 0.015933, "Incumbent": 998, "step": 2198}],
+      [{"Time": 0.015766, "Incumbent": 1101, "step": 1}, {"Time": 0.015766, "Incumbent": 1095, "step": 4}, {"Time": 0.015766, "Incumbent": 1064, "step": 6}, {"Time": 0.015767, "Incumbent": 1037, "step": 9}, {"Time": 0.015771, "Incumbent": 1011, "step": 58}, {"Time": 0.015811, "Incumbent": 998, "step": 590}],
+      [{"Time": 0.015766, "Incumbent": 1045, "step": 1}, {"Time": 0.015769, "Incumbent": 1040, "step": 39}, {"Time": 0.015771, "Incumbent": 1025, "step": 55}, {"Time": 0.015775, "Incumbent": 1022, "step": 106}, {"Time": 0.015776, "Incumbent": 1021, "step": 122}, {"Time": 0.015779, "Incumbent": 1019, "step": 150}, {"Time": 0.015788, "Incumbent": 1018, "step": 266}, {"Time": 0.015795, "Incumbent": 998, "step": 355}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-43",
+    "capacity": 240,
+    "num_subsets": 625,
+    "num_partitions": 2279,
+    "nonzeros": 4742,
+    "min_coeff": 1,
+    "max_coeff": 200,
+    "exact_cost": 465,
+    "second_best_cost": 472,
+    "exact_total_s": 0.009724,
+    "exact_tts_s": 0.009642,
+    "sqa_best_cost": 465,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.025209,
+    "sqa_mean_tts_s": 0.024400,
+    "routes": [
+      [4, 11, 12, 15, 10, 8, 1],
+      [17, 2, 18, 3],
+      [14, 9, 20, 7, 5],
+      [19, 16, 6, 13]
+    ],
+    "traces": [
+      [{"Time": 0.024306, "Incumbent": 579, "step": 1}, {"Time": 0.024307, "Incumbent": 569, "step": 5}, {"Time": 0.024307, "Incumbent": 533, "step": 8}, {"Time": 0.024308, "Incumbent": 517, "step": 15}, {"Time": 0.024310, "Incumbent": 511, "step": 36}, {"Time": 0.024315, "Incumbent": 508, "step": 72}, {"Time": 0.024318, "Incumbent": 507, "step": 103}, {"Time": 0.024339, "Incumbent": 472, "step": 330}, {"Time": 0.024480, "Incumbent": 465, "step": 2075}],
+      [{"Time": 0.024306, "Incumbent": 593, "step": 1}, {"Time": 0.024307, "Incumbent": 575, "step": 5}, {"Time": 0.024308, "Incumbent": 552, "step": 8}, {"Time": 0.024309, "Incumbent": 531, "step": 20}, {"Time": 0.024313, "Incumbent": 497, "step": 54}, {"Time": 0.024352, "Incumbent": 480, "step": 465}, {"Time": 0.024424, "Incumbent": 472, "step": 1331}, {"Time": 0.024429, "Incumbent": 465, "step": 1388}],
+      [{"Time": 0.024306, "Incumbent": 564, "step": 1}, {"Time": 0.024306, "Incumbent": 531, "step": 4}, {"Time": 0.024312, "Incumbent": 526, "step": 68}, {"Time": 0.024318, "Incumbent": 505, "step": 143}, {"Time": 0.024323, "Incumbent": 472, "step": 197}, {"Time": 0.024360, "Incumbent": 465, "step": 709}],
+      [{"Time": 0.024306, "Incumbent": 576, "step": 1}, {"Time": 0.024306, "Incumbent": 552, "step": 3}, {"Time": 0.024307, "Incumbent": 521, "step": 12}, {"Time": 0.024309, "Incumbent": 517, "step": 32}, {"Time": 0.024310, "Incumbent": 513, "step": 48}, {"Time": 0.024314, "Incumbent": 505, "step": 90}, {"Time": 0.024314, "Incumbent": 504, "step": 94}, {"Time": 0.024329, "Incumbent": 501, "step": 283}, {"Time": 0.024330, "Incumbent": 500, "step": 299}, {"Time": 0.024349, "Incumbent": 493, "step": 530}, {"Time": 0.024358, "Incumbent": 481, "step": 656}, {"Time": 0.024359, "Incumbent": 465, "step": 676}],
+      [{"Time": 0.024306, "Incumbent": 601, "step": 1}, {"Time": 0.024306, "Incumbent": 600, "step": 3}, {"Time": 0.024306, "Incumbent": 524, "step": 5}, {"Time": 0.024307, "Incumbent": 505, "step": 10}, {"Time": 0.024320, "Incumbent": 500, "step": 158}, {"Time": 0.024338, "Incumbent": 488, "step": 398}, {"Time": 0.024340, "Incumbent": 481, "step": 426}, {"Time": 0.024373, "Incumbent": 465, "step": 863}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-44",
+    "capacity": 235,
+    "num_subsets": 544,
+    "num_partitions": 2283,
+    "nonzeros": 3964,
+    "min_coeff": 1,
+    "max_coeff": 355,
+    "exact_cost": 973,
+    "second_best_cost": 979,
+    "exact_total_s": 0.005174,
+    "exact_tts_s": 0.005022,
+    "sqa_best_cost": 973,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.020040,
+    "sqa_mean_tts_s": 0.019260,
+    "routes": [
+      [17, 3, 9, 18, 2, 1],
+      [16, 7, 19, 8, 4],
+      [15, 20, 13, 5, 14],
+      [12, 10, 11, 6]
+    ],
+    "traces": [
+      [{"Time": 0.019048, "Incumbent": 1038, "step": 1}, {"Time": 0.019049, "Incumbent": 989, "step": 7}, {"Time": 0.019094, "Incumbent": 985, "step": 557}, {"Time": 0.019095, "Incumbent": 973, "step": 576}],
+      [{"Time": 0.019047, "Incumbent": 1067, "step": 1}, {"Time": 0.019047, "Incumbent": 1054, "step": 3}, {"Time": 0.019048, "Incumbent": 1036, "step": 5}, {"Time": 0.019049, "Incumbent": 1019, "step": 10}, {"Time": 0.019050, "Incumbent": 1013, "step": 24}, {"Time": 0.019051, "Incumbent": 1000, "step": 33}, {"Time": 0.019081, "Incumbent": 999, "step": 390}, {"Time": 0.019084, "Incumbent": 994, "step": 436}, {"Time": 0.019087, "Incumbent": 985, "step": 476}, {"Time": 0.019090, "Incumbent": 979, "step": 512}, {"Time": 0.019254, "Incumbent": 973, "step": 2550}],
+      [{"Time": 0.019047, "Incumbent": 1110, "step": 1}, {"Time": 0.019047, "Incumbent": 1059, "step": 2}, {"Time": 0.019048, "Incumbent": 1036, "step": 5}, {"Time": 0.019048, "Incumbent": 1024, "step": 6}, {"Time": 0.019050, "Incumbent": 1018, "step": 20}, {"Time": 0.019051, "Incumbent": 1008, "step": 34}, {"Time": 0.019052, "Incumbent": 992, "step": 36}, {"Time": 0.019055, "Incumbent": 988, "step": 81}, {"Time": 0.019079, "Incumbent": 979, "step": 403}, {"Time": 0.019457, "Incumbent": 973, "step": 4743}],
+      [{"Time": 0.019047, "Incumbent": 1036, "step": 1}, {"Time": 0.019050, "Incumbent": 1030, "step": 23}, {"Time": 0.019050, "Incumbent": 1019, "step": 26}, {"Time": 0.019051, "Incumbent": 1015, "step": 38}, {"Time": 0.019053, "Incumbent": 1005, "step": 52}, {"Time": 0.019057, "Incumbent": 999, "step": 94}, {"Time": 0.019075, "Incumbent": 996, "step": 297}, {"Time": 0.019079, "Incumbent": 994, "step": 344}, {"Time": 0.019087, "Incumbent": 991, "step": 429}, {"Time": 0.019109, "Incumbent": 979, "step": 696}, {"Time": 0.019305, "Incumbent": 973, "step": 3099}],
+      [{"Time": 0.019047, "Incumbent": 1079, "step": 1}, {"Time": 0.019047, "Incumbent": 1032, "step": 2}, {"Time": 0.019048, "Incumbent": 1009, "step": 14}, {"Time": 0.019049, "Incumbent": 1005, "step": 18}, {"Time": 0.019057, "Incumbent": 1002, "step": 97}, {"Time": 0.019060, "Incumbent": 998, "step": 141}, {"Time": 0.019065, "Incumbent": 985, "step": 186}, {"Time": 0.019084, "Incumbent": 979, "step": 369}, {"Time": 0.019191, "Incumbent": 973, "step": 1617}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-45",
+    "capacity": 279,
+    "num_subsets": 355,
+    "num_partitions": 3406,
+    "nonzeros": 2292,
+    "min_coeff": 1,
+    "max_coeff": 386,
+    "exact_cost": 1071,
+    "second_best_cost": 1078,
+    "exact_total_s": 0.001282,
+    "exact_tts_s": 0.001198,
+    "sqa_best_cost": 1071,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.026865,
+    "sqa_mean_tts_s": 0.025992,
+    "routes": [
+      [19, 8, 3, 13, 1],
+      [10, 12, 18, 2],
+      [14, 4, 9, 16, 7],
+      [20, 5, 6, 17, 15, 11]
+    ],
+    "traces": [
+      [{"Time": 0.025868, "Incumbent": 1170, "step": 1}, {"Time": 0.025868, "Incumbent": 1155, "step": 4}, {"Time": 0.025869, "Incumbent": 1149, "step": 7}, {"Time": 0.025869, "Incumbent": 1146, "step": 9}, {"Time": 0.025870, "Incumbent": 1113, "step": 10}, {"Time": 0.025871, "Incumbent": 1108, "step": 27}, {"Time": 0.025885, "Incumbent": 1101, "step": 174}, {"Time": 0.025892, "Incumbent": 1094, "step": 244}, {"Time": 0.025920, "Incumbent": 1071, "step": 575}],
+      [{"Time": 0.025867, "Incumbent": 1228, "step": 1}, {"Time": 0.025868, "Incumbent": 1186, "step": 2}, {"Time": 0.025868, "Incumbent": 1141, "step": 6}, {"Time": 0.025868, "Incumbent": 1133, "step": 7}, {"Time": 0.025868, "Incumbent": 1130, "step": 10}, {"Time": 0.025874, "Incumbent": 1122, "step": 66}, {"Time": 0.025875, "Incumbent": 1101, "step": 85}, {"Time": 0.025877, "Incumbent": 1071, "step": 110}],
+      [{"Time": 0.025867, "Incumbent": 1229, "step": 1}, {"Time": 0.025868, "Incumbent": 1199, "step": 2}, {"Time": 0.025868, "Incumbent": 1167, "step": 4}, {"Time": 0.025868, "Incumbent": 1166, "step": 6}, {"Time": 0.025868, "Incumbent": 1161, "step": 7}, {"Time": 0.025868, "Incumbent": 1149, "step": 8}, {"Time": 0.025868, "Incumbent": 1148, "step": 11}, {"Time": 0.025869, "Incumbent": 1130, "step": 12}, {"Time": 0.025869, "Incumbent": 1123, "step": 17}, {"Time": 0.025870, "Incumbent": 1117, "step": 24}, {"Time": 0.025879, "Incumbent": 1108, "step": 131}, {"Time": 0.025881, "Incumbent": 1105, "step": 149}, {"Time": 0.025899, "Incumbent": 1101, "step": 366}, {"Time": 0.025918, "Incumbent": 1100, "step": 617}, {"Time": 0.025924, "Incumbent": 1086, "step": 689}, {"Time": 0.025970, "Incumbent": 1071, "step": 1308}],
+      [{"Time": 0.025868, "Incumbent": 1199, "step": 1}, {"Time": 0.025868, "Incumbent": 1196, "step": 2}, {"Time": 0.025869, "Incumbent": 1162, "step": 5}, {"Time": 0.025870, "Incumbent": 1145, "step": 11}, {"Time": 0.025871, "Incumbent": 1123, "step": 23}, {"Time": 0.025878, "Incumbent": 1096, "step": 87}, {"Time": 0.025901, "Incumbent": 1082, "step": 346}, {"Time": 0.026114, "Incumbent": 1071, "step": 2567}],
+      [{"Time": 0.025868, "Incumbent": 1190, "step": 1}, {"Time": 0.025868, "Incumbent": 1148, "step": 2}, {"Time": 0.025868, "Incumbent": 1140, "step": 3}, {"Time": 0.025869, "Incumbent": 1129, "step": 18}, {"Time": 0.025870, "Incumbent": 1121, "step": 25}, {"Time": 0.025871, "Incumbent": 1102, "step": 35}, {"Time": 0.025881, "Incumbent": 1093, "step": 138}, {"Time": 0.026025, "Incumbent": 1086, "step": 1822}, {"Time": 0.026076, "Incumbent": 1071, "step": 2456}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-46",
+    "capacity": 210,
+    "num_subsets": 824,
+    "num_partitions": 4197,
+    "nonzeros": 6403,
+    "min_coeff": 1,
+    "max_coeff": 260,
+    "exact_cost": 812,
+    "second_best_cost": 814,
+    "exact_total_s": 0.022809,
+    "exact_tts_s": 0.022696,
+    "sqa_best_cost": 812,
+    "sqa_succ_runs": 2,
+    "sqa_mean_total_s": 0.067544,
+    "sqa_mean_tts_s": 0.066630,
+    "routes": [
+      [13, 11, 8, 6, 7, 1],
+      [17, 16, 3, 18, 2, 12],
+      [10, 19, 9, 4],
+      [14, 20, 15, 5]
+    ],
+    "traces": [
+      [{"Time": 0.066490, "Incumbent": 877, "step": 1}, {"Time": 0.066491, "Incumbent": 844, "step": 4}, {"Time": 0.066492, "Incumbent": 834, "step": 9}, {"Time": 0.066502, "Incumbent": 830, "step": 74}, {"Time": 0.066504, "Incumbent": 824, "step": 90}, {"Time": 0.066551, "Incumbent": 812, "step": 498}],
+      [{"Time": 0.066489, "Incumbent": 891, "step": 1}, {"Time": 0.066489, "Incumbent": 873, "step": 2}, {"Time": 0.066490, "Incumbent": 870, "step": 3}, {"Time": 0.066490, "Incumbent": 844, "step": 4}, {"Time": 0.066490, "Incumbent": 838, "step": 5}, {"Time": 0.066495, "Incumbent": 832, "step": 21}, {"Time": 0.066496, "Incumbent": 831, "step": 28}, {"Time": 0.066502, "Incumbent": 830, "step": 92}, {"Time": 0.066513, "Incumbent": 828, "step": 187}, {"Time": 0.066514, "Incumbent": 814, "step": 203}, {"Time": 0.066586, "Incumbent": 812, "step": 930}],
+      [{"Time": 0.066489, "Incumbent": 858, "step": 1}, {"Time": 0.066491, "Incumbent": 847, "step": 11}, {"Time": 0.066497, "Incumbent": 840, "step": 71}, {"Time": 0.066499, "Incumbent": 838, "step": 91}, {"Time": 0.066500, "Incumbent": 834, "step": 98}, {"Time": 0.066500, "Incumbent": 828, "step": 100}, {"Time": 0.066522, "Incumbent": 824, "step": 311}, {"Time": 0.066580, "Incumbent": 820, "step": 980}, {"Time": 0.066604, "Incumbent": 814, "step": 1281}],
+      [{"Time": 0.066489, "Incumbent": 894, "step": 1}, {"Time": 0.066489, "Incumbent": 859, "step": 2}, {"Time": 0.066490, "Incumbent": 838, "step": 7}, {"Time": 0.066501, "Incumbent": 837, "step": 104}, {"Time": 0.066504, "Incumbent": 824, "step": 134}, {"Time": 0.066521, "Incumbent": 814, "step": 334}],
+      [{"Time": 0.066489, "Incumbent": 892, "step": 1}, {"Time": 0.066489, "Incumbent": 850, "step": 2}, {"Time": 0.066490, "Incumbent": 848, "step": 11}, {"Time": 0.066491, "Incumbent": 840, "step": 21}, {"Time": 0.066492, "Incumbent": 838, "step": 26}, {"Time": 0.066492, "Incumbent": 827, "step": 29}, {"Time": 0.066494, "Incumbent": 820, "step": 45}, {"Time": 0.066554, "Incumbent": 817, "step": 786}, {"Time": 0.066885, "Incumbent": 814, "step": 4776}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-47",
+    "capacity": 266,
+    "num_subsets": 471,
+    "num_partitions": 1174,
+    "nonzeros": 3367,
+    "min_coeff": 1,
+    "max_coeff": 250,
+    "exact_cost": 583,
+    "second_best_cost": 585,
+    "exact_total_s": 0.003757,
+    "exact_tts_s": 0.003677,
+    "sqa_best_cost": 583,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.008759,
+    "sqa_mean_tts_s": 0.007999,
+    "routes": [
+      [17, 1, 2, 14],
+      [7, 8, 5, 15, 3],
+      [13, 6, 12, 4],
+      [19, 18, 16, 10, 20, 9, 11]
+    ],
+    "traces": [
+      [{"Time": 0.007972, "Incumbent": 676, "step": 1}, {"Time": 0.007973, "Incumbent": 650, "step": 2}, {"Time": 0.007973, "Incumbent": 649, "step": 3}, {"Time": 0.007974, "Incumbent": 597, "step": 19}, {"Time": 0.007976, "Incumbent": 591, "step": 41}, {"Time": 0.007990, "Incumbent": 585, "step": 208}, {"Time": 0.008020, "Incumbent": 583, "step": 590}],
+      [{"Time": 0.007972, "Incumbent": 728, "step": 1}, {"Time": 0.007972, "Incumbent": 634, "step": 2}, {"Time": 0.007973, "Incumbent": 619, "step": 8}, {"Time": 0.007974, "Incumbent": 603, "step": 24}, {"Time": 0.007977, "Incumbent": 597, "step": 64}, {"Time": 0.007980, "Incumbent": 583, "step": 112}],
+      [{"Time": 0.007972, "Incumbent": 692, "step": 1}, {"Time": 0.007972, "Incumbent": 685, "step": 3}, {"Time": 0.007972, "Incumbent": 607, "step": 7}, {"Time": 0.007973, "Incumbent": 583, "step": 8}],
+      [{"Time": 0.007972, "Incumbent": 725, "step": 1}, {"Time": 0.007972, "Incumbent": 667, "step": 3}, {"Time": 0.007972, "Incumbent": 602, "step": 4}, {"Time": 0.007972, "Incumbent": 585, "step": 6}, {"Time": 0.008016, "Incumbent": 583, "step": 557}],
+      [{"Time": 0.007972, "Incumbent": 643, "step": 1}, {"Time": 0.007973, "Incumbent": 615, "step": 22}, {"Time": 0.007974, "Incumbent": 600, "step": 24}, {"Time": 0.007975, "Incumbent": 599, "step": 40}, {"Time": 0.007975, "Incumbent": 596, "step": 44}, {"Time": 0.007978, "Incumbent": 592, "step": 76}, {"Time": 0.007981, "Incumbent": 585, "step": 111}, {"Time": 0.008006, "Incumbent": 583, "step": 471}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-48",
+    "capacity": 220,
+    "num_subsets": 676,
+    "num_partitions": 2192,
+    "nonzeros": 5125,
+    "min_coeff": 1,
+    "max_coeff": 307,
+    "exact_cost": 544,
+    "second_best_cost": 545,
+    "exact_total_s": 0.010508,
+    "exact_tts_s": 0.010490,
+    "sqa_best_cost": 544,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.023170,
+    "sqa_mean_tts_s": 0.022294,
+    "routes": [
+      [17, 10, 14, 8, 13, 1],
+      [6, 4, 3, 11, 15, 5, 2],
+      [9, 16, 18, 7],
+      [20, 19, 12]
+    ],
+    "traces": [
+      [{"Time": 0.022231, "Incumbent": 642, "step": 1}, {"Time": 0.022231, "Incumbent": 588, "step": 2}, {"Time": 0.022236, "Incumbent": 570, "step": 52}, {"Time": 0.022237, "Incumbent": 565, "step": 68}, {"Time": 0.022243, "Incumbent": 564, "step": 146}, {"Time": 0.022243, "Incumbent": 562, "step": 148}, {"Time": 0.022245, "Incumbent": 545, "step": 179}, {"Time": 0.022264, "Incumbent": 544, "step": 441}],
+      [{"Time": 0.022230, "Incumbent": 644, "step": 1}, {"Time": 0.022231, "Incumbent": 551, "step": 2}, {"Time": 0.022254, "Incumbent": 545, "step": 297}, {"Time": 0.022325, "Incumbent": 544, "step": 1252}],
+      [{"Time": 0.022231, "Incumbent": 605, "step": 1}, {"Time": 0.022232, "Incumbent": 574, "step": 6}, {"Time": 0.022237, "Incumbent": 563, "step": 57}, {"Time": 0.022241, "Incumbent": 561, "step": 104}, {"Time": 0.022241, "Incumbent": 556, "step": 108}, {"Time": 0.022245, "Incumbent": 554, "step": 162}, {"Time": 0.022247, "Incumbent": 550, "step": 179}, {"Time": 0.022262, "Incumbent": 545, "step": 366}, {"Time": 0.022320, "Incumbent": 544, "step": 1038}],
+      [{"Time": 0.022231, "Incumbent": 617, "step": 1}, {"Time": 0.022231, "Incumbent": 609, "step": 5}, {"Time": 0.022231, "Incumbent": 607, "step": 7}, {"Time": 0.022232, "Incumbent": 597, "step": 9}, {"Time": 0.022232, "Incumbent": 550, "step": 10}, {"Time": 0.022253, "Incumbent": 544, "step": 241}],
+      [{"Time": 0.022230, "Incumbent": 614, "step": 1}, {"Time": 0.022230, "Incumbent": 578, "step": 2}, {"Time": 0.022235, "Incumbent": 563, "step": 51}, {"Time": 0.022237, "Incumbent": 561, "step": 78}, {"Time": 0.022239, "Incumbent": 554, "step": 95}, {"Time": 0.022307, "Incumbent": 544, "step": 925}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-49",
+    "capacity": 233,
+    "num_subsets": 524,
+    "num_partitions": 2871,
+    "nonzeros": 3703,
+    "min_coeff": 1,
+    "max_coeff": 388,
+    "exact_cost": 1045,
+    "second_best_cost": 1049,
+    "exact_total_s": 0.003742,
+    "exact_tts_s": 0.003614,
+    "sqa_best_cost": 1045,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.024286,
+    "sqa_mean_tts_s": 0.023420,
+    "routes": [
+      [14, 5, 2, 15, 19, 11, 12, 1],
+      [17, 16, 3, 6],
+      [20, 4, 13, 8],
+      [10, 18, 9, 7]
+    ],
+    "traces": [
+      [{"Time": 0.023362, "Incumbent": 1241, "step": 1}, {"Time": 0.023362, "Incumbent": 1240, "step": 2}, {"Time": 0.023362, "Incumbent": 1226, "step": 3}, {"Time": 0.023362, "Incumbent": 1103, "step": 5}, {"Time": 0.023365, "Incumbent": 1101, "step": 30}, {"Time": 0.023369, "Incumbent": 1090, "step": 59}, {"Time": 0.023373, "Incumbent": 1087, "step": 104}, {"Time": 0.023379, "Incumbent": 1079, "step": 158}, {"Time": 0.023379, "Incumbent": 1076, "step": 167}, {"Time": 0.023380, "Incumbent": 1073, "step": 174}, {"Time": 0.023433, "Incumbent": 1070, "step": 803}, {"Time": 0.023435, "Incumbent": 1064, "step": 820}, {"Time": 0.023474, "Incumbent": 1049, "step": 1295}, {"Time": 0.023508, "Incumbent": 1045, "step": 1694}],
+      [{"Time": 0.023361, "Incumbent": 1154, "step": 1}, {"Time": 0.023362, "Incumbent": 1143, "step": 3}, {"Time": 0.023363, "Incumbent": 1084, "step": 13}, {"Time": 0.023366, "Incumbent": 1070, "step": 25}, {"Time": 0.023409, "Incumbent": 1045, "step": 514}],
+      [{"Time": 0.023361, "Incumbent": 1183, "step": 1}, {"Time": 0.023361, "Incumbent": 1166, "step": 4}, {"Time": 0.023362, "Incumbent": 1129, "step": 9}, {"Time": 0.023362, "Incumbent": 1105, "step": 14}, {"Time": 0.023372, "Incumbent": 1084, "step": 128}, {"Time": 0.023374, "Incumbent": 1081, "step": 150}, {"Time": 0.023381, "Incumbent": 1075, "step": 224}, {"Time": 0.023381, "Incumbent": 1073, "step": 230}, {"Time": 0.023408, "Incumbent": 1045, "step": 558}],
+      [{"Time": 0.023361, "Incumbent": 1166, "step": 1}, {"Time": 0.023361, "Incumbent": 1137, "step": 2}, {"Time": 0.023363, "Incumbent": 1103, "step": 18}, {"Time": 0.023368, "Incumbent": 1102, "step": 72}, {"Time": 0.023369, "Incumbent": 1078, "step": 76}, {"Time": 0.023369, "Incumbent": 1072, "step": 81}, {"Time": 0.023376, "Incumbent": 1060, "step": 163}, {"Time": 0.023408, "Incumbent": 1045, "step": 554}],
+      [{"Time": 0.023361, "Incumbent": 1229, "step": 1}, {"Time": 0.023361, "Incumbent": 1199, "step": 2}, {"Time": 0.023362, "Incumbent": 1185, "step": 4}, {"Time": 0.023362, "Incumbent": 1184, "step": 8}, {"Time": 0.023362, "Incumbent": 1114, "step": 9}, {"Time": 0.023367, "Incumbent": 1099, "step": 66}, {"Time": 0.023368, "Incumbent": 1045, "step": 79}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-50",
+    "capacity": 245,
+    "num_subsets": 540,
+    "num_partitions": 2105,
+    "nonzeros": 3932,
+    "min_coeff": 1,
+    "max_coeff": 244,
+    "exact_cost": 627,
+    "second_best_cost": 629,
+    "exact_total_s": 0.005239,
+    "exact_tts_s": 0.005210,
+    "sqa_best_cost": 627,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.016500,
+    "sqa_mean_tts_s": 0.015767,
+    "routes": [
+      [18, 10, 1, 8],
+      [9, 4, 17, 11, 12, 6, 2],
+      [7, 3, 13, 20, 5],
+      [19, 15, 14, 16]
+    ],
+    "traces": [
+      [{"Time": 0.015721, "Incumbent": 811, "step": 1}, {"Time": 0.015723, "Incumbent": 807, "step": 11}, {"Time": 0.015724, "Incumbent": 795, "step": 18}, {"Time": 0.015727, "Incumbent": 787, "step": 41}, {"Time": 0.015727, "Incumbent": 756, "step": 42}, {"Time": 0.015729, "Incumbent": 658, "step": 61}, {"Time": 0.015744, "Incumbent": 636, "step": 209}, {"Time": 0.015756, "Incumbent": 629, "step": 344}, {"Time": 0.015762, "Incumbent": 627, "step": 408}],
+      [{"Time": 0.015721, "Incumbent": 889, "step": 1}, {"Time": 0.015721, "Incumbent": 674, "step": 2}, {"Time": 0.015723, "Incumbent": 669, "step": 18}, {"Time": 0.015727, "Incumbent": 630, "step": 66}, {"Time": 0.015729, "Incumbent": 627, "step": 86}],
+      [{"Time": 0.015721, "Incumbent": 790, "step": 1}, {"Time": 0.015721, "Incumbent": 669, "step": 5}, {"Time": 0.015725, "Incumbent": 636, "step": 49}, {"Time": 0.015737, "Incumbent": 631, "step": 190}, {"Time": 0.015744, "Incumbent": 627, "step": 265}],
+      [{"Time": 0.015721, "Incumbent": 900, "step": 1}, {"Time": 0.015721, "Incumbent": 873, "step": 2}, {"Time": 0.015721, "Incumbent": 787, "step": 3}, {"Time": 0.015721, "Incumbent": 630, "step": 8}, {"Time": 0.015749, "Incumbent": 627, "step": 326}],
+      [{"Time": 0.015721, "Incumbent": 889, "step": 1}, {"Time": 0.015721, "Incumbent": 748, "step": 2}, {"Time": 0.015727, "Incumbent": 671, "step": 64}, {"Time": 0.015729, "Incumbent": 669, "step": 90}, {"Time": 0.015731, "Incumbent": 651, "step": 107}, {"Time": 0.015744, "Incumbent": 631, "step": 267}, {"Time": 0.015754, "Incumbent": 630, "step": 396}, {"Time": 0.015804, "Incumbent": 629, "step": 997}, {"Time": 0.015851, "Incumbent": 627, "step": 1566}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-51",
+    "capacity": 228,
+    "num_subsets": 639,
+    "num_partitions": 2940,
+    "nonzeros": 4868,
+    "min_coeff": 1,
+    "max_coeff": 207,
+    "exact_cost": 491,
+    "second_best_cost": 494,
+    "exact_total_s": 0.011143,
+    "exact_tts_s": 0.011054,
+    "sqa_best_cost": 491,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.030449,
+    "sqa_mean_tts_s": 0.029805,
+    "routes": [
+      [5, 9, 12, 1],
+      [6, 2, 16, 13, 20, 4],
+      [19, 18, 3, 17, 8, 14],
+      [11, 7, 15, 10]
+    ],
+    "traces": [
+      [{"Time": 0.029444, "Incumbent": 653, "step": 1}, {"Time": 0.029444, "Incumbent": 634, "step": 2}, {"Time": 0.029445, "Incumbent": 622, "step": 3}, {"Time": 0.029445, "Incumbent": 604, "step": 7}, {"Time": 0.029445, "Incumbent": 524, "step": 10}, {"Time": 0.029464, "Incumbent": 520, "step": 196}, {"Time": 0.029513, "Incumbent": 514, "step": 715}, {"Time": 0.029550, "Incumbent": 491, "step": 1145}],
+      [{"Time": 0.029443, "Incumbent": 666, "step": 1}, {"Time": 0.029443, "Incumbent": 620, "step": 2}, {"Time": 0.029444, "Incumbent": 609, "step": 11}, {"Time": 0.029445, "Incumbent": 603, "step": 14}, {"Time": 0.029447, "Incumbent": 593, "step": 38}, {"Time": 0.029447, "Incumbent": 573, "step": 41}, {"Time": 0.029449, "Incumbent": 564, "step": 57}, {"Time": 0.029450, "Incumbent": 532, "step": 73}, {"Time": 0.029507, "Incumbent": 510, "step": 754}, {"Time": 0.029561, "Incumbent": 503, "step": 1425}, {"Time": 0.029700, "Incumbent": 494, "step": 3024}, {"Time": 0.029815, "Incumbent": 491, "step": 4474}],
+      [{"Time": 0.029443, "Incumbent": 623, "step": 1}, {"Time": 0.029443, "Incumbent": 610, "step": 3}, {"Time": 0.029444, "Incumbent": 603, "step": 7}, {"Time": 0.029445, "Incumbent": 600, "step": 15}, {"Time": 0.029445, "Incumbent": 590, "step": 19}, {"Time": 0.029445, "Incumbent": 574, "step": 20}, {"Time": 0.029448, "Incumbent": 569, "step": 48}, {"Time": 0.029452, "Incumbent": 560, "step": 89}, {"Time": 0.029452, "Incumbent": 559, "step": 97}, {"Time": 0.029465, "Incumbent": 542, "step": 247}, {"Time": 0.029471, "Incumbent": 533, "step": 315}, {"Time": 0.029481, "Incumbent": 529, "step": 443}, {"Time": 0.029521, "Incumbent": 522, "step": 942}, {"Time": 0.029538, "Incumbent": 503, "step": 1144}, {"Time": 0.029611, "Incumbent": 494, "step": 2054}, {"Time": 0.029921, "Incumbent": 491, "step": 5888}],
+      [{"Time": 0.029443, "Incumbent": 660, "step": 1}, {"Time": 0.029443, "Incumbent": 651, "step": 2}, {"Time": 0.029443, "Incumbent": 572, "step": 3}, {"Time": 0.029444, "Incumbent": 562, "step": 10}, {"Time": 0.029445, "Incumbent": 533, "step": 26}, {"Time": 0.029447, "Incumbent": 532, "step": 40}, {"Time": 0.029485, "Incumbent": 503, "step": 448}, {"Time": 0.029592, "Incumbent": 494, "step": 1670}, {"Time": 0.029971, "Incumbent": 491, "step": 6093}],
+      [{"Time": 0.029443, "Incumbent": 636, "step": 1}, {"Time": 0.029443, "Incumbent": 627, "step": 2}, {"Time": 0.029444, "Incumbent": 578, "step": 10}, {"Time": 0.029447, "Incumbent": 563, "step": 33}, {"Time": 0.029450, "Incumbent": 557, "step": 69}, {"Time": 0.029458, "Incumbent": 551, "step": 146}, {"Time": 0.029459, "Incumbent": 537, "step": 155}, {"Time": 0.029469, "Incumbent": 524, "step": 270}, {"Time": 0.029533, "Incumbent": 494, "step": 995}, {"Time": 0.029767, "Incumbent": 491, "step": 3700}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-52",
+    "capacity": 210,
+    "num_subsets": 713,
+    "num_partitions": 3112,
+    "nonzeros": 5464,
+    "min_coeff": 1,
+    "max_coeff": 242,
+    "exact_cost": 622,
+    "second_best_cost": 625,
+    "exact_total_s": 0.011262,
+    "exact_tts_s": 0.011248,
+    "sqa_best_cost": 622,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.036494,
+    "sqa_mean_tts_s": 0.035565,
+    "routes": [
+      [14, 1, 19, 10],
+      [12, 2, 17, 7],
+      [6, 9, 8, 13, 16, 4, 3, 5],
+      [20, 11, 18, 15]
+    ],
+    "traces": [
+      [{"Time": 0.035498, "Incumbent": 741, "step": 1}, {"Time": 0.035499, "Incumbent": 696, "step": 6}, {"Time": 0.035500, "Incumbent": 676, "step": 9}, {"Time": 0.035505, "Incumbent": 659, "step": 49}, {"Time": 0.035509, "Incumbent": 656, "step": 91}, {"Time": 0.035511, "Incumbent": 655, "step": 103}, {"Time": 0.035512, "Incumbent": 648, "step": 114}, {"Time": 0.035517, "Incumbent": 625, "step": 158}, {"Time": 0.035554, "Incumbent": 622, "step": 577}],
+      [{"Time": 0.035498, "Incumbent": 749, "step": 1}, {"Time": 0.035498, "Incumbent": 745, "step": 2}, {"Time": 0.035498, "Incumbent": 725, "step": 4}, {"Time": 0.035499, "Incumbent": 679, "step": 5}, {"Time": 0.035499, "Incumbent": 648, "step": 6}, {"Time": 0.035534, "Incumbent": 646, "step": 422}, {"Time": 0.035580, "Incumbent": 642, "step": 923}, {"Time": 0.035608, "Incumbent": 627, "step": 1230}, {"Time": 0.035680, "Incumbent": 625, "step": 2000}, {"Time": 0.035705, "Incumbent": 622, "step": 2264}],
+      [{"Time": 0.035498, "Incumbent": 757, "step": 1}, {"Time": 0.035498, "Incumbent": 747, "step": 3}, {"Time": 0.035498, "Incumbent": 733, "step": 6}, {"Time": 0.035499, "Incumbent": 709, "step": 7}, {"Time": 0.035499, "Incumbent": 689, "step": 13}, {"Time": 0.035500, "Incumbent": 659, "step": 26}, {"Time": 0.035501, "Incumbent": 656, "step": 29}, {"Time": 0.035502, "Incumbent": 645, "step": 39}, {"Time": 0.035507, "Incumbent": 622, "step": 92}],
+      [{"Time": 0.035498, "Incumbent": 749, "step": 1}, {"Time": 0.035498, "Incumbent": 745, "step": 3}, {"Time": 0.035498, "Incumbent": 737, "step": 4}, {"Time": 0.035499, "Incumbent": 698, "step": 8}, {"Time": 0.035500, "Incumbent": 684, "step": 9}, {"Time": 0.035501, "Incumbent": 646, "step": 17}, {"Time": 0.035509, "Incumbent": 626, "step": 113}, {"Time": 0.035532, "Incumbent": 622, "step": 313}],
+      [{"Time": 0.035498, "Incumbent": 757, "step": 1}, {"Time": 0.035499, "Incumbent": 718, "step": 3}, {"Time": 0.035499, "Incumbent": 695, "step": 4}, {"Time": 0.035500, "Incumbent": 654, "step": 9}, {"Time": 0.035503, "Incumbent": 648, "step": 46}, {"Time": 0.035512, "Incumbent": 642, "step": 152}, {"Time": 0.035528, "Incumbent": 622, "step": 369}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-53",
+    "capacity": 297,
+    "num_subsets": 300,
+    "num_partitions": 1554,
+    "nonzeros": 1921,
+    "min_coeff": 1,
+    "max_coeff": 354,
+    "exact_cost": 967,
+    "second_best_cost": 972,
+    "exact_total_s": 0.001033,
+    "exact_tts_s": 0.001015,
+    "sqa_best_cost": 967,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.007633,
+    "sqa_mean_tts_s": 0.006896,
+    "routes": [
+      [14, 10, 13, 6, 1],
+      [15, 17, 2, 8, 3],
+      [12, 7, 18, 4, 5],
+      [20, 9, 16, 11, 19]
+    ],
+    "traces": [
+      [{"Time": 0.006814, "Incumbent": 1096, "step": 1}, {"Time": 0.006814, "Incumbent": 1041, "step": 3}, {"Time": 0.006816, "Incumbent": 1011, "step": 23}, {"Time": 0.006817, "Incumbent": 967, "step": 39}],
+      [{"Time": 0.006813, "Incumbent": 1130, "step": 1}, {"Time": 0.006813, "Incumbent": 1083, "step": 3}, {"Time": 0.006814, "Incumbent": 1061, "step": 7}, {"Time": 0.006814, "Incumbent": 1057, "step": 11}, {"Time": 0.006815, "Incumbent": 1041, "step": 19}, {"Time": 0.006815, "Incumbent": 1040, "step": 25}, {"Time": 0.006816, "Incumbent": 992, "step": 32}, {"Time": 0.006821, "Incumbent": 972, "step": 98}, {"Time": 0.006894, "Incumbent": 967, "step": 1076}],
+      [{"Time": 0.006813, "Incumbent": 1154, "step": 1}, {"Time": 0.006813, "Incumbent": 1087, "step": 2}, {"Time": 0.006813, "Incumbent": 1055, "step": 5}, {"Time": 0.006813, "Incumbent": 1041, "step": 8}, {"Time": 0.006814, "Incumbent": 1036, "step": 14}, {"Time": 0.006815, "Incumbent": 985, "step": 32}, {"Time": 0.006838, "Incumbent": 981, "step": 316}, {"Time": 0.006838, "Incumbent": 967, "step": 318}],
+      [{"Time": 0.006813, "Incumbent": 1070, "step": 1}, {"Time": 0.006813, "Incumbent": 1067, "step": 2}, {"Time": 0.006813, "Incumbent": 1059, "step": 8}, {"Time": 0.006813, "Incumbent": 1033, "step": 9}, {"Time": 0.006814, "Incumbent": 1002, "step": 19}, {"Time": 0.006822, "Incumbent": 999, "step": 118}, {"Time": 0.006825, "Incumbent": 991, "step": 153}, {"Time": 0.006843, "Incumbent": 986, "step": 379}, {"Time": 0.006917, "Incumbent": 972, "step": 1277}, {"Time": 0.007017, "Incumbent": 967, "step": 2694}],
+      [{"Time": 0.006813, "Incumbent": 1140, "step": 1}, {"Time": 0.006813, "Incumbent": 1107, "step": 3}, {"Time": 0.006813, "Incumbent": 1096, "step": 5}, {"Time": 0.006813, "Incumbent": 1091, "step": 7}, {"Time": 0.006814, "Incumbent": 981, "step": 9}, {"Time": 0.006839, "Incumbent": 977, "step": 280}, {"Time": 0.006860, "Incumbent": 972, "step": 580}, {"Time": 0.006913, "Incumbent": 967, "step": 1320}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-54",
+    "capacity": 198,
+    "num_subsets": 749,
+    "num_partitions": 4850,
+    "nonzeros": 5586,
+    "min_coeff": 1,
+    "max_coeff": 301,
+    "exact_cost": 791,
+    "second_best_cost": 797,
+    "exact_total_s": 0.008994,
+    "exact_tts_s": 0.008813,
+    "sqa_best_cost": 791,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.063694,
+    "sqa_mean_tts_s": 0.062778,
+    "routes": [
+      [19, 5, 20, 4, 1, 18],
+      [15, 8, 6, 16, 2, 7],
+      [13, 11, 10, 3],
+      [17, 12, 14, 9]
+    ],
+    "traces": [
+      [{"Time": 0.062591, "Incumbent": 925, "step": 1}, {"Time": 0.062592, "Incumbent": 834, "step": 2}, {"Time": 0.062594, "Incumbent": 791, "step": 18}],
+      [{"Time": 0.062590, "Incumbent": 965, "step": 1}, {"Time": 0.062590, "Incumbent": 889, "step": 2}, {"Time": 0.062591, "Incumbent": 881, "step": 6}, {"Time": 0.062591, "Incumbent": 877, "step": 11}, {"Time": 0.062594, "Incumbent": 865, "step": 43}, {"Time": 0.062595, "Incumbent": 842, "step": 52}, {"Time": 0.062604, "Incumbent": 823, "step": 154}, {"Time": 0.062608, "Incumbent": 820, "step": 202}, {"Time": 0.062664, "Incumbent": 816, "step": 832}, {"Time": 0.062674, "Incumbent": 810, "step": 948}, {"Time": 0.062691, "Incumbent": 797, "step": 1140}, {"Time": 0.062917, "Incumbent": 791, "step": 3522}],
+      [{"Time": 0.062589, "Incumbent": 934, "step": 1}, {"Time": 0.062590, "Incumbent": 933, "step": 2}, {"Time": 0.062590, "Incumbent": 882, "step": 3}, {"Time": 0.062593, "Incumbent": 870, "step": 22}, {"Time": 0.062600, "Incumbent": 838, "step": 91}, {"Time": 0.062605, "Incumbent": 828, "step": 149}, {"Time": 0.062621, "Incumbent": 823, "step": 308}, {"Time": 0.062671, "Incumbent": 797, "step": 827}, {"Time": 0.062980, "Incumbent": 791, "step": 3986}],
+      [{"Time": 0.062589, "Incumbent": 940, "step": 1}, {"Time": 0.062590, "Incumbent": 922, "step": 3}, {"Time": 0.062592, "Incumbent": 886, "step": 6}, {"Time": 0.062593, "Incumbent": 822, "step": 13}, {"Time": 0.062627, "Incumbent": 810, "step": 273}, {"Time": 0.062727, "Incumbent": 808, "step": 1221}, {"Time": 0.062764, "Incumbent": 791, "step": 1595}],
+      [{"Time": 0.062590, "Incumbent": 918, "step": 1}, {"Time": 0.062590, "Incumbent": 872, "step": 5}, {"Time": 0.062593, "Incumbent": 868, "step": 28}, {"Time": 0.062594, "Incumbent": 845, "step": 37}, {"Time": 0.062595, "Incumbent": 822, "step": 51}, {"Time": 0.062633, "Incumbent": 791, "step": 472}]
+    ]
+  },
+  {
+    "instance": "XSH-n20-k4-55",
+    "capacity": 289,
+    "num_subsets": 306,
+    "num_partitions": 1386,
+    "nonzeros": 2022,
+    "min_coeff": 1,
+    "max_coeff": 297,
+    "exact_cost": 617,
+    "second_best_cost": 618,
+    "exact_total_s": 0.001452,
+    "exact_tts_s": 0.001405,
+    "sqa_best_cost": 617,
+    "sqa_succ_runs": 5,
+    "sqa_mean_total_s": 0.007331,
+    "sqa_mean_tts_s": 0.006641,
+    "routes": [
+      [15, 1, 12, 10, 2],
+      [20, 14, 3, 17, 4],
+      [18, 19, 11, 6, 5, 7],
+      [16, 8, 9, 13]
+    ],
+    "traces": [
+      [{"Time": 0.006579, "Incumbent": 829, "step": 1}, {"Time": 0.006579, "Incumbent": 778, "step": 2}, {"Time": 0.006580, "Incumbent": 733, "step": 4}, {"Time": 0.006582, "Incumbent": 705, "step": 35}, {"Time": 0.006583, "Incumbent": 691, "step": 39}, {"Time": 0.006584, "Incumbent": 626, "step": 47}, {"Time": 0.006587, "Incumbent": 617, "step": 85}],
+      [{"Time": 0.006579, "Incumbent": 736, "step": 1}, {"Time": 0.006579, "Incumbent": 718, "step": 10}, {"Time": 0.006581, "Incumbent": 707, "step": 28}, {"Time": 0.006584, "Incumbent": 698, "step": 76}, {"Time": 0.006586, "Incumbent": 644, "step": 102}, {"Time": 0.006592, "Incumbent": 626, "step": 185}, {"Time": 0.006597, "Incumbent": 617, "step": 249}],
+      [{"Time": 0.006579, "Incumbent": 782, "step": 1}, {"Time": 0.006579, "Incumbent": 752, "step": 2}, {"Time": 0.006579, "Incumbent": 745, "step": 8}, {"Time": 0.006582, "Incumbent": 731, "step": 34}, {"Time": 0.006583, "Incumbent": 721, "step": 46}, {"Time": 0.006584, "Incumbent": 715, "step": 54}, {"Time": 0.006589, "Incumbent": 673, "step": 113}, {"Time": 0.006590, "Incumbent": 619, "step": 140}, {"Time": 0.006594, "Incumbent": 617, "step": 187}],
+      [{"Time": 0.006579, "Incumbent": 866, "step": 1}, {"Time": 0.006579, "Incumbent": 671, "step": 2}, {"Time": 0.006580, "Incumbent": 663, "step": 18}, {"Time": 0.006585, "Incumbent": 651, "step": 82}, {"Time": 0.006592, "Incumbent": 650, "step": 194}, {"Time": 0.006596, "Incumbent": 644, "step": 238}, {"Time": 0.006639, "Incumbent": 619, "step": 863}, {"Time": 0.006661, "Incumbent": 617, "step": 1158}],
+      [{"Time": 0.006579, "Incumbent": 918, "step": 1}, {"Time": 0.006579, "Incumbent": 830, "step": 2}, {"Time": 0.006579, "Incumbent": 801, "step": 5}, {"Time": 0.006579, "Incumbent": 792, "step": 8}, {"Time": 0.006579, "Incumbent": 787, "step": 9}, {"Time": 0.006580, "Incumbent": 786, "step": 11}, {"Time": 0.006580, "Incumbent": 758, "step": 14}, {"Time": 0.006581, "Incumbent": 755, "step": 24}, {"Time": 0.006581, "Incumbent": 754, "step": 25}, {"Time": 0.006582, "Incumbent": 718, "step": 41}, {"Time": 0.006584, "Incumbent": 707, "step": 59}, {"Time": 0.006584, "Incumbent": 668, "step": 62}, {"Time": 0.006585, "Incumbent": 659, "step": 78}, {"Time": 0.006586, "Incumbent": 651, "step": 90}, {"Time": 0.006596, "Incumbent": 650, "step": 232}, {"Time": 0.006606, "Incumbent": 626, "step": 356}, {"Time": 0.006633, "Incumbent": 619, "step": 734}, {"Time": 0.006677, "Incumbent": 618, "step": 1348}, {"Time": 0.006767, "Incumbent": 617, "step": 2683}]
+    ]
+  }
+]

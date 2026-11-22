@@ -41,9 +41,18 @@ def main():
     print(f"  [Qiskit Core: {qiskit.__version__} | IBM 4-Step Pattern + Official check_cvrp]")
     print("=" * 88)
 
-    # 1. Locate campaign data and checker dynamically
+    # 1. Locate campaign data, instances, and checker dynamically (bundled inside repo first)
     repo_dir = Path(__file__).resolve().parent
     workspace_dir = repo_dir.parent
+
+    local_check_dir = repo_dir / "check"
+    local_checker_bin = local_check_dir / "target" / "release" / "check_cvrp"
+    if not local_checker_bin.exists() and (local_check_dir / "Cargo.toml").exists():
+        try:
+            print("Building bundled QOBLIB Rust checker (check/src/bin/check_cvrp.rs)...")
+            subprocess.run(["cargo", "build", "--release"], cwd=str(local_check_dir), check=True, capture_output=True)
+        except Exception:
+            pass
 
     campaign_candidates = [
         repo_dir / "campaign_test_results.json",
@@ -51,11 +60,13 @@ def main():
         workspace_dir / "campaign_test_results.json"
     ]
     checker_candidates = [
+        local_checker_bin,
         workspace_dir / "QOBLIB" / "09-routing" / "check" / "target" / "release" / "check_cvrp",
         workspace_dir / "check_cvrp",
         Path("check_cvrp")
     ]
     instances_candidates = [
+        repo_dir / "instances",
         workspace_dir / "QOBLIB" / "09-routing" / "instances",
         workspace_dir / "instances"
     ]
