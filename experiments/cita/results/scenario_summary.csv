@@ -1,6 +1,0 @@
-scenario,instances,fleet_slack_min,fleet_slack_max,candidate_routes_median,partition_count_median,paired_partition_factor_median,exact_ms_median,pricing_ms_median,cover_ms_median,cost_improved_instances,paired_cost_reduction_pct_median,milp_optimal,milp_limit,milp_attempted
-original,55,0,0,536,2334,1.0,1.7366,1.4592,0.2492,0,0.0,55,0,55
-plus_1_unit,55,4,4,2624,88338,39.89748201438849,9.4038,5.9474,3.7449,55,10.7914,0,0,0
-plus_2pct,55,16,24,10783,5237545,2147.0131636682754,66.4269,21.0064,42.6483,55,15.641,0,0,0
-plus_5pct,55,36,60,22557,63376232,25044.52548694571,175.6166,44.2426,130.8845,55,16.9584,0,0,0
-plus_10pct,55,72,120,38279,427619367,173403.63285714286,417.968,77.7348,336.271,55,18.9231,0,0,0

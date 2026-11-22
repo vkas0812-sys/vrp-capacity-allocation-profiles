@@ -1,9 +1,0 @@
-{
-  "instances": 55,
-  "reference_and_tc_exact_replay_matches": 55,
-  "capacity_only_candidates_median": 26982,
-  "capacity_only_pricing_ms_median": 34.6313,
-  "bounded_pricing_ms_median": 1.45917,
-  "candidate_reduction_factor_paired_median": 51.43729552889858,
-  "pricing_speedup_factor_paired_median": 25.724084305299776
-}
