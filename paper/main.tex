@@ -6,25 +6,21 @@
 \authorrunning{Kha-Anh-Son Vuong and Luong-Thanh-Tra Ngo}
 \institute{International University -- Viet Nam National University Ho Chi Minh City, Vietnam
 \and FPT University, Ho Chi Minh Campus, Vietnam\\
+Both authors contributed equally and share first authorship.\\
 Corresponding author: Luong-Thanh-Tra Ngo, \email{TraNLT2@fe.edu.vn}}
 \begin{document}
 \maketitle
 \begin{abstract}
-When total fleet capacity equals demand, a dispatcher buying four extra units must decide which vehicles receive them. We group customer partitions by sorted route overloads to compute the minimum distance and number of feasible partitions for every allocation. On 55 four-vehicle QOBLIB XSH instances, choosing the allocation after observing demand shortened the optimum relative to equal allocation in 41 cases (median reduction across all cases $1.48\%$, maximum $14.26\%$). In leave-one-out evaluation, every training fold selected three units on one vehicle and one on another. This split attained the optimum on 45 held-out instances. On 30 six-vehicle instances with CVRPLIB-X coordinates and generated demands, the adaptive choice improved on the most even allocation in 29 cases but on the three-plus-one split in only 14. An exact join that anchors three customers preserved all class counts and optima and reduced end-to-end computation time by a median factor of 3.59.
+When total fleet capacity equals demand, a dispatcher buying four extra units must decide which vehicles receive them. We group customer partitions by sorted route overloads to compute the minimum distance and number of feasible partitions for every allocation. On 55 four-vehicle QOBLIB XSH instances, choosing the allocation after observing demand shortened the optimum relative to equal allocation in 41 cases (median reduction across all cases $1.48\%$, maximum $14.26\%$). In leave-one-out evaluation, every training fold selected three units on one vehicle and one on another. This split attained the optimum on 45 held-out instances. After route pricing, a single profile returned all five design optima and partition counts in a median of 0.058 seconds, compared with 1.452 seconds for five time-limited distance-only MILP solves. On 30 six-vehicle instances with CVRPLIB-X coordinates and generated demands, the adaptive choice improved on the most even allocation in 29 cases but on the three-plus-one split in only 14. An exact join that anchors three customers preserved all class counts and optima and reduced end-to-end computation time by a median factor of 3.59.
 \keywords{Capacitated vehicle routing; Fleet capacity allocation; Set partitioning; Exact enumeration}
 \end{abstract}
 
 \section{Introduction}
-Four delivery vehicles whose combined capacity equals demand must all leave the depot full. On the first QOBLIB XSH instance, adding one unit to each vehicle expands the feasible customer partitions from 2,520 to 97,951 and shortens the optimum from 646 to 580 distance units. Figure~\ref{fig:routes} shows how customers regroup on the four tours.
+A dispatcher has four identical vehicles, each fully loaded, and can add four units of carrying capacity. On QOBLIB instance XSH-n20-k4-09, giving one unit to each vehicle yields a shortest total distance of 680. Giving three units to one vehicle and one to another brings the distance down to 585. Splitting the units two and two gives the optimum of 583. The vehicles serve the same customers in all three cases. What changes is which customers can share a tour.
 
-\begin{figure}[tb]
-\centering\includegraphics[width=.94\linewidth]{route-example.pdf}
-\caption{Optimal tours for XSH-n20-k4-01 at the original capacity and after adding one unit per vehicle. The black square marks the common depot. Line styles distinguish the four routes within each panel. Both panels use the original coordinates and the same scale.}\label{fig:routes}
-\end{figure}
+This example poses two decisions. A dispatcher who can configure vehicles after observing demand wants the best allocation for that map. A fleet operator who must commit earlier wants a fixed allocation that performs well across maps. To measure the cost of committing early, we compute the optimum for every allocation on each map, then evaluate a fixed allocation selected on other maps.
 
-The purchase raises a second question: could the dispatcher shorten the routes further by installing the same four units on fewer vehicles? To answer it, we extend the published tight-capacity baseline~\cite{tc} on the QOBLIB routing suite~\cite{qob}. For each distinct set of route overloads, we compute both the cheapest partition and the number of feasible partitions. A single profile then answers every allocation query under the same budget.
-
-We compare an allocation chosen for the observed demand map with one selected on other maps. For six vehicles, we derive a counting correction that lets us discard most intermediate triple masks while preserving the full profile. Two controls separate the effects of capacity on distance and runtime. Reassigning demands to locations preserves the feasible partition counts while changing tour costs. Moving the load filter before tour pricing changes computational work while preserving the solutions.
+Our starting point is the tight-capacity routing benchmark~\cite{qob} and its published baseline optima~\cite{tc}. We group partitions of customers by the extra capacity their routes require. Each group records its minimum distance and its number of partitions. A single profile thus answers two questions for any allocation within budget: how short the routes can be and how many ways the customers can be assigned to routes. With six vehicles, restricting which triples of routes can be joined reduces the work. We derive a correction for the number of times each partition appears in those joins, preserving the counts as well as the optima.
 
 \section{Related Work}
 Balinski and Quandt~\cite{bq} formulate routing as the selection of feasible routes. Baldacci et al.~\cite{master} strengthen the resulting set-partitioning relaxation with additional cuts. Pessoa et al.~\cite{generic} use branch-cut-and-price to solve a range of routing problems. Our output includes the number of partitions at each overload profile, even when their routes are expensive. We therefore price every eligible customer set using Held--Karp dynamic programming~\cite{hk}. This difference in outputs matters when comparing runtimes.
@@ -37,7 +33,7 @@ Aggoune-Mtalaa et al.~\cite{modules} study how to allocate modules in urban frei
 
 We use the X benchmark~\cite{x} in three ways: 20-customer samples retain their original demands, six-vehicle samples retain only the parent geometry, and full parents supply demands for a load-count diagnostic. Only the samples undergo route optimization.
 
-The TC-Exact technical note~\cite{tc} reports optimal costs at the original tight capacities. We reproduce those values before varying capacity. Our complementary-subset join is also related to algorithms for counting disjoint set packings by combining partial packings~\cite{pack} and to subset convolution~\cite{convolve}. Here each partial packing carries routing costs and overloads. The counting correction depends on how many routes contain the distinguished customers.
+The TC-Exact technical note~\cite{tc} reports optimal costs at the original tight capacities. We reproduce those values before varying capacity. Joining complementary subsets is related to methods that count disjoint set packings by combining partial packings~\cite{pack} and to subset convolution~\cite{convolve}. Here each partial packing carries routing costs and overloads. The counting correction depends on how many routes contain the distinguished customers.
 
 \section{Quantities That Capacity Can Change}
 Let $N$ be a set of $n$ customers, each with positive integer demand $d_i$. A fixed fleet of $k$ vehicles serves them from one depot. Each vehicle makes one nonempty tour and has integer capacity $C$. Define $D=\sum_{i\in N}d_i$, the fleet slack $\Delta=kC-D$, and $d(S)=\sum_{i\in S}d_i$. A feasible partition $P$ is an unordered collection of $k$ disjoint nonempty subsets whose union is $N$ and whose individual loads are at most $C$. Write $\mathcal P(C)$ for the family of such partitions and $H(C)=|\mathcal P(C)|$ for its cardinality. Let $t(S)$ denote the minimum cost of a closed depot tour through $S$. The optimal distance is
@@ -119,19 +115,26 @@ An intermediate model relaxes the routing problem, so a valid lower bound surviv
 All 55 QOBLIB XSH-n20-k4 instances have 20 customers, four vehicles and $D=4Q$. We solve each at its original capacity and after increasing per-vehicle capacity by $1$, $\lceil0.02Q\rceil$, $\lceil0.05Q\rceil$ and $\lceil0.10Q\rceil$. The feasible sets are nested, so the partition count cannot fall and the optimum cannot rise.
 
 \paragraph{Pairing and timing.}
-We record the number of candidate sets, partition count, optimum, optimum multiplicity and next distinct partition cost. We calculate each capacity ratio or percentage change within an instance, then take medians across instances. In the sweep, base timings use five runs and modified capacities use two. A dedicated early/late ablation runs three consecutive repetitions per mode on all 55 instances at each of three slack levels. We alternate the order of the two modes across cases. The time ratio is the median late time divided by the median early time for that case. Total solver time comprises pricing and coverage, excluding process launch, input parsing, route reconstruction and external checks. Timings were obtained on an Apple M1 with Apple Clang 21, C++17 and optimization level O3. Python 3.11 and SciPy 1.12 drive the MILPs. The deterministic counts are independent of the timing protocol.
+We record candidate and partition counts, minimum cost, its multiplicity and the next distinct cost. We compute ratios within instances before taking medians. Base timings use five repetitions and modified capacities use two. The early/late comparison uses three repetitions per mode at three slack levels, alternating mode order across cases and dividing median late time by median early time. Timings include pricing and cover search. We used an Apple M1, Apple Clang 21 (C++17, -O3), Python 3.11 and SciPy 1.12.
 
 \paragraph{Demand reassignment.}
 We draw 51 deterministic pseudorandom shuffles for each original XSH demand vector. Seeds are $20261121+100i+j$, with $i=0,\ldots,54$ in input-name order and $j=0,\ldots,50$. For each shuffle we solve at $Q$ and $Q+1$, compare both partition and candidate counts against the unshuffled inputs, and reconstruct the two sets of optimal tours. We summarize the 51 percentage reductions by their median for each instance before comparing with the original assignment. The 2,805 shuffles share 55 base instances. We first ran five assignments per input and then fixed the expanded sample size at 51. We report the initial and additional batches separately as a sensitivity check.
 
 \paragraph{External timing and full-parent counts.}
-We select the ten smallest CVRPLIB-X parents in increasing size. From each we draw two disjoint sets of 20 customers, retaining their depot, coordinates and demands. After shuffling IDs with seed 20261121, positions 1--20 and 21--40 determine the samples. We pack demands in descending order onto the lightest of four vehicles and use the largest resulting load as base capacity. This construction guarantees feasibility and allows positive initial slack. Each sample uses the same three perturbed levels as the XSH ablation. The 12-second cap per mode covers three repetitions and was set after exploratory runs revealed a slow case. Identical rounded capacities can occur under multiple nominal labels. We report the number of completed pairs for each label.
+For each of the ten smallest CVRPLIB-X parents, we shuffled customer IDs (seed 20261121) and took two disjoint 20-customer samples, retaining the original depot, coordinates and demands. We assigned demands in descending order to the lightest of four vehicles. The largest resulting load sets a feasible base capacity. We tested the same three increases as in the XSH ablation. After a slow pilot, we set a 12-second limit per mode for three repetitions and recorded completed pairs at each nominal level.
 
-For each full parent we also compute Eq.~(\ref{eq:count}) using the original customer demands, the file capacity and the fleet size encoded in its name. We repeat the five-level capacity sweep on these data. This yields ten parent profiles and 55 XSH profiles at five levels, or 325 exact count pairs. We verify the XSH values against all recorded early or late subset enumerations. Neither full-parent tour optimization nor an assumption about a particular optimal tour is required for this calculation.
+For the ten full parents, Eq.~(\ref{eq:count}) uses the original demands, capacity and named fleet size. Together with XSH this gives 325 exact count pairs across five capacities. We verified all XSH counts against explicit enumeration.
 
 \section{Results}
 \subsection{The first unit changes which customers can travel together}
 All 55 base optima matched TC-Exact and the route master. Every tested increase shortened the optimum on every instance. At one extra unit per vehicle, feasible partitions grew by a median factor of 39.90 (range 16.00--108.32). Distance savings ranged from 3.53\% to 24.14\% (interquartile range 8.00--16.31\%). Table~\ref{tab:sweep} reports medians of within-instance changes.
+
+Figure~\ref{fig:routes} illustrates the capacity change on XSH-n20-k4-01. Giving each vehicle one extra unit increases the number of feasible customer partitions from 2,520 to 97,951 and reduces the optimal distance from 646 to 580.
+
+\begin{figure}[tb]
+\centering\includegraphics[width=.94\linewidth]{route-example.pdf}
+\caption{Optimal tours for XSH-n20-k4-01 at the original capacity and after adding one unit per vehicle. The black square marks the common depot. Line styles distinguish the four routes within each panel. Both panels use the original coordinates and the same scale.}\label{fig:routes}
+\end{figure}
 
 \begin{table}[tb]\centering
 \caption{Capacity sweep across the 55 XSH instances. Columns report medians. Growth and distance savings are calculated relative to the same instance at $Q$. Times cover pricing and cover search.}\label{tab:sweep}
@@ -145,7 +148,7 @@ Base &536&2,334&1.00&0.00&1.74\\
 \end{tabular}
 \end{table}
 
-An additional feasible partition helps the objective only when its customer groups can be toured more cheaply than the incumbent. Instance 01 illustrates the distinction even within one capacity sweep. Moving from 2\% to 5\% extra capacity increases its partition count from 5,601,030 to 64,760,163, yet both settings have optimum 551. Its next tested capacity brings the optimum down to 542. Thus the much larger combinatorial response at higher capacities is compatible with flat intervals in the travel-distance response.
+On instance 01, raising extra capacity from 2\% to 5\% increased the partition count from 5,601,030 to 64,760,163 while the optimum remained 551. At the next tested capacity the optimum fell to 542.
 
 The supplement plots the between-instance dispersion at each capacity level.
 
@@ -165,12 +168,30 @@ $(1,1,1,1)$ & 14/55 & 1.50\%\\\bottomrule
 \end{tabular}
 \end{table}
 
-Choosing the allocation after observing the demand map improved on equal allocation in 41 of 55 cases. Relative to the equal-allocation distance, the median reduction was 1.48\% and the largest was 14.26\%. On instance 09 the optimum fell from 680 under equal allocation to 583 under $(2,2,0,0)$; $(3,1,0,0)$ gave 585. These changes hold total vehicle capacity, number of trips, demands and distances fixed.
+Choosing the allocation after observing the demand map improved on equal allocation in 41 of 55 cases. Relative to the equal-allocation distance, the median reduction was 1.48\% and the largest was 14.26\%. Instance 09, which opens the paper, attained this maximum. Two other designs on that map had the same optimum of 585: $(3,1,0,0)$ admitted 720,424 feasible partitions and $(2,1,1,0)$ admitted 431,249. These counts include partitions of every cost. They distinguish allocations with equal best distance without implying that the additional partitions are equally cheap.
 
 Could a planner obtain most of the benefit from one reusable design? For each held-out XSH instance we selected the allocation with the smallest mean cost relative to equal allocation on the other 54. Every fold selected $(3,1,0,0)$. It tied the instance-specific optimum in 45 cases. The adaptive choice yielded shorter routes in the remaining ten, with a median reduction across all instances of zero, a mean of 0.18\% and a maximum of 3.01\%. Thus much of the apparent gain over equal distribution was available to a simple fixed policy in this suite. The adaptive optimum assumes that capacity can be configured after demands are observed.
 
 \paragraph{Independent route selection.}
 As a check on the pair join, a set-partitioning MILP uses one binary variable per priced route and adds $\sum_S e(S)y_S\leq4$ to the coverage and fleet-size equalities. It shares the tour prices, but neither the pair summaries nor the load-tuple enumeration. With ten seconds per instance, the MILP proved the same optimum on 52 of 55 cases. On instances 09, 13 and 28 it timed out with lower bounds and feasible incumbents. We attribute those three optimality results to exact enumeration.
+
+\paragraph{One profile or five fixed-design solves?}
+We compared the time to return all five design optima on every XSH instance (Table~\ref{tab:five-solves}). Both methods started with the same priced routes and overloads. The profile time includes serializing routes, starting the C++ join, and querying all five designs. The five single-threaded MILP solves shared a coverage matrix. For each design we removed routes exceeding its largest increment and, for each threshold $t=1,\ldots,4$, capped the number of routes with overload at least $t$ at the number of vehicles receiving at least $t$ units. We ran each method once per instance, alternating their order, with a two-second solver limit per design.
+
+\begin{table}[tb]
+\centering\small
+\caption{Five fixed allocations per XSH instance. Wall times start after shared route pricing and include all five queries or solver calls. Time-limited calls are included at their observed duration. The last column counts instances with all five optima established.}\label{tab:five-solves}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Method & Median time (s) & Optima established & All five \\
+\midrule
+One exact profile & 0.058 & 275/275 & 55/55 \\
+Five fixed MILPs & 1.452 & 270/275 & 50/55 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The profile reproduced the archived optimum and partition count for every design. Each MILP that reported optimality agreed with the profile. The median within-instance ratio of elapsed MILP time to profile time was 26.07$\times$. This ratio describes the two implementations under the stated time limit. The MILPs returned distance bounds and incumbents, while the profile also counted partitions for every design.
 
 \paragraph{Transfer to six vehicles.}
 We froze the three-plus-one rule from XSH and tested it first on ten 24-customer instances with six vehicles of base capacity 100, then on twenty further instances. Each uses the depot and 24 sampled customer coordinates of a different X parent. The first ten are the smallest parents in the source repository. Before the extension we sorted the remaining 87 parents by node count and picked 20 evenly spaced ranks, including both endpoints. With seed $20261123+i$ for consecutive sample index $i=0,\ldots,29$, we sampled sites without replacement, then generated six four-customer demand groups. Three integers per group were drawn uniformly from 16 through 34; the fourth filled the group load to 100. We rejected groups whose fourth value was outside that range, then shuffled the 24 demands across the sites. This guarantees a feasible tight base fleet. The parent instances retain their source identities only through their coordinates; demands and capacities are generated for this test. The most even split of four indivisible units is $(1,1,1,1,0,0)$.
@@ -236,7 +257,7 @@ Upgraded vehicles & Median partitions & Median saving recovered & Full saving\\\
 \end{tabular}
 \end{table}
 
-One upgrade shortened the optimum on every instance. Its share of the available saving ranged from 4.20\% to 100\%, with an interquartile range of 80.77--100\%. Instance 11 illustrates why the median cannot determine an individual fleet decision. Its optimal distance fell from 914 to 908 with the first upgrade and to 771 with the second. The second vehicle unlocked 137 distance units after the first had unlocked six. A planner evaluating upgrades sequentially could overlook this complementarity by stopping after a small first gain.
+One upgrade shortened every optimum, recovering 4.20--100\% of the available saving (interquartile range 80.77--100\%). On instance 11 the distance fell from 914 to 908 with one upgrade and to 771 with two. A small first gain can therefore conceal a large second gain.
 
 \paragraph{Computing the entire curve.}
 We evaluated three cover implementations on all 55 XSH inputs at upgrade sizes $h=1$ and $h=2$. Direct enumeration visits each complete partition. An intermediate implementation chooses between scanning anchored submasks and scanning priced candidates to split the final remainder, and recomputes its three budget entries for each prefix. The cached implementation reuses these entries. All modes receive the same priced sets, and we rotated their order over three runs per mode per input and upgrade size. Timing covers the search and cache construction after parsing the priced sets; it excludes tour pricing, file transfer, reconstruction and cache teardown. All 110 configurations agreed across modes on exact-class costs and counts. Reconstructed witnesses attained the reported class costs and used the specified number of upgrades. The one-unit runs additionally reproduced all previously recorded budget optima and counts by exact class.
