@@ -3,6 +3,7 @@
 [![QOBLIB Benchmark](https://img.shields.io/badge/QOBLIB-09--routing%20(CVRP)-blue)](https://github.com/ZIB-AOPT/QOBLIB/tree/main/09-routing)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17%20(-O3)-00599C?logo=cplusplus)](src/)
 [![QOBLIB Checker](https://img.shields.io/badge/Verified-check__cvrp%20(275%2F275%20VALID)-198038)](https://github.com/ZIB-AOPT/QOBLIB/tree/main/09-routing/check)
+[![Lean 4 Proofs](https://img.shields.io/badge/Lean%204-Formal%20Proofs%20(15%2F15%20Verified)-purple)](lean/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](CITATION.cff)
 
 **Authors (Equal Contribution / Shared First Authorship):**
@@ -80,11 +81,16 @@ vrp-capacity-allocation-profiles/
 │   ├── holdout_summary.py             # 30-instance (10 initial + 20 holdout) 6-vehicle summary
 │   └── results/                       # 26 verified CSV/JSON experimental outputs (275/275 check_cvrp OK)
 │
-└── paper/                             # Springer LNCS (ICCSA) Manuscript & Vector Figures
-    ├── main.tex & main.pdf            # Main manuscript ("Exact Capacity Allocation Profiles...")
-    ├── supplement.tex & supplement.pdf# 10-page supplementary tables & edge-model formulations
-    ├── figures.py                     # Reproducible publication figure generator
-    └── *.pdf, *.png                   # Vector figures included in main.tex and supplement.tex
+├── paper/                             # Springer LNCS (ICCSA) Manuscript & Vector Figures
+│   ├── main.tex & main.pdf            # Main manuscript ("Exact Capacity Allocation Profiles...")
+│   ├── supplement.tex & supplement.pdf# 10-page supplementary tables & edge-model formulations
+│   ├── figures.py                     # Reproducible publication figure generator
+│   └── *.pdf, *.png                   # Vector figures included in main.tex and supplement.tex
+│
+└── lean/                              # Lean 4 Machine-Checked Formal Mathematical Proofs
+    ├── README.md                      # Installation, verification guide, and theorem correspondence table
+    ├── lean-toolchain                 # Pins Lean 4 version (leanprover/lean4:v4.36.0)
+    └── VrpCapacityAllocationProofs.lean # 15 zero-sorry formal proofs of the paper's mathematical claims
 ```
 
 ---
@@ -148,6 +154,12 @@ python3 experiments/summarize_allocation.py
 python3 experiments/summarize_anchors.py
 python3 experiments/holdout_summary.py
 ```
+
+### 4. Machine-Check the Formal Mathematical Proofs in Lean 4 (`lean/`)
+```bash
+lean lean/VrpCapacityAllocationProofs.lean
+```
+See [`lean/README.md`](lean/README.md) for Lean 4 installation instructions and the complete mapping between the 15 formally verified theorems and [`paper/main.tex`](paper/main.tex).
 
 See [`experiments/README.md`](experiments/README.md) and [`docs/reproducibility.md`](docs/reproducibility.md) for the complete campaign reproduction commands.
 
