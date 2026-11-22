@@ -10,8 +10,15 @@ __pycache__/
 .DS_Store
 ._*
 
-# Temporary test outputs
+# Temporary build & test outputs
 *.sol
 temp_solutions/
 quantum_55_instances_summary.json
 check/target/
+build_campaign
+run_experiments
+check_cvrp
+campaign_results.json
+campaign_test_results.json
+live_benchmark_results.json
+fig1_sqa_analysis.pdf

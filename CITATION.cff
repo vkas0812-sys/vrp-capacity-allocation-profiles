@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, experimental dataset, or manuscript in your research, please cite it using the metadata below."
+type: software
+title: "Exact Capacity Allocation Profiles for Vehicle Routing with Tight Fleets"
+authors:
+  - family-names: "Vuong"
+    given-names: "Kha Anh Son"
+    email: "sonvka31@mp.hcmiu.edu.vn"
+    affiliation: "School of Industrial Engineering and Management, Ho Chi Minh City International University, Vietnam National University Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0006-3435-7990"
+  - family-names: "Ngo"
+    given-names: "Luong Thanh Tra"
+    email: "TraNLT2@fe.edu.vn"
+    affiliation: "FPT University, Greenwich Vietnam, Ho Chi Minh Campus, Vietnam"
+    orcid: "https://orcid.org/0009-0003-2268-3498"
+version: "v2.0"
+date-released: "2026-11-22"
+url: "https://github.com/vkas0812-sys/vrp-capacity-allocation-profiles"
+repository-code: "https://github.com/vkas0812-sys/vrp-capacity-allocation-profiles"
+license: Apache-2.0
+keywords:
+  - Capacitated Vehicle Routing Problem
+  - CVRP
+  - Fleet Capacity Allocation
+  - Set Partitioning
+  - Exact Enumeration
+  - Held-Karp Dynamic Programming
+  - Anchored Routing Join
+  - QOBLIB

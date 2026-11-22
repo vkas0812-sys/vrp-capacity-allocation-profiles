@@ -1,0 +1,21 @@
+{
+  "instances": 55,
+  "pairs": 2805,
+  "strict": 2721,
+  "unchanged": 84,
+  "max_reduction": 26.356589147286826,
+  "shuffled_quartiles": [
+    4.4635,
+    5.7018,
+    7.734
+  ],
+  "shift_quartiles": [
+    -10.1046,
+    -5.0786,
+    -2.9535
+  ],
+  "shuffle_median_larger": 3,
+  "original_above_all": 9,
+  "first_five": 6.168224299065416,
+  "fresh_46": 5.717868880816468
+}
