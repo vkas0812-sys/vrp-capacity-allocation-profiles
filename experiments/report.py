@@ -2,6 +2,7 @@
 """Audit saved results, summarize paired effects, and render the benchmark figure."""
 
 import argparse
+from concurrent.futures import ProcessPoolExecutor
 import csv
 import json
 from pathlib import Path
@@ -12,7 +13,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from benchmark import NAMES, SCENARIOS, check_official, read_instance, write_csv
+from benchmark import pool_workers, NAMES, SCENARIOS, check_official, read_instance, write_csv
 
 
 LABELS = ("Original", "+1 unit", "+2%", "+5%", "+10%")
@@ -21,6 +22,32 @@ LABELS = ("Original", "+1 unit", "+2%", "+5%", "+10%")
 def records(path):
     with path.open(newline="") as stream:
         return list(csv.DictReader(stream))
+
+
+def _verify_one_solution(job):
+    record, item, expected_cap, expected_obj, inst_path, checker = job
+    name, scenario = record["instance"], record["scenario"]
+    key = (name, scenario)
+    capacity, objective = record["capacity"], record["objective"]
+    if (capacity, objective) != (expected_cap, expected_obj):
+        raise ValueError(f"Solution and result disagree for {key}")
+    routes = record["routes"]
+    if len(routes) != 4 or sorted(c for r in routes for c in r["customers"]) != list(range(1, 21)):
+        raise ValueError(f"Invalid customer coverage for {key}")
+    total = 0
+    for route in routes:
+        customers = route["customers"]
+        closed = (0, *customers, 0)
+        cost = sum(item.distance[a][b] for a, b in zip(closed, closed[1:]))
+        load = sum(item.demand[c - 1] for c in customers)
+        if not 0 < load <= capacity or (cost, load) != (route["cost"], route["load"]):
+            raise ValueError(f"Invalid saved tour cost or demand for {key}")
+        total += cost
+    if total != objective:
+        raise ValueError(f"Invalid saved objective for {key}")
+    if checker:
+        check_official(checker, inst_path, routes, capacity, objective)
+    return key
 
 
 def verify_files(results, instance_directory, checker):
@@ -33,32 +60,17 @@ def verify_files(results, instance_directory, checker):
     rows = {(r["instance"], r["scenario"]): r for r in records(results / "per_instance.csv")
             if r["mode"] == "bounded"}
     seen = set()
+    jobs = []
     for record in data:
         name, scenario = record["instance"], record["scenario"]
         key = (name, scenario)
         if key in seen or key not in expected:
             raise ValueError(f"Unexpected or duplicate solution {key}")
         seen.add(key)
-        capacity, objective = record["capacity"], record["objective"]
-        if (capacity, objective) != (int(rows[key]["capacity"]), int(rows[key]["objective"])):
-            raise ValueError(f"Solution and result disagree for {key}")
-        routes = record["routes"]
-        if len(routes) != 4 or sorted(c for r in routes for c in r["customers"]) != list(range(1, 21)):
-            raise ValueError(f"Invalid customer coverage for {key}")
-        item = instances[name]
-        total = 0
-        for route in routes:
-            customers = route["customers"]
-            closed = (0, *customers, 0)
-            cost = sum(item.distance[a][b] for a, b in zip(closed, closed[1:]))
-            load = sum(item.demand[c - 1] for c in customers)
-            if not 0 < load <= capacity or (cost, load) != (route["cost"], route["load"]):
-                raise ValueError(f"Invalid saved tour cost or demand for {key}")
-            total += cost
-        if total != objective:
-            raise ValueError(f"Invalid saved objective for {key}")
-        if checker:
-            check_official(checker, instance_directory / f"{name}.vrp", routes, capacity, objective)
+        jobs.append((record, instances[name], int(rows[key]["capacity"]),
+                     int(rows[key]["objective"]), instance_directory / f"{name}.vrp", checker))
+    with ProcessPoolExecutor(max_workers=pool_workers()) as pool:
+        list(pool.map(_verify_one_solution, jobs))
     if seen != expected:
         raise ValueError(f"Missing {len(expected - seen)} solutions")
     output = {"verified_solutions": len(seen), "official_qoblib_checker": bool(checker),

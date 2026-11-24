@@ -22,3 +22,11 @@ campaign_results.json
 campaign_test_results.json
 live_benchmark_results.json
 fig1_sqa_analysis.pdf
+
+# Multi-core runner local caches & binaries
+cvrplib_x_initial/
+cvrplib_x_holdout/
+replay_bin
+exact_bin
+results_multicore_m4/
+._*

@@ -2,7 +2,7 @@
 """Run the CVRP exact-cover and set-partitioning experiments from raw .vrp files."""
 
 import argparse
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 import csv
 from dataclasses import dataclass
 from functools import lru_cache
@@ -11,6 +11,16 @@ import json
 from math import floor, hypot
 from pathlib import Path
 import platform
+import os
+
+
+def pool_workers(cap=None):
+    """Return worker count from VRP_WORKERS env var, or CPU count (optionally capped)."""
+    env = os.environ.get("VRP_WORKERS")
+    if env:
+        return max(1, int(env))
+    cpus = os.cpu_count() or 4
+    return min(cpus, cap) if cap else cpus
 import re
 import statistics
 import subprocess
@@ -195,61 +205,73 @@ def check_official(checker, instance_path, routes, capacity, objective):
             raise ValueError(f"QOBLIB checker cost mismatch for {file.name}")
 
 
+def _solve_instance_campaign(job):
+    name, instances_dir, binary, checker, repeats_orig, stress_repeats, time_limit = job
+    instance_path = instances_dir / f"{name}.vrp"
+    instance = read_instance(instance_path)
+    inst_rows, inst_solutions, inst_timings = [], [], []
+    previous = None
+    for scenario, percent in SCENARIOS:
+        increase = 1 if percent is None else (instance.capacity * percent + 99) // 100
+        capacity = instance.capacity + increase
+        slack = 4 * increase
+        for mode in (("bounded", "capacity_only") if increase == 0 else ("bounded",)):
+            min_load = max(1, capacity - slack) if mode == "bounded" else 1
+            supplied_to_milp = mode == "bounded" and increase == 0
+            repeats = stress_repeats if increase else repeats_orig
+            result, masks, columns, timings = exact_run(binary, instance, capacity,
+                                                        min_load, repeats, supplied_to_milp)
+            row = dict(instance=name, scenario=scenario, mode=mode,
+                       original_capacity=instance.capacity, capacity=capacity,
+                       fleet_slack=slack, minimum_load=min_load,
+                       qoblib_reference=instance.reference if increase == 0 else None, **result)
+            routes = verify_and_reconstruct(instance, capacity, masks, row["objective"])
+            if checker:
+                check_official(checker, instance_path, routes, capacity, row["objective"])
+            if supplied_to_milp:
+                comparison, milp_masks = milp_run(columns, time_limit)
+                row.update(comparison)
+                if milp_masks:
+                    verify_and_reconstruct(instance, capacity, milp_masks, row["milp_objective"])
+                if (row["milp_status"] == 0 and
+                        (row["milp_objective"] != row["objective"]
+                         or abs(row["milp_bound"] - row["objective"]) > 1e-6)):
+                    raise ValueError(f"HiGHS disagrees with exact cover for {name}: {row}")
+            if increase == 0 and instance.reference != row["objective"]:
+                raise ValueError(f"QOBLIB reference cost differs for {name}: {row}")
+            if mode == "capacity_only":
+                metrics = ("partitions", "optimal_partitions", "objective", "second_distinct_objective")
+                if any(previous[key] != row[key] for key in metrics):
+                    raise ValueError(f"Unpruned pricing disagrees for {name}")
+            else:
+                if previous and (row["objective"] > previous["objective"]
+                                 or row["partitions"] < previous["partitions"]):
+                    raise ValueError(f"Capacity expansion violated monotonicity for {name}")
+                previous = row
+                inst_solutions.append({"instance": name, "scenario": scenario, "capacity": capacity,
+                                       "objective": row["objective"], "routes": routes})
+            inst_timings.extend(dict(instance=name, scenario=scenario, mode=mode, repeat=i,
+                                     pricing_ms=t[0], cover_ms=t[1])
+                                for i, t in enumerate(timings, 1))
+            inst_rows.append(row)
+    return name, instance.sha256, inst_rows, inst_solutions, inst_timings
+
+
 def run_campaign(args):
     if args.download:
         fetch_instances(args.instances)
     args.output.mkdir(parents=True, exist_ok=True)
     names = args.names or NAMES
     rows, solution_records, timings_records, input_hashes = [], [], [], {}
-    for name in names:
-        instance_path = args.instances / f"{name}.vrp"
-        instance = read_instance(instance_path)
-        input_hashes[name] = instance.sha256
-        previous = None
-        for scenario, percent in SCENARIOS:
-            increase = 1 if percent is None else (instance.capacity * percent + 99) // 100
-            capacity = instance.capacity + increase
-            slack = 4 * increase
-            for mode in (("bounded", "capacity_only") if increase == 0 else ("bounded",)):
-                min_load = max(1, capacity - slack) if mode == "bounded" else 1
-                supplied_to_milp = mode == "bounded" and increase == 0
-                repeats = args.stress_repeats if increase else args.repeats
-                result, masks, columns, timings = exact_run(args.binary, instance, capacity,
-                                                            min_load, repeats, supplied_to_milp)
-                row = dict(instance=name, scenario=scenario, mode=mode,
-                           original_capacity=instance.capacity, capacity=capacity,
-                           fleet_slack=slack, minimum_load=min_load,
-                           qoblib_reference=instance.reference if increase == 0 else None, **result)
-                routes = verify_and_reconstruct(instance, capacity, masks, row["objective"])
-                if args.checker:
-                    check_official(args.checker, instance_path, routes, capacity, row["objective"])
-                if supplied_to_milp:
-                    comparison, milp_masks = milp_run(columns, args.time_limit)
-                    row.update(comparison)
-                    if milp_masks:
-                        verify_and_reconstruct(instance, capacity, milp_masks, row["milp_objective"])
-                    if (row["milp_status"] == 0 and
-                            (row["milp_objective"] != row["objective"]
-                             or abs(row["milp_bound"] - row["objective"]) > 1e-6)):
-                        raise ValueError(f"HiGHS disagrees with exact cover for {name}: {row}")
-                if increase == 0 and instance.reference != row["objective"]:
-                    raise ValueError(f"QOBLIB reference cost differs for {name}: {row}")
-                if mode == "capacity_only":
-                    metrics = ("partitions", "optimal_partitions", "objective", "second_distinct_objective")
-                    if any(previous[key] != row[key] for key in metrics):
-                        raise ValueError(f"Unpruned pricing disagrees for {name}")
-                else:
-                    if previous and (row["objective"] > previous["objective"]
-                                     or row["partitions"] < previous["partitions"]):
-                        raise ValueError(f"Capacity expansion violated monotonicity for {name}")
-                    previous = row
-                    solution_records.append({"instance": name, "scenario": scenario, "capacity": capacity,
-                                             "objective": row["objective"], "routes": routes})
-                timings_records.extend(dict(instance=name, scenario=scenario, mode=mode, repeat=i,
-                                            pricing_ms=t[0], cover_ms=t[1])
-                                       for i, t in enumerate(timings, 1))
-                rows.append(row)
-        print(f"{name} verified", flush=True)
+    jobs = [(name, args.instances, args.binary, args.checker,
+             args.repeats, args.stress_repeats, args.time_limit) for name in names]
+    with ProcessPoolExecutor(max_workers=pool_workers()) as pool:
+        for name, sha256, inst_rows, inst_solutions, inst_timings in pool.map(_solve_instance_campaign, jobs):
+            input_hashes[name] = sha256
+            rows.extend(inst_rows)
+            solution_records.extend(inst_solutions)
+            timings_records.extend(inst_timings)
+            print(f"{name} verified", flush=True)
 
     write_csv(args.output / "per_instance.csv", rows)
     write_csv(args.output / "repetitions.csv", timings_records)
