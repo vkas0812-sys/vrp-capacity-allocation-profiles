@@ -2,11 +2,12 @@
 import argparse
 import csv
 from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from statistics import median
 
 from allocation_transfer import HERE, POLICIES, solve_parent
-from benchmark import write_csv
+from benchmark import pool_workers, write_csv
 
 RESULTS=HERE/"results"
 
@@ -23,8 +24,10 @@ def main():
     manifest=read(HERE/"holdout_parents.csv")
     if args.check_milp:
         checks=[]
-        for i in (0,6,13,19):
-            checks.extend(solve_parent((args.check_milp,10+i,manifest[i]["parent"],POLICIES)))
+        jobs=[(args.check_milp,10+i,manifest[i]["parent"],POLICIES) for i in (0,6,13,19)]
+        with ProcessPoolExecutor(max_workers=pool_workers(4)) as pool:
+            for block in pool.map(solve_parent,jobs):
+                checks.extend(block)
         write_csv(RESULTS/"six_vehicle_holdout_milp.csv",checks)
         return
     rows=[]

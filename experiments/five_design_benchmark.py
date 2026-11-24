@@ -1,5 +1,6 @@
 """Compare one profile with five fixed-design masters on shared XSH route prices."""
 import argparse
+from concurrent.futures import ProcessPoolExecutor
 import csv
 import subprocess
 import warnings
@@ -11,7 +12,7 @@ import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import csc_matrix
 
-from benchmark import NAMES, customer_ids, exact_run, read_instance
+from benchmark import pool_workers, NAMES, customer_ids, exact_run, read_instance
 
 HERE = Path(__file__).resolve().parent
 DESIGNS = [(0, 0, 0, 4), (0, 0, 1, 3), (0, 0, 2, 2), (0, 1, 1, 2), (1, 1, 1, 1)]
@@ -57,47 +58,60 @@ def five_masters(routes):
     return answers
 
 
+def _solve_five_design_instance(job):
+    index, name, instances_dir, pricer, join, ref_inst = job
+    inst = read_instance(instances_dir / (name + ".vrp"))
+    q = inst.capacity
+    _, _, columns, _ = exact_run(pricer, inst, q + 4, q - 4, 1, True)
+    routes = [(m, c, max(0, sum(inst.demand[j-1] for j in customer_ids(m)) - q))
+              for m, c in columns]
+
+    def timed(method):
+        start = perf_counter()
+        answer = method()
+        return answer, perf_counter() - start
+
+    methods = [lambda: profile(routes, join), lambda: five_masters(routes)]
+    order = (0, 1) if index % 2 == 0 else (1, 0)
+    outputs = {i: timed(methods[i]) for i in order}
+    (profiles, tp), (masters, tm) = outputs[0], outputs[1]
+    out_rows = []
+    for d in DESIGNS:
+        label = " ".join(map(str, d))
+        optimum, count = profiles[d]
+        assert (optimum, count) == ref_inst[label]
+        res = masters[d]
+        if res.fun is not None:
+            assert res.fun >= optimum - 1e-5
+        if res.status == 0:
+            assert abs(res.fun - optimum) < 1e-5
+        out_rows.append([name, label, tp, tm, optimum, count, res.status,
+                         res.fun, res.mip_dual_bound])
+    return out_rows
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("instances", type=Path)
     args = parser.parse_args()
     with (HERE/"results/allocation_designs.csv").open() as stream:
-        reference = {(r["instance"], r["design"]): (int(r["cost"]), int(r["partitions"]))
-                     for r in csv.DictReader(stream)}
+        reference = {}
+        for r in csv.DictReader(stream):
+            reference.setdefault(r["instance"], {})[r["design"]] = (int(r["cost"]), int(r["partitions"]))
     with TemporaryDirectory() as tmp:
         pricer, join = Path(tmp)/"exact", Path(tmp)/"join"
         for source, target in [("exact.cpp", pricer), ("allocation_cover.cpp", join)]:
             subprocess.run(["c++", "-O3", "-std=c++17", HERE/source, "-o", target], check=True)
+        jobs = [(index, name, args.instances, pricer, join, reference[name])
+                for index, name in enumerate(NAMES)]
         with (HERE/"results/five_design_benchmark.csv").open("w", newline="") as stream:
             writer = csv.writer(stream)
             writer.writerow(["instance", "design", "profile_seconds_all", "milp_seconds_all",
                              "profile_cost", "partitions", "milp_status", "incumbent", "dual_bound"])
-            for index, name in enumerate(NAMES):
-                inst = read_instance(args.instances/(name + ".vrp"))
-                q = inst.capacity
-                _, _, columns, _ = exact_run(pricer, inst, q + 4, q - 4, 1, True)
-                routes = [(m, c, max(0, sum(inst.demand[j-1] for j in customer_ids(m)) - q))
-                          for m, c in columns]
-                def timed(method):
-                    start = perf_counter()
-                    answer = method()
-                    return answer, perf_counter() - start
-                methods = [lambda: profile(routes, join), lambda: five_masters(routes)]
-                order = (0, 1) if index % 2 == 0 else (1, 0)
-                outputs = {i: timed(methods[i]) for i in order}
-                (profiles, tp), (masters, tm) = outputs[0], outputs[1]
-                for d in DESIGNS:
-                    label = " ".join(map(str, d))
-                    optimum, count = profiles[d]
-                    assert (optimum, count) == reference[name, label]
-                    res = masters[d]
-                    if res.fun is not None:
-                        assert res.fun >= optimum - 1e-5
-                    if res.status == 0:
-                        assert abs(res.fun - optimum) < 1e-5
-                    writer.writerow([name, label, tp, tm, optimum, count, res.status,
-                                     res.fun, res.mip_dual_bound])
-                stream.flush()
+            with ProcessPoolExecutor(max_workers=pool_workers(8)) as pool:
+                for out_rows in pool.map(_solve_five_design_instance, jobs):
+                    writer.writerows(out_rows)
+                    stream.flush()
 
 
 if __name__ == "__main__":

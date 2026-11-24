@@ -12,7 +12,7 @@ from random import Random
 from statistics import median
 from subprocess import TimeoutExpired
 
-from benchmark import exact_run, verify_and_reconstruct, write_csv
+from benchmark import pool_workers, exact_run, verify_and_reconstruct, write_csv
 from external_ablation import PARENTS, subsamples
 
 RESULTS = Path(__file__).resolve().parent / "results"
@@ -58,7 +58,7 @@ def main():
     args = parser.parse_args()
     jobs = [(args.binary.resolve(), i, sample, inst) for i, name in enumerate(PARENTS)
             for sample, (inst, _) in enumerate(subsamples(args.parents / (name + ".vrp")), 1)]
-    with ProcessPoolExecutor(max_workers=3) as pool:
+    with ProcessPoolExecutor(max_workers=pool_workers()) as pool:
         blocks = list(pool.map(run_block, jobs))
     write_csv(RESULTS / "external_geometry.csv", [r for block in blocks for r in block])
     parents = {}

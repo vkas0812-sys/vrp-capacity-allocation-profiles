@@ -13,7 +13,7 @@ import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import csc_matrix
 
-from benchmark import write_csv
+from benchmark import pool_workers, write_csv
 from external_ablation import PARENTS
 
 HERE=Path(__file__).resolve().parent
@@ -111,7 +111,7 @@ def main():
             selected={r["parent"] for r in csv.DictReader(source) if r["policy"]=="adaptive" and r["status"]!="0"}
         policies={"four":(0,0,0,0,0,4),"two_two":(0,0,0,0,2,2),"two_one_one":(0,0,0,1,1,2)}
         filename="allocation_transfer_completion.csv"
-    with ProcessPoolExecutor(max_workers=2) as pool:
+    with ProcessPoolExecutor(max_workers=pool_workers()) as pool:
         blocks=list(pool.map(solve_parent,[(args.parents,i,n,policies) for i,n in enumerate(PARENTS) if n in selected]))
     write_csv(HERE/"results"/filename,[r for b in blocks for r in b])
 
